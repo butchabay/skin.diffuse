@@ -1,0 +1,18 @@
+Changelog: 1.0.0 (25.03.2012)
+
+- Removed Various Views and Includes
+- Removed Horizontal Home Menu
+- Removed Extended Now Playing
+- Removed Clean Home Now Playing
+- Removed Light Theme Home
+- Removed Lang Flags
+- Removed Stdio Flags in Extras Folder
+- Removed Genre Fanarts (Music and Videos)
+- Removed New Flags
+- Created Silver Default Theme
+- Added Flags created by littlemixi and jugger75
+
+
+
+
+
