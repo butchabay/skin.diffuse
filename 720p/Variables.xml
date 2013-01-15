@@ -74,13 +74,13 @@
 	</variable>
 	
 	<variable name="randomandlastlabels">
-		<value condition="Control.HasFocus(8006)">$INFO[Container(8006).ListItem.Label][COLOR=white] • $INFO[Container(8006).ListItem.Property(Year)] • $INFO[Container(8006).ListItem.Property(RunningTime)] minutes[/COLOR]</value>
-		<value condition="Control.HasFocus(8007)">$INFO[Container(8007).ListItem.Label][COLOR=white] • $INFO[Container(8007).ListItem.Property(Year)] • $INFO[Container(8007).ListItem.Property(RunningTime)] minutes[/COLOR]</value>
-		<value condition="Control.HasFocus(8008)">$INFO[Container(8008).ListItem.Label][COLOR=white] • $INFO[Container(8008).ListItem.Property(Year)] • $INFO[Container(8008).ListItem.Property(RunningTime)] minutes[/COLOR]</value>
-		<value condition="Control.HasFocus(8025)">$INFO[Container(8025).ListItem.Label][COLOR=white] • $INFO[Container(8025).ListItem.Property(Year)] • $INFO[Container(8025).ListItem.Property(RunningTime)] minutes[/COLOR]</value>
-		<value condition="Control.HasFocus(8009)">$INFO[Container(8009).ListItem.Label2][COLOR=white] • $INFO[Container(8009).ListItem.Property(EpisodeSeasonWidget)] • $INFO[Container(8009).ListItem.Label][/COLOR]</value>
-		<value condition="Control.HasFocus(8010)">$INFO[Container(8010).ListItem.Label2][COLOR=white] • $INFO[Container(8010).ListItem.Property(EpisodeSeasonWidget)] • $INFO[Container(8010).ListItem.Label][/COLOR]</value>
-		<value condition="Control.HasFocus(8011)">$INFO[Container(8011).ListItem.Label2][COLOR=white] • $INFO[Container(8011).ListItem.Property(EpisodeSeasonWidget)] • $INFO[Container(8011).ListItem.Label][/COLOR]</value>
+		<value condition="Control.HasFocus(8006)">$INFO[Container(8006).ListItem.Label][COLOR=grey2]  $INFO[Container(8006).ListItem.Property(RunningTime)] minutes[/COLOR]</value>
+		<value condition="Control.HasFocus(8007)">$INFO[Container(8007).ListItem.Label][COLOR=grey2]  $INFO[Container(8007).ListItem.Property(RunningTime)] minutes[/COLOR]</value>
+		<value condition="Control.HasFocus(8008)">$INFO[Container(8008).ListItem.Label][COLOR=grey2]  $INFO[Container(8008).ListItem.Property(RunningTime)] minutes[/COLOR]</value>
+		<value condition="Control.HasFocus(8025)">$INFO[Container(8025).ListItem.Label][COLOR=grey2]  $INFO[Container(8025).ListItem.Property(RunningTime)] minutes[/COLOR]</value>
+		<value condition="Control.HasFocus(8009)">$INFO[Container(8009).ListItem.Label2][COLOR=grey2]  $INFO[Container(8009).ListItem.Label][/COLOR]</value>
+		<value condition="Control.HasFocus(8010)">$INFO[Container(8010).ListItem.Label2][COLOR=grey2]  $INFO[Container(8010).ListItem.Label][/COLOR]</value>
+		<value condition="Control.HasFocus(8011)">$INFO[Container(8011).ListItem.Label2][COLOR=grey2]  $INFO[Container(8011).ListItem.Label][/COLOR]</value>
 	</variable>
 	
 	<variable name="randomandlastplot">
@@ -111,7 +111,8 @@
 		<value condition="[stringcompare(ListItem.VideoCodec,divx) | stringcompare(ListItem.VideoCodec,dx50) | stringcompare(ListItem.VideoCodec,div3) | stringcompare(ListItem.VideoCodec,div4) | stringcompare(ListItem.VideoCodec,div5)] + !stringcompare(ListItem.VideoResolution,720) + !stringcompare(ListItem.VideoResolution,540)">extras/flagging/cases/divx.png</value>
 		<value condition="stringcompare(ListItem.VideoCodec,xvid) + ![stringcompare(ListItem.VideoResolution,720) + stringcompare(ListItem.VideoResolution,540)]">extras/flagging/cases/xvid.png</value>
 		<value condition="stringcompare(ListItem.FileExtension,mkv) + ![stringcompare(ListItem.VideoResolution,720) + stringcompare(ListItem.VideoResolution,1080) + stringcompare(ListItem.VideoResolution,540) + stringcompare(ListItem.VideoResolution,480)]">extras/flagging/cases/mkv.png</value>
-		<value condition="Library.HasContent(Moviesets)">extras/flagging/cases/collection.png</value>
+		<value condition="Library.HasContent(MovieSets) + !Container.Content(TVShows) + !Container.Content(Seasons)">extras/flagging/cases/collection.png</value>
+		<value condition="Container.Content(TVShows) | Container.Content(Seasons)">extras/flagging/cases/TVseries.png</value>
 	</variable>
 	
 	<variable name="breadcrumpslabels">

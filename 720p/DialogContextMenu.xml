@@ -56,10 +56,10 @@
     	<posx>11</posx>
     	<posy>-2</posy>
 		<width>378</width>
-		<height>40</height>
+		<height>35</height>
 		<align>center</align>
 		<aligny>center</aligny>
-		<font>diffuse_24_bold</font>
+		<font>diffuse_18_rss</font>
 		<textcolor>darkgrey</textcolor>
 		<focusedcolor>white</focusedcolor>
 		<disabledcolor>midgrey</disabledcolor>

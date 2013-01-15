@@ -53,7 +53,7 @@
 <scrolltime tween="quadratic" easing="out">300</scrolltime>
 <orientation>horizontal</orientation>
 <preloaditems>1</preloaditems>
-<visible>Container.Content(Movies) | Library.HasContent(Moviesets)</visible>
+<visible>Container.Content(Movies)</visible>
 <itemlayout condition="Skin.HasSetting(ClearCases2)" height="390" width="190">
 <control type="image">
 <visible>Skin.HasSetting(ClearCases2)</visible>
@@ -63,7 +63,7 @@
 <height>230</height>
 <aspectratio aligny="center" scalediffuse="false">scale</aspectratio>
 <fadetime>IconCrossfadeTime</fadetime>
-<texture background="true">$INFO[ListItem.Icon]</texture>
+<texture background="true" fallback="extras/moviegenresposter/Empty.jpg">$INFO[ListItem.Art(poster)]</texture>
 </control>
 <control type="image">
 <visible>Skin.HasSetting(ClearCases2)</visible>
@@ -73,7 +73,7 @@
 <height>230</height>
 <aspectratio aligny="center" scalediffuse="false">scale</aspectratio>
 <fadetime>IconCrossfadeTime</fadetime>
-<texture background="true" flipy="true">$INFO[ListItem.Icon]</texture>
+<texture background="true" fallback="extras/moviegenresposter/Empty.jpg">$INFO[ListItem.Art(poster)]</texture>
 <colordiffuse>62ffffff</colordiffuse>
 </control>
 <control type="group">
@@ -117,7 +117,7 @@
 <height>235</height>
 <aspectratio aligny="top" scalediffuse="false">stretch</aspectratio>
 <fadetime>IconCrossfadeTime</fadetime>
-<texture background="true" diffuse="views/poster/posterview/posterdiffuse.png">$INFO[ListItem.Icon]</texture>
+<texture background="true" diffuse="views/poster/posterview/posterdiffuse.png" fallback="extras/moviegenresposter/Empty.jpg">$INFO[ListItem.Art(poster)]</texture>
 </control>
 <control type="image">
 <visible>!Skin.HasSetting(ClearCases2)</visible>
@@ -127,7 +127,7 @@
 <height>236</height>
 <aspectratio aligny="top" scalediffuse="false">stretch</aspectratio>
 <fadetime>IconCrossfadeTime</fadetime>
-<texture background="true" diffuse="views/poster/posterview/posterdiffuse.png" flipy="true">$INFO[ListItem.Icon]</texture>
+<texture background="true" diffuse="views/poster/posterview/posterdiffuse.png" fallback="extras/moviegenresposter/Empty.jpg" flipy="true">$INFO[ListItem.Art(poster)]</texture>
 <colordiffuse>62ffffff</colordiffuse>
 </control>
 <control type="image">
@@ -145,7 +145,7 @@
 <control type="group">
 <posx>20</posx>
 <posy>0</posy>
-<visible>Container.Content(Movies) | Library.HasContent(Moviesets)</visible>
+<visible>Container.Content(Movies) | Library.HasContent(MovieSets)</visible>
 <control type="group">
 <animation type="WindowOpen" reversible="false">
 <effect type="slide" start="0,600" end="0,0" time="1000" delay="500" reversible="false" easing="out" tween="cubic" />
@@ -525,8 +525,7 @@
 <height>250</height>
 <aspectratio aligny="bottom">stretch</aspectratio>
 <fadetime>IconCrossfadeTime</fadetime>
-<texture>extras/flagging/cases/TVseries.png</texture>
-<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
+<texture>$VAR[clearcases]</texture>
 </control>
 <control type="image"> <!-- DVD Clear Case -->
 <posx>0</posx>
@@ -535,9 +534,8 @@
 <height>250</height>
 <aspectratio aligny="bottom">stretch</aspectratio>
 <fadetime>IconCrossfadeTime</fadetime>
-<texture background="true" flipy="true">extras/flagging/cases/TVSeries.png</texture>
+<texture>$VAR[clearcases]</texture>
 <colordiffuse>62ffffff</colordiffuse>
-<visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
 </control>
 <control type="image">
 <posx>145</posx>

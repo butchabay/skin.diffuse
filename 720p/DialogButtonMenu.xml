@@ -60,7 +60,7 @@
 										<label>41340</label>
 										<textcolor>darkgrey</textcolor>
 										<focusedcolor>white</focusedcolor>
-										<font>diffuse_24_bold</font>
+										<font>diffuse_18_rss</font>
 										<align>center</align>
 										<onclick>Dialog.Close(all,true)</onclick>
 										<onclick>XBMC.ReloadSkin()</onclick>
@@ -75,7 +75,7 @@
 										<label>$LOCALIZE[31252] $INFO[system.profilename]</label>
 										<textcolor>darkgrey</textcolor>
 										<focusedcolor>white</focusedcolor>
-										<font>diffuse_24_bold</font>
+										<font>diffuse_18_rss</font>
 										<align>center</align>
 										<onclick>dialog.close(all,true)</onclick>
 										<onclick>system.logoff</onclick>
@@ -90,7 +90,7 @@
 										<label>$LOCALIZE[31253]</label>
 										<textcolor>darkgrey</textcolor>
 										<focusedcolor>white</focusedcolor>
-										<font>diffuse_24_bold</font>
+										<font>diffuse_18_rss</font>
 										<align>center</align>
 										<onclick>XBMC.Quit()</onclick>
 										<texturefocus>dialogs/context/listfo.png</texturefocus>
@@ -103,7 +103,7 @@
 										<label>$LOCALIZE[31259]</label>
 										<textcolor>darkgrey</textcolor>
 										<focusedcolor>white</focusedcolor>
-										<font>diffuse_24_bold</font>
+										<font>diffuse_18_rss</font>
 										<align>center</align>
 										<onclick>XBMC.Suspend()</onclick>
 										<texturefocus>dialogs/context/listfo.png</texturefocus>
@@ -116,7 +116,7 @@
 										<label>$LOCALIZE[31260]</label>
 										<textcolor>darkgrey</textcolor>
 										<focusedcolor>white</focusedcolor>
-										<font>diffuse_24_bold</font>
+										<font>diffuse_18_rss</font>
 										<align>center</align>
 										<onclick>XBMC.Suspend()</onclick>
 										<texturefocus>dialogs/context/listfo.png</texturefocus>
@@ -129,7 +129,7 @@
 										<label>$LOCALIZE[31261]</label>
 										<textcolor>darkgrey</textcolor>
 										<focusedcolor>white</focusedcolor>
-										<font>diffuse_24_bold</font>
+										<font>diffuse_18_rss</font>
 										<align>center</align>
 										<onclick>Restart</onclick>
 										<texturefocus>dialogs/context/listfo.png</texturefocus>
@@ -145,7 +145,7 @@
 										<height>35</height>
 										<align>center</align>
 										<label>$LOCALIZE[31258]</label>
-										<font>diffuse_24_bold</font>
+										<font>diffuse_18_rss</font>
 										<onclick>Shutdown()</onclick>
 										<onleft>35</onleft>
 										<onright>31</onright>
@@ -160,7 +160,7 @@
 										<height>35</height>
 										<label>31269</label>
 										<align>center</align>
-										<font>diffuse_24_bold</font>
+										<font>diffuse_18_rss</font>
 										<onclick>AlarmClock(shutdowntimer,XBMC.Shutdown(),30)</onclick>
 										<onleft>30</onleft>
 										<onright>32</onright>
@@ -173,7 +173,7 @@
 										<height>35</height>
 										<label>31268</label>
 										<align>center</align>
-										<font>diffuse_24_bold</font>
+										<font>diffuse_18_rss</font>
 										<onclick>AlarmClock(shutdowntimer,XBMC.Shutdown(),60)</onclick>
 										<onleft>31</onleft>
 										<onright>33</onright>
@@ -186,7 +186,7 @@
 										<height>35</height>
 										<label>31267</label>
 										<align>center</align>
-										<font>diffuse_24_bold</font>
+										<font>diffuse_18_rss</font>
 										<onclick>AlarmClock(shutdowntimer,XBMC.Shutdown(),120)</onclick>
 										<onleft>32</onleft>
 										<onright>34</onright>
@@ -199,7 +199,7 @@
 										<height>35</height>
 										<label>31266</label>
 										<align>center</align>
-										<font>diffuse_24_bold</font>
+										<font>diffuse_18_rss</font>
 										<onclick>AlarmClock(shutdowntimer,XBMC.Shutdown())</onclick>
 										<onleft>33</onleft>
 										<onright>35</onright>
@@ -214,7 +214,7 @@
 										<height>35</height>
 										<label>31265</label>
 										<align>center</align>
-										<font>diffuse_24_bold</font>
+										<font>diffuse_18_rss</font>
 										<onclick>CancelAlarm(shutdowntimer)</onclick>
 										<onleft>34</onleft>
 										<onright>30</onright>
@@ -259,7 +259,7 @@
 										<height>35</height>
 										<label>-</label>
 										<textcolor>blue</textcolor>
-										<font>diffuse_24_bold</font>
+										<font>diffuse_18_rss</font>
 										<align>center</align>
 										<scroll>true</scroll>
 										<texturefocus>dialogs/context/listfo.png</texturefocus>
@@ -274,7 +274,7 @@
 										<height>35</height>
 										<label>$LOCALIZE[31258]</label>
 										<textcolor>darkgrey</textcolor>
-										<font>diffuse_24_bold</font>
+										<font>diffuse_18_rss</font>
 										<align>center</align>
 										<scroll>true</scroll>
 										<texturefocus>dialogs/context/listfo.png</texturefocus>
@@ -290,7 +290,7 @@
 										<label>$LOCALIZE[31252] $INFO[system.profilename]</label>
 										<textcolor>darkgrey</textcolor>
 										<focusedcolor>white</focusedcolor>
-								    	<font>diffuse_24_bold</font>
+								    	<font>diffuse_18_rss</font>
 										<align>center</align>
 										<onclick>dialog.close(all,true)</onclick>
 										<onclick>system.logoff</onclick>
@@ -305,7 +305,7 @@
 										<label>41319</label>
 										<textcolor>darkgrey</textcolor>
 										<focusedcolor>white</focusedcolor>
-										<font>diffuse_24_bold</font>
+										<font>diffuse_18_rss</font>
 										<align>center</align>
 										<onclick>XBMC.ActivateWindow(4)</onclick>
 										<texturefocus>dialogs/context/listfo.png</texturefocus>
@@ -318,7 +318,7 @@
 										<label>41365</label>
 										<textcolor>darkgrey</textcolor>
 										<focusedcolor>white</focusedcolor>
-										<font>diffuse_24_bold</font>
+										<font>diffuse_18_rss</font>
 										<align>center</align>
 										<onclick>XBMC.ActivateWindow(skinsettings)</onclick>
 										<texturefocus>dialogs/context/listfo.png</texturefocus>
@@ -331,7 +331,7 @@
 										<label>41024</label>
 										<textcolor>darkgrey</textcolor>
 										<focusedcolor>white</focusedcolor>
-										<font>diffuse_24_bold</font>
+										<font>diffuse_18_rss</font>
 										<align>center</align>
 										<onclick>XBMC.ActivateWindow(Favourites)</onclick>
 										<texturefocus>dialogs/context/listfo.png</texturefocus>
@@ -344,7 +344,7 @@
 										<label>31254</label>
 										<textcolor>darkgrey</textcolor>
 										<focusedcolor>white</focusedcolor>
-										<font>diffuse_24_bold</font>
+										<font>diffuse_18_rss</font>
 										<align>center</align>
 										<onclick>XBMC.ActivateWindow(3)</onclick>
 										<texturefocus>dialogs/context/listfo.png</texturefocus>
@@ -357,7 +357,7 @@
 										<label>31251</label>
 										<textcolor>darkgrey</textcolor>
 										<focusedcolor>white</focusedcolor>
-										<font>diffuse_24_bold</font>
+										<font>diffuse_18_rss</font>
 										<align>center</align>
 										<onclick>XBMC.ActivateWindow(7)</onclick>
 										<texturefocus>dialogs/context/listfo.png</texturefocus>

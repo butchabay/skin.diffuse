@@ -64,7 +64,7 @@
 					<posy>0</posy>
 					<width>250</width>
 					<height>40</height>
-					 <font>diffuse_20_rss</font>
+					<font>diffuse_20_rss</font>
 					<textcolor>lightgrey</textcolor>
 					<texturefocus>windows/common/list_fo.png</texturefocus>
 					<align>left</align>
@@ -72,7 +72,6 @@
 					<label>$INFO[ListItem.Label]</label>
 					<animation effect="zoom" time="300" center="50,20" start="100" end="120" tween="sine" easing="out" reversible="false">focus</animation>
 					<animation effect="zoom" time="200" center="50,20" start="120" end="100" tween="sine" easing="in" reversible="false">unfocus</animation>
-					
 				</control>
 			</focusedlayout>
 			<content>

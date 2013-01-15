@@ -25,7 +25,7 @@
 		<height>42</height>
 		<texturefocus>button-focus.png</texturefocus>
 		<texturenofocus>button-nofocus.png</texturenofocus>
-		<font>diffuse_20_alt</font>
+		<font>-</font>
 		<textcolor>midgrey</textcolor>
 		<disabledcolor>grey3</disabledcolor>
 		<textoffsetx>7</textoffsetx>

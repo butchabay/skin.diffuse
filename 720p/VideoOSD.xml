@@ -2,9 +2,9 @@
 	<defaultcontrol always="true">602</defaultcontrol>
 	<controls>
 		<control type="group">
-			<animation effect="slide" start="0,-160" end="0,0" time="800" tween="back" easing="out">WindowOpen</animation>
-			<animation effect="slide" start="0,0" end="0,-160" time="800" delay="150" tween="back" easing="out">WindowClose</animation>
-			<animation effect="slide" start="0,0" end="0,-160" time="800" tween="back" easing="out" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)">Conditional</animation>
+			<animation effect="slide" start="0,-160" end="0,0" time="800" tween="sine" easing="out">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="0,-160" time="800" delay="150" tween="sine" easing="out">WindowClose</animation>
+			<animation effect="slide" start="0,0" end="0,-160" time="800" tween="sine" easing="out" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)">Conditional</animation>
 		<control type="image">
 			<description>media info background image</description>
 			<posx>-100</posx>
@@ -13,7 +13,7 @@
 			<height>235</height>
 			<texture flipy="true">osd-back-info.png</texture>
 		</control>
-			<!-- SETTINGS GROUP (Bookmarks audio video) -->
+			<!-- SETTINGS GROUP  -->
 			<control type="group" id="200">
 				<posx>705</posx>
 				<posy>15</posy>
@@ -194,9 +194,9 @@
 			
 			<!-- PVR ENABLED -->
 			
-			<!-- SETTINGS GROUP (Bookmarks audio video) -->
+			
 			<control type="group" id="200">
-				<posx>585</posx>
+				<posx>575</posx>
 				<posy>15</posy>
 				<visible>VideoPlayer.Content(LiveTV)</visible>
 				<control type="button" id="701">
@@ -235,27 +235,11 @@
 					<texturefocus>osd/fullscreen/info-fo.png</texturefocus>
 					<texturenofocus>osd/fullscreen/info-nofo.png</texturenofocus>
 					<onleft>702</onleft>
-					<onright>704</onright>
+					<onright condition="VideoPlayer.Content(LiveTV)">706</onright>
 					<onclick>ActivateWindow(142)</onclick>
 				</control>
-				<control type="button" id="704">
-					<posx>240</posx>
-					<posy>0</posy>
-					<width>50</width>
-					<height>50</height>
-					<label>31356</label>
-					<font>-</font>
-					<texturefocus>osd/fullscreen/xbmcsubs-settings-fo.png</texturefocus>
-					<texturenofocus>osd/fullscreen/xbmcsubs-settings-nofo.png</texturenofocus>
-					<onleft>703</onleft>
-					<onright>706</onright>
-					<onclick>Close</onclick>
-					<onclick>XBMC.RunScript($INFO[Skin.String(SubtitleScript_Path)])</onclick>
-					<enable>Skin.HasSetting(SubtitleDownload_Enable) + !IsEmpty(Skin.String(SubtitleScript_Path))</enable>
-					<animation effect="fade" start="100" end="50" time="100" condition="![Skin.HasSetting(SubtitleDownload_Enable) + !IsEmpty(Skin.String(SubtitleScript_Path))]">Conditional</animation>
-				</control>
 				<control type="button" id="706">
-					<posx>300</posx>
+					<posx>240</posx>
 					<posy>0</posy>
 					<width>50</width>
 					<height>50</height>
@@ -263,7 +247,7 @@
 					<font>-</font>
 					<texturefocus>osd/fullscreen/osd_button_record_off_fo.png</texturefocus>
 					<texturenofocus>osd/fullscreen/osd_button_record_off_nf.png</texturenofocus>
-					<onleft>704</onleft>
+					<onleft>703</onleft>
 					<onright>707</onright>
 					<onclick>XBMC.PlayerControl(record)</onclick>
 					<enable>Player.CanRecord</enable>
@@ -271,7 +255,7 @@
 					<visible>VideoPlayer.Content(LiveTV) + Player.CanRecord + !Player.Recording</visible>
 				</control>
 				<control type="button" id="706">
-					<posx>360</posx>
+					<posx>240</posx>
 					<posy>0</posy>
 					<width>50</width>
 					<height>50</height>
@@ -280,7 +264,7 @@
 					<textcolor>orange</textcolor>
 					<texturefocus>osd/fullscreen/rec-fo.png</texturefocus>
 					<texturenofocus>osd/fullscreen/rec-nofo.png</texturenofocus>
-					<onleft>704</onleft>
+					<onleft>703</onleft>
 					<onright>707</onright>
 					<onclick>XBMC.PlayerControl(record)</onclick>
 					<enable>Player.CanRecord</enable>
@@ -288,7 +272,7 @@
 					<visible>VideoPlayer.Content(LiveTV) + Player.CanRecord + Player.Recording</visible>
 				</control>
 				<control type="button" id="707">
-					<posx>420</posx>
+					<posx>300</posx>
 					<posy>0</posy>
 					<width>50</width>
 					<height>50</height>
@@ -303,7 +287,7 @@
 					<visible>VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="button" id="708">
-					<posx>480</posx>
+					<posx>360</posx>
 					<posy>0</posy>
 					<width>50</width>
 					<height>50</height>
@@ -317,7 +301,7 @@
 					<visible>VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="button" id="709">
-					<posx>540</posx>
+					<posx>420</posx>
 					<posy>0</posy>
 					<width>50</width>
 					<height>50</height>
@@ -333,7 +317,7 @@
 			</control>
 			<!-- GROUP FOR PLAYER CONTROLS -->
 			<control type="group" id="100">
-				<posx>285</posx>
+				<posx>275</posx>
 				<posy>15</posy>
 				<visible>VideoPlayer.Content(LiveTV)</visible>
 				<control type="button" id="600">
@@ -432,6 +416,8 @@
 				<textcolor>44ffffff</textcolor>
 				<visible>!Window.IsVisible(124)</visible>
 				<visible>!Window.IsVisible(123)</visible>
+				<visible>!Window.IsVisible(PVROSDChannels)</visible>
+				<visible>!Window.IsVisible(PVROSDGuide)</visible>
 			</control>
 			<control type="label">
 				<posx>0</posx>
@@ -442,7 +428,7 @@
 				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>diffuse_30_title_bold</font>
+				<font>diffuse_18_rss</font>
 				<textcolor>44ffffff</textcolor>
 				<visible>!Window.IsActive(142) + !Window.IsActive(115)</visible>
 			</control>

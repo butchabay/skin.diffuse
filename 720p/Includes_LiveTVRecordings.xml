@@ -1,0 +1,136 @@
+<includes>
+
+	<include name="LiveTVRecordings">
+	
+			<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
+			<!---------------------------------------------------------  TV RECORDINGS GROUP  ---------------------------------------------------------------------------->
+			
+			<control type="group">
+				<description>Recordings group</description>
+				<visible>Control.IsVisible(13)</visible>
+				<include>transition_Fanart</include>
+				<control type="group">
+					<posx>15</posx>
+					<posy>60</posy>
+					<control type="label">
+						<posx>372</posx>
+						<posy>515</posy>
+						<height>30</height>
+						<width>750</width>
+						<font>diffuse_18_rss</font>
+						<textcolor>white</textcolor>
+						<scroll>true</scroll>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[Container(13).ListItem.Title]  $INFO[Container(13).ListItem.Duration]</label>
+					</control>
+					<control type="label">
+						<posx>372</posx>
+						<posy>535</posy>
+						<height>30</height>
+						<width>660</width>
+						<font>diffuse_14_rss</font>
+						<textcolor>grey</textcolor>
+						<scroll>true</scroll>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.ChannelName]</label>
+					</control>
+					<control type="image">
+						 <posx>120</posx>
+						 <posy>523</posy>
+						 <width>200</width>
+						 <height>100</height>
+						<info>ListItem.Icon</info>
+					</control>
+					<control type="textbox">
+						<description>Plot</description>
+						<posx>372</posx>
+		                <posy>565</posy>
+		                <height>60</height>
+					    <width>750</width>
+						<font>diffuse_14_rss</font>
+						<align>justify</align>
+						<textcolor>white</textcolor>
+						<label>$INFO[Container(13).ListItem.Plot]</label>
+						<autoscroll time="3000" delay="7000" repeat="5000">true</autoscroll>
+					</control>
+				</control>
+				<control type="list" id="13">
+					<posx>80</posx>
+					<posy>85</posy>
+					<width>500</width>
+					<height>445</height>
+					<onright>35</onright>
+					<onleft>31</onleft>
+					<onup>13</onup>
+					<ondown>13</ondown>
+					<viewtype label="535">list</viewtype>
+					<pagecontrol>-</pagecontrol>
+					<scrolltime>200</scrolltime>
+					<itemlayout height="50" width="250">
+						<control type="label">
+							<posx>40</posx>
+							<posy>0</posy>
+							<width>170</width>
+							<height>25</height>
+							<font>diffuse_16_rss</font>
+							<textcolor>lightgrey</textcolor>
+							<selectedcolor>white</selectedcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+						<control type="label">
+							<posx>40</posx>
+							<posy>25</posy>
+							<width>170</width>
+							<height>20</height>
+							<font>diffuse_16_rss</font>
+							<textcolor>grey2</textcolor>
+							<selectedcolor>white</selectedcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Date]</label>
+						</control>
+					</itemlayout>
+					<focusedlayout height="50" width="250">
+						<control type="image">
+							<posx>21</posx>
+							<posy>0</posy>
+							<width>264</width>
+							<height>50</height>
+							<texture>views/list/other/list_fo.png</texture>
+						</control>
+						<control type="label">
+							<posx>40</posx>
+							<posy>0</posy>
+							<width>170</width>
+							<height>25</height>
+							<font>diffuse_16_rss</font>
+							<textcolor>lightgrey</textcolor>
+							<selectedcolor>white</selectedcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+						<control type="label">
+							<posx>40</posx>
+							<posy>25</posy>
+							<width>170</width>
+							<height>20</height>
+							<font>diffuse_16_rss</font>
+							<textcolor>grey2</textcolor>
+							<selectedcolor>white</selectedcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Date]</label>
+						</control>
+					</focusedlayout>
+				</control>
+			</control>
+</include>
+</includes>
+
+<!------------------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------>

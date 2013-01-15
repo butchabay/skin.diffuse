@@ -1,0 +1,173 @@
+<includes>
+
+	<include name="LiveTVNowPlayingInfo">
+	<control type="image">
+			<description>floor</description>
+		    <include>transition_Fanart</include>
+			<posx>0</posx>
+			<posy>50</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>menuBackgroundvertical.png</texture>
+			<aspectratio>stretch</aspectratio>
+		</control>
+		<control type="group">
+		 <include>transition_Fanart</include>
+		<control type="image"> <!-- Home Background 2 -->
+			<posx>0</posx>
+		    <posy>0</posy>
+		    <width>1280</width>
+			<height>720</height>
+			<aspectratio>stretch</aspectratio>
+ 			<texture background="true">settings_panel.png</texture>
+			</control>
+			<control type="image">
+				<posx>388</posx>
+		        <posy>68</posy>
+		        <width>770</width>
+		        <height>396</height>
+				<texture background="true" fallback="special://skin/backgrounds/livetv.jpg">$INFO[Skin.String(Home_Custom_Back_TV_Folder)]</texture>
+				<aspectratio aligny="bottom">stretch</aspectratio>
+				<visible>!Player.HasVideo</visible>
+			</control>
+			<control type="image"> <!-- Home Background -->
+			<posx>388</posx>
+		    <posy>68</posy>
+		    <width>770</width>
+		    <height>396</height>
+			<aspectratio>stretch</aspectratio>
+ 			<texture background="true">backgroundblue.jpg</texture>
+			<colordiffuse>99FFFFFF</colordiffuse>
+			<visible>!Player.HasVideo</visible>
+			</control>
+		<control type="group">
+		<visible>Player.HasVideo</visible>
+		<control type="image">
+			<posx>369</posx>
+			<posy>53</posy>
+			<width>809</width>
+			<height>433</height>
+			<texture background="true">trailer-back.png</texture>
+			<fadetime>600</fadetime>
+			<aspectratio>stretch</aspectratio>
+			<align>center</align>
+		</control>
+	<control type="videowindow">
+		  <posx>390</posx>
+		  <posy>68</posy>
+		  <width>768</width>
+		  <height>397</height>
+		  <align>center</align>
+		  <aspectratio>stretch</aspectratio>
+		  <fadetime>600</fadetime>
+	 </control>
+	  </control>
+	       <control type="group">
+		   <visible>Player.HasVideo</visible>
+		   <visible>!Control.IsVisible(15) + !Control.IsVisible(16) + !Control.IsVisible(10)</visible>
+	       <control type="image">
+		   <posx>388</posx>
+		   <posy>365</posy>
+		   <width>770</width>
+		   <height>100</height>
+		   <texture>views/list/other/list_fo.png</texture>
+		   <colordiffuse>darkgrey2</colordiffuse>
+		</control>
+		<control type="image">
+		   <posx>388</posx>
+		   <posy>365</posy>
+		   <width>770</width>
+		   <height>100</height>
+		   <texture>views/list/other/list_fo.png</texture>
+		   <colordiffuse>darkgrey2</colordiffuse>
+		</control>
+		<control type="image">
+		   <posx>388</posx>
+		   <posy>365</posy>
+		   <width>770</width>
+		   <height>100</height>
+		   <texture>views/list/other/list_fo.png</texture>
+		   <colordiffuse>darkgrey2</colordiffuse>
+		</control>
+		<control type="progress">
+			<description>Progressbar</description>
+			<posx>528</posx>
+			<posy>438</posy>
+			<width>320</width>
+			<height>16</height>
+			<texturebg border="10">osd/fullscreen/progressBackground.png</texturebg>
+			<midtexture border="10.5">osd/fullscreen/progressSlider.png</midtexture>
+			<colordiffuse>lightgrey</colordiffuse>
+			<reveal>true</reveal>
+			<info>Player.Progress</info>
+		</control>
+		<control type="image">
+          <description>Cover image</description>
+          <posx>422</posx>
+          <posy>375</posy>
+          <width>80</width>
+          <height>80</height>
+          <aspectratio>keep</aspectratio>
+          <texture>$INFO[VideoPlayer.Cover]</texture>
+		  <visible>Player.HasMedia + !Control.IsVisible(10)</visible>	
+        </control>
+		</control>
+		<control type="group">
+		 <visible>!Control.IsVisible(15) + !Control.IsVisible(16) + !Control.IsVisible(10)</visible>
+		  <posx>140</posx>
+          <posy>-100</posy>
+		<control type="label">
+			<posx>390</posx>
+			<posy>472</posy>
+			<width>700</width>
+			<height>20</height>
+			<label>$INFO[VideoPlayer.ChannelNumber]  $INFO[VideoPlayer.ChannelName]</label>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>diffuse_14_rss</font>
+			<textcolor>lightgrey</textcolor>
+			<visible>Player.HasMedia + !Control.IsVisible(10)</visible>	
+		</control>
+		<control type="label">
+			<posx>390</posx>
+			<posy>490</posy>
+			<width>700</width>
+			<height>20</height>
+			<label>$INFO[VideoPlayer.Title]</label>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>diffuse_16_rss</font>
+			<textcolor>white</textcolor>
+			<visible>Player.HasMedia + !Control.IsVisible(10)</visible>	
+		</control>
+		<control type="label">
+			<posx>390</posx>
+			<posy>515</posy>
+			<width>700</width>
+			<height>20</height>
+			<label>$INFO[VideoPlayer.NextTitle,$LOCALIZE[41323]: ]  $INFO[VideoPlayer.NextStartTime]$INFO[VideoPlayer.NextEndTime,-]</label>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>diffuse_14_rss</font>
+			<textcolor>lightgrey</textcolor>
+			<visible>Player.HasMedia + !Control.IsVisible(10)</visible>	
+		</control>
+		
+		  <control type="label">
+		    <description>Time label</description>
+			<posx>900</posx>
+			<posy>537</posy>
+			<height>40</height>
+			<width>200</width>
+			<label>[COLOR=lightgrey]$INFO[Player.Time][/COLOR]  $INFO[Player.Duration]</label>
+			<font>diffuse_16_rss</font>
+			<textcolor>grey</textcolor>
+			<align>right</align>
+		 </control>
+	   </control>
+	</control>
+</include>
+</includes>
+
+<!------------------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------>

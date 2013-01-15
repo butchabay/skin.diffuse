@@ -1,51 +1,60 @@
 <window id="139">
   <defaultcontrol always="true">5</defaultcontrol>
   <controls>
-    <control type="group">
-      <animation effect="slide" start="640,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
-      <animation effect="slide" start="0,0" end="640,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
-      <control type="image">
-        <posx>640</posx>
-        <posy>0</posy>
-        <width>640</width>
-        <height>720</height>
-        <texture border="15,0,0,0" flipx="true">homesubbackground.png</texture>
-      </control>
+    <include>DialogOverlay</include>
+				<control type="group">
+				<include>PanelRotate</include>
+						<posx>190</posx>
+						<posy>100</posy>
+						<control type="image">
+						<description>background image</description>
+						<posx>150</posx>
+						<posy>0</posy>
+						<width>600</width>
+						<height>30</height>
+						<texture>dialogs/context/contextbgtb.png</texture>
+						<colordiffuse>bluegrey</colordiffuse>
+						<aspectratio>stretch</aspectratio>
+				</control>
+				<control type="image">
+						<description>background image</description>
+						<posx>150</posx>
+						<posy>30</posy>
+						<width>600</width>
+						<height>505</height>
+						<texture>dialogs/context/contextmid.png</texture>
+						<colordiffuse>bluegrey</colordiffuse>
+						<aspectratio>stretch</aspectratio>
+				</control>
+				<control type="image">
+						<description>background image</description>
+						<posx>150</posx>
+						<posy>535</posy>
+						<width>600</width>
+						<height>30</height>
+						<texture flipy="true">dialogs/context/contextbgtb.png</texture>
+						<colordiffuse>bluegrey</colordiffuse>
+						<aspectratio>stretch</aspectratio>
+				</control>
       <control type="label">
         <description>header label</description>
-        <posx>35r</posx>
+        <posx>120</posx>
         <posy>40</posy>
-        <width>710</width>
+        <width>590</width>
         <height>30</height>
-        <font>diffuse_30</font>
+        <font>diffuse_30_title_bold</font>
         <label>$LOCALIZE[13406]</label>
-        <align>right</align>
+        <align>center</align>
         <aligny>center</aligny>
-        <textcolor>orange</textcolor>
-        <shadowcolor>black</shadowcolor>
-      </control>
-      <control type="scrollbar" id="60">
-        <posx>1235</posx>
-        <posy>90</posy>
-        <width>25</width>
-        <height>600</height>
-        <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-        <texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
-        <texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
-        <textureslidernib>ScrollBarNib.png</textureslidernib>
-        <textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
-        <onleft>5</onleft>
-        <onright>5</onright>
-        <showonepage>false</showonepage>
-        <orientation>vertical</orientation>
+        <textcolor>blue</textcolor>
       </control>
       <control type="list" id="5">
-        <posx>670</posx>
+        <posx>181</posx>
         <posy>90</posy>
-        <width>560</width>
-        <height>601</height>
-        <onleft>60</onleft>
-        <onright>60</onright>
+        <width>538</width>
+        <height>440</height>
+        <onleft>-</onleft>
+        <onright>-</onright>
         <onup>5</onup>
         <ondown>5</ondown>
         <pagecontrol>60</pagecontrol>
@@ -54,34 +63,21 @@
           <control type="image">
             <posx>0</posx>
             <posy>0</posy>
-            <width>560</width>
+            <width>600</width>
             <height>41</height>
-            <texture border="5">menuitemNF.png</texture>
+            <texture>dialogs/context/listline.png</texture>
           </control>
           <control type="label">
-            <posx>170</posx>
+            <posx>50</posx>
             <posy>0</posy>
-            <width>160</width>
+            <width>500</width>
             <height>35</height>
-            <font>diffuse_20</font>
+            <font>diffuse_18_alt_bold</font>
             <aligny>center</aligny>
-            <textcolor>orange</textcolor>
-            <shadowcolor>black</shadowcolor>
-            <selectedcolor>selected</selectedcolor>
-            <align>right</align>
-            <label>$INFO[ListItem.Label][COLOR=grey2] : [/COLOR]</label>
-          </control>
-          <control type="label">
-            <posx>170</posx>
-            <posy>0</posy>
-            <width>390</width>
-            <height>35</height>
-            <font>diffuse_20</font>
-            <aligny>center</aligny>
-            <shadowcolor>black</shadowcolor>
+            <textcolor>blue</textcolor>
             <selectedcolor>selected</selectedcolor>
             <align>left</align>
-            <info>ListItem.Label2</info>
+            <label>$INFO[ListItem.Label][COLOR=grey2][/COLOR] : $INFO[ListItem.Label2]</label>
           </control>
         </itemlayout>
         <focusedlayout height="40">
@@ -90,41 +86,19 @@
             <posy>0</posy>
             <width>560</width>
             <height>41</height>
-            <visible>!Control.HasFocus(5)</visible>
-            <texture border="5">menuitemNF.png</texture>
-          </control>
-          <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>560</width>
-            <height>41</height>
-            <visible>Control.HasFocus(5)</visible>
-            <texture border="5">button-focus.png</texture>
+            <texture>dialogs/context/listfo.png</texture>
           </control>
           <control type="label">
-            <posx>170</posx>
+            <posx>50</posx>
             <posy>0</posy>
-            <width>160</width>
+            <width>500</width>
             <height>35</height>
-            <font>diffuse_20</font>
+            <font>diffuse_18_alt_bold</font>
             <aligny>center</aligny>
-            <textcolor>orange</textcolor>
-            <shadowcolor>black</shadowcolor>
-            <selectedcolor>selected</selectedcolor>
-            <align>right</align>
-            <label>$INFO[ListItem.Label][COLOR=grey2] : [/COLOR]</label>
-          </control>
-          <control type="label">
-            <posx>170</posx>
-            <posy>0</posy>
-            <width>390</width>
-            <height>35</height>
-            <font>diffuse_20</font>
-            <aligny>center</aligny>
-            <shadowcolor>black</shadowcolor>
-            <selectedcolor>selected</selectedcolor>
+            <textcolor>lightgrey</textcolor>
+            <selectedcolor>lightgrey</selectedcolor>
             <align>left</align>
-            <info>ListItem.Label2</info>
+            <label>$INFO[ListItem.Label][COLOR=grey2][/COLOR] : $INFO[ListItem.Label2]</label>
           </control>
         </focusedlayout>
       </control>

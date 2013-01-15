@@ -463,7 +463,11 @@
 		</font>
 	
 	<!-- RSS-->
-	
+	      <font>
+			<name>diffuse_14_rss</name>
+			<filename>Fat.ttf</filename>
+			<size>14</size>
+		</font>
 	     <font>
 			<name>diffuse_16_rss</name>
 			<filename>Fat.ttf</filename>

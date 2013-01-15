@@ -2,9 +2,9 @@
 	<defaultcontrol always="true">602</defaultcontrol>
 	<controls>
 		<control type="group">
-			<animation effect="slide" start="0,-160" end="0,0" time="800" tween="back" easing="out">WindowOpen</animation>
-			<animation effect="slide" start="0,0" end="0,-160" time="800" delay="150" tween="back" easing="out">WindowClose</animation>
-			<animation effect="slide" start="0,0" end="0,-160" time="800" tween="back" easing="out" condition="Window.IsVisible(VisualisationSettings) | Window.IsVisible(VisualisationPresetList)">Conditional</animation>
+			<animation effect="slide" start="0,-160" end="0,0" time="800" tween="sine" easing="out">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="0,-160" time="800" delay="150" tween="sine" easing="out">WindowClose</animation>
+			<animation effect="slide" start="0,0" end="0,-160" time="800" tween="sine" easing="out" condition="Window.IsVisible(VisualisationSettings) | Window.IsVisible(VisualisationPresetList)">Conditional</animation>
 			<control type="image">
 			<description>media info background image</description>
 			<posx>-100</posx>

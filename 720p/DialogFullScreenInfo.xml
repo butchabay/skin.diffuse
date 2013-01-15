@@ -163,7 +163,7 @@
 					<posy>350</posy>
 					<width>900</width>
 					<height>18</height>
-					<label>[COLOR=white]$LOCALIZE[19031]: $INFO[VideoPlayer.NextTitle][/COLOR]</label>
+					<label>[COLOR=grey2]$LOCALIZE[19031][/COLOR] $INFO[VideoPlayer.NextTitle]  [COLOR=grey2]$INFO[VideoPlayer.Genre][/COLOR]  [COLOR=lightgrey]$INFO[VideoPlayer.NextStartTime] - $INFO[VideoPlayer.NextEndTime][/COLOR]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<scroll>true</scroll>
@@ -597,7 +597,7 @@
 					<posy>465</posy>
 					<width>900</width>
 					<height>18</height>
-					<label>[COLOR=white]$LOCALIZE[19031]: $INFO[VideoPlayer.NextTitle][/COLOR]</label>
+					<label>[COLOR=grey2]$LOCALIZE[19031][/COLOR] $INFO[VideoPlayer.NextTitle]  [COLOR=grey2]$INFO[VideoPlayer.Genre][/COLOR]  [COLOR=lightgrey]$INFO[VideoPlayer.NextStartTime] - $INFO[VideoPlayer.NextEndTime][/COLOR]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<scroll>true</scroll>

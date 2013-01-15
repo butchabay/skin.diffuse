@@ -12,74 +12,9 @@
 				<animation effect="slide" start="0,600" end="0,0" time="800" delay="600" reversible="false" easing="out" tween="cubic" condition="Control.HasFocus(8006) | Control.HasFocus(8007) | Control.HasFocus(8008) | Control.HasFocus(8025)">Conditional</animation>
 				<animation effect="fade" start="100" end="0" time="0" delay="0" reversible="false" condition="!Control.HasFocus(8006) + !Control.HasFocus(8007) + !Control.HasFocus(8008) + !Control.HasFocus(8025)">Conditional</animation>
 				<visible>Skin.HasSetting(homepageNowplayingInfo) | !Player.HasMedia</visible>
-				<control type="image">
-                   <description>floor image</description>
-						<posx>-15</posx>
-						<posy>0</posy>
-						<width>1280</width>
-						<height>720</height>
-						<aspectratio>stretch</aspectratio>
-						<texture>menuBackgroundvertical.png</texture>
-                  </control>
-				<control type="label">
-					<description>Title label</description>
-					<posx>372</posx>
-					<posy>515</posy>
-					<height>20</height>
-					<width>750</width>
-					<label>$VAR[randomandlastlabels]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>diffuse_18_title_bold</font>
-					<textcolor>grey2</textcolor>
-				</control>
-					<control type="textbox">
-					<description>plot</description>
-					<posx>372</posx>
-					<posy>550</posy>
-					<height>80</height>
-					<width>750</width>
-					<label>$VAR[randomandlastplot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-					<align>left</align>
-					<font>diffuse_18_alt_bold</font>
-				</control>
-				<control type="image">
-					<description>info icon on the right</description>
-					<posx>1115</posx>
-					<posy>510</posy>
-					<height>40</height>
-					<width>40</width>
-					<aspectratio>keep</aspectratio>
-					<align>left</align>
-					<aligny>center</aligny>
-					<fadetime>500</fadetime>
-					<texture>osd/fullscreen/info-fo.png</texture>
-				</control>
-				<control type="image">
-						<description>fanart image</description>
-						<posx>100</posx>
-						<posy>515</posy>
-						<width>240</width>
-						<height>123</height>
-						<aspectratio>stretch</aspectratio>
-						<align>left</align>
-						<aligny>center</aligny>
-						<fadetime>500</fadetime>
-						<texture background="true" fallback="special://skin/backgrounds/movies.jpg">$VAR[randomandlastfanart]</texture>
-					</control>
-					<control type="image">
-						<description>Border</description>
-						<posx>90</posx>
-						<posy>506</posy>
-						<width>261</width>
-						<height>140</height>
-						<aspectratio>stretch</aspectratio>
-						<align>left</align>
-						<aligny>center</aligny>
-						<texture background="true">views/frames/frame_Landscape.png</texture>
-					</control>
-				</control>	
+				
+				<include>LastandRandomMovieInfo</include>
+			</control>
 				
 				<!-- RECENTLY ADDED Movie Playlist1 -->
 				
@@ -133,11 +68,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu1.1.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu1.1.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu1.1.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu1.1.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu1.1.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.1.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu1.1.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu1.1.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.1.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu1.1.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.1.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.1.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu1.1.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu1.1.Title))</visible>
 						</item>
@@ -145,11 +80,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu1.2.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu1.2.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu1.2.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu1.2.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu1.2.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.2.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu1.2.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu1.2.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.2.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu1.2.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.2.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.2.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu1.2.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu1.2.Title))</visible>
 						</item>
@@ -157,11 +92,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu1.3.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu1.3.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu1.3.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu1.3.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu1.3.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.3.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu1.3.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu1.3.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.3.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu1.3.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.3.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.3.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu1.3.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu1.3.Title))</visible>
 						</item>
@@ -169,11 +104,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu1.4.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu1.4.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu1.4.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu1.4.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu1.4.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.4.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu1.4.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu1.4.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.4.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu1.4.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.4.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.4.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu1.4.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu1.4.Title))</visible>
 						</item>
@@ -181,11 +116,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu1.5.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu1.5.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu1.5.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu1.5.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu1.5.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.5.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu1.5.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu1.5.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.5.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu1.5.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.5.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.5.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu1.5.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu1.5.Title))</visible>
 						</item>
@@ -193,11 +128,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu1.6.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu1.6.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu1.6.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu1.6.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu1.6.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.6.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu1.6.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu1.6.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.6.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu1.6.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.6.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.6.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu1.6.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu1.6.Title))</visible>
 						</item>
@@ -205,11 +140,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu1.7.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu1.7.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu1.7.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu1.7.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu1.7.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.7.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu1.7.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu1.7.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.7.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu1.7.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.7.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.7.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu1.7.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu1.7.Title))</visible>
 						</item>
@@ -217,11 +152,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu1.8.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu1.8.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu1.8.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu1.8.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu1.8.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.8.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu1.8.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu1.8.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.8.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu1.8.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.8.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.8.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu1.8.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu1.8.Title))</visible>
 						</item>
@@ -229,11 +164,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu1.9.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu1.9.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu1.9.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu1.9.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu1.9.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.9.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu1.9.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu1.9.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.9.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu1.9.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.9.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.9.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu1.9.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu1.9.Title))</visible>
 						</item>
@@ -241,11 +176,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu1.10.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu1.10.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu1.10.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu1.10.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu1.10.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.10.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu1.10.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu1.10.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu1.10.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu1.10.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.10.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu1.10.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu1.10.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu1.10.Title))</visible>
 						</item>
@@ -303,11 +238,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu2.1.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu2.1.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu2.1.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu2.1.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu2.1.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu2.1.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu2.1.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu2.1.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu2.1.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu2.1.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu2.1.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu2.1.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu2.1.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu2.1.Title))</visible>
 						</item>
@@ -315,11 +250,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu2.2.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu2.2.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu2.2.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu2.2.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu2.2.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu2.2.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu2.2.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu2.2.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu2.2.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu2.2.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu2.2.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu2.2.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu2.2.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu2.2.Title))</visible>
 						</item>
@@ -327,11 +262,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu2.3.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu2.3.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu2.3.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu2.3.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu2.3.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu2.3.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu2.3.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu2.3.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu2.3.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu2.3.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu2.3.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu2.3.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu2.3.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu2.3.Title))</visible>
 						</item>
@@ -339,11 +274,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu2.4.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu2.4.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu2.4.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu2.4.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu2.4.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu2.4.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu2.4.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu2.4.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu2.4.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu2.4.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu2.4.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu2.4.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu2.4.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu2.4.Title))</visible>
 						</item>
@@ -351,11 +286,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu2.5.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu2.5.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu2.5.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu2.5.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu2.5.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu2.5.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu2.5.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu2.5.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu2.5.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu2.5.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu2.5.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu2.5.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu2.5.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu2.5.Title))</visible>
 						</item>
@@ -363,11 +298,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu2.6.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu2.6.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu2.6.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu2.6.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu2.6.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu2.6.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu2.6.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu2.6.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu2.6.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu2.6.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu2.6.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu2.6.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu2.6.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu2.6.Title))</visible>
 						</item>
@@ -375,11 +310,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu2.7.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu2.7.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu2.7.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu2.7.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu2.7.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu2.7.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu2.7.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu2.7.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu2.7.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu2.7.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu2.7.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu2.7.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu2.7.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu2.7.Title))</visible>
 						</item>
@@ -387,11 +322,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu2.8.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu2.8.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu2.8.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu2.8.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu2.8.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu2.8.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu2.8.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu2.8.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu2.8.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu2.8.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu2.8.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu2.8.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu2.8.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu2.8.Title))</visible>
 						</item>
@@ -399,11 +334,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu2.9.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu2.9.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu2.9.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu2.9.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu2.9.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu2.9.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu2.9.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu2.9.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu2.9.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu2.9.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu2.9.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu2.9.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu2.9.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu2.9.Title))</visible>
 						</item>
@@ -411,11 +346,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu2.10.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu2.10.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu2.10.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu2.10.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu2.10.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu2.10.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu2.10.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu2.10.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu2.10.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu2.10.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu2.10.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu2.10.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu2.10.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu2.10.Title))</visible>
 						</item>
@@ -474,11 +409,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu3.1.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu3.1.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu3.1.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu3.1.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu3.1.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu3.1.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu3.1.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu3.1.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu3.1.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu3.1.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu3.1.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu3.1.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu3.1.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu3.1.Title))</visible>
 						</item>
@@ -486,11 +421,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu3.2.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu3.2.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu3.2.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu3.2.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu3.2.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu3.2.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu3.2.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu3.2.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu3.2.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu3.2.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu3.2.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu3.2.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu3.2.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu3.2.Title))</visible>
 						</item>
@@ -498,11 +433,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu3.3.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu3.3.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu3.3.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu3.3.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu3.3.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu3.3.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu3.3.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu3.3.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu3.3.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu3.3.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu3.3.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu3.3.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu3.3.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu3.3.Title))</visible>
 						</item>
@@ -510,11 +445,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu3.4.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu3.4.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu3.4.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu3.4.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu3.4.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu3.4.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu3.4.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu3.4.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu3.4.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu3.4.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu3.4.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu3.4.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu3.4.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu3.4.Title))</visible>
 						</item>
@@ -522,11 +457,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu3.5.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu3.5.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu3.5.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu3.5.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu3.5.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu3.5.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu3.5.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu3.5.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu3.5.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu3.5.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu3.5.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu3.5.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu3.5.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu3.5.Title))</visible>
 						</item>
@@ -534,11 +469,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu3.6.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu3.6.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu3.6.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu3.6.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu3.6.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu3.6.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu3.6.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu3.6.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu3.6.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu3.6.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu3.6.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu3.6.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu3.6.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu3.6.Title))</visible>
 						</item>
@@ -546,11 +481,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu3.7.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu3.7.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu3.7.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu3.7.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu3.7.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu3.7.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu3.7.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu3.7.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu3.7.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu3.7.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu3.7.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu3.7.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu3.7.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu3.7.Title))</visible>
 						</item>
@@ -558,11 +493,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu3.8.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu3.8.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu3.8.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu3.8.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu3.8.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu3.8.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu3.8.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu3.8.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu3.8.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu3.8.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu3.8.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu3.8.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu3.8.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu3.8.Title))</visible>
 						</item>
@@ -570,11 +505,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu3.9.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu3.9.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu3.9.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu3.9.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu3.9.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu3.9.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu3.9.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu3.9.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu3.9.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu3.9.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu3.9.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu3.9.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu3.9.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu3.9.Title))</visible>
 						</item>
@@ -582,11 +517,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu3.10.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu3.10.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu3.10.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu3.10.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu3.10.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu3.10.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu3.10.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu3.10.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu3.10.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu3.10.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu3.10.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu3.10.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu3.10.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu3.10.Title))</visible>
 						</item>
@@ -646,11 +581,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu7.1.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu7.1.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu7.1.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu7.1.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu7.1.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu7.1.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu7.1.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu7.1.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu7.1.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu7.1.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu7.1.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu7.1.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu7.1.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu7.1.Title))</visible>
 						</item>
@@ -658,11 +593,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu7.2.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu.2.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu7.2.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu7.2.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu7.2.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu7.2.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu7.2.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu7.2.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu7.2.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu7.2.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu7.2.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu7.2.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu7.2.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu7.2.Title))</visible>
 						</item>
@@ -670,11 +605,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu7.3.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu7.3.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu7.3.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu7.3.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu7.3.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu7.3.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu7.3.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu7.3.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu7.3.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu7.3.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu7.3.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu7.3.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu7.3.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu7.3.Title))</visible>
 						</item>
@@ -682,11 +617,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu7.4.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu7.4.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu7.4.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu7.4.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu7.4.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu7.4.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu7.4.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu7.4.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu7.4.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu7.4.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu7.4.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu7.4.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu7.4.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu7.4.Title))</visible>
 						</item>
@@ -694,11 +629,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu7.5.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu7.5.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu7.5.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu7.5.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu7.5.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu7.5.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu7.5.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu7.5.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu7.5.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu7.5.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu7.5.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu7.5.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu7.5.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu7.5.Title))</visible>
 						</item>
@@ -706,11 +641,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu7.6.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu7.6.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu7.6.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu7.6.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu7.6.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu7.6.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu7.6.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu7.6.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu7.6.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu7.6.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu7.6.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu7.6.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu7.6.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu7.6.Title))</visible>
 						</item>
@@ -718,11 +653,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu7.7.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu7.7.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu7.7.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu7.7.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu7.7.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu7.7.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu7.7.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu7.7.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu7.7.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu7.7.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu7.7.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu7.7.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu7.7.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu7.7.Title))</visible>
 						</item>
@@ -730,11 +665,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu7.8.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu7.8.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu7.8.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu7.8.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu7.8.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu7.8.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu7.8.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu7.8.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu7.8.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu7.8.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu7.8.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu7.8.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu7.8.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu7.8.Title))</visible>
 						</item>
@@ -742,11 +677,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu7.9.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu7.9.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu7.9.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu7.9.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu7.9.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu7.9.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu7.9.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu7.9.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu7.9.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu7.9.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu7.9.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu7.9.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu7.9.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu7.9.Title))</visible>
 						</item>
@@ -754,11 +689,11 @@
 							<label>$INFO[Window.Property(PlaylistLastMovieMenu7.10.Title)]</label>
 							<label2>$INFO[Window.Property(PlaylistLastMovieMenu7.10.Year)]</label2>
 							<thumb>$INFO[Window.Property(PlaylistLastMovieMenu7.10.RunningTime)]</thumb>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastMovieMenu7.10.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastMovieMenu7.10.Thumb)]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu7.10.Fanart)]</property>
+							<onclick>$INFO[Window.Property(PlaylistLastMovieMenu7.10.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu7.10.Art(poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastMovieMenu7.10.Art(fanart))]</property>
 							<property name="Year">$INFO[Window.Property(PlaylistLastMovieMenu7.10.Year)]</property>
-							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu7.10.RunningTime)]</property>
+							<property name="RunningTime">$INFO[Window.Property(PlaylistLastMovieMenu7.10.RunTime)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastMovieMenu7.10.Plot)]</property>
 							<visible>!IsEmpty(Window.Property(PlaylistLastMovieMenu7.10.Title))</visible>
 						</item>
@@ -773,62 +708,8 @@
 				<animation effect="slide" start="0,600" end="0,0" time="800" delay="600" reversible="false" easing="out" tween="cubic" condition="Control.HasFocus(8009) | Control.HasFocus(8010) | Control.HasFocus(8011)">Conditional</animation>
 				<animation effect="fade" start="100" end="0" time="0" delay="0" reversible="false" condition="!Control.HasFocus(8009) + !Control.HasFocus(8010) + !Control.HasFocus(8011)">Conditional</animation>
 				<visible>Skin.HasSetting(homepageNowplayingInfo) | !Player.HasMedia</visible>
-				<control type="image">
-                   <description>floor image</description>
-						<posx>-15</posx>
-						<posy>0</posy>
-						<width>1280</width>
-						<height>720</height>
-						<aspectratio>stretch</aspectratio>
-						<texture>menuBackgroundvertical.png</texture>
-                  </control>
-				<control type="label">
-					<description>Title label</description>
-					<posx>372</posx>
-					<posy>515</posy>
-					<height>20</height>
-					<width>750</width>
-					<label>$VAR[randomandlastlabels]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>diffuse_18_title_bold</font>
-					<textcolor>grey2</textcolor>
-				</control>
-				<control type="textbox">
-					<description>plot</description>
-					<posx>372</posx>
-					<posy>550</posy>
-					<height>80</height>
-					<width>750</width>
-					<label>$VAR[randomandlastplot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-					<align>left</align>
-					<font>diffuse_18_alt_bold</font>
-				</control>
-					<control type="image">
-						<description>info icon on the right</description>
-						<posx>1115</posx>
-						<posy>510</posy>
-						<height>40</height>
-						<width>40</width>
-						<aspectratio>keep</aspectratio>
-						<align>left</align>
-						<aligny>center</aligny>
-						<fadetime>500</fadetime>
-						<texture>osd/fullscreen/info-fo.png</texture>
-					</control>
-				<control type="image">
-						<description>fanart image</description>
-						<posx>100</posx>
-						<posy>515</posy>
-						<width>240</width>
-						<height>123</height>
-						<aspectratio>stretch</aspectratio>
-						<align>left</align>
-						<aligny>center</aligny>
-						<fadetime>500</fadetime>
-                    <texture background="true" fallback="special://skin/backgrounds/tv_shows.jpg">$VAR[randomandlastfanart]</texture>
-                    </control>
+				
+				<include>LastandRandomTVInfo</include>
 				</control>
 			
 			<!-- RECENTLY ADDED TV Playlist 1 -->
@@ -880,10 +761,11 @@
 						</focusedlayout>
 					<content>
 						<item id="1">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.ShowTitle)]</label2>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.TVShowThumb)]</icon>
+							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.Title)]</label>
+							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.TVShowTitle)]</label2>
+							<onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.Play)]</onclick> 
+							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.Art(fanart))]</property>
 					        <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.EpisodeNo)]</property>
 							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.Fanart)]</property>
 							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.ShowThumb)]</property>
@@ -891,8 +773,8 @@
 							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu4.1.EpisodeTitle))</visible>
 						</item>
 						<item id="2">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.ShowTitle)]</label2>
+							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.Title)]</label>
+							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.TVShowTitle)]</label2>
 							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.Path)]&quot;)</onclick>
 							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.TVShowThumb)]</icon>
 							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.EpisodeNo)]</property>
@@ -1326,8 +1208,8 @@
 					<label>31323</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>diffuse_20_bold</font>
-					<textcolor>white</textcolor>
+					<font>diffuse_18_rss</font>
+			        <textcolor>grey</textcolor>
 				<visible>Control.HasFocus(8006) | Control.HasFocus(8082)</visible>
 			   </control>
 			</control>
@@ -1368,8 +1250,8 @@
 					<label>31323</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>diffuse_20_bold</font>
-					<textcolor>white</textcolor>
+					<font>diffuse_18_rss</font>
+			        <textcolor>grey</textcolor>
 				<visible>Control.HasFocus(8007) | Control.HasFocus(8083)</visible>
 			   </control>
 			</control>
@@ -1409,8 +1291,8 @@
 					<label>31323</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>diffuse_20_bold</font>
-					<textcolor>white</textcolor>
+					<font>diffuse_18_rss</font>
+			        <textcolor>grey</textcolor>
 				<visible>Control.HasFocus(8008) | Control.HasFocus(8084)</visible>
 			   </control>
 			</control>
@@ -1453,8 +1335,8 @@
 					<label>31323</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>diffuse_20_bold</font>
-					<textcolor>white</textcolor>
+					<font>diffuse_18_rss</font>
+			        <textcolor>grey</textcolor>
 				<visible>Control.HasFocus(8025) | Control.HasFocus(8085)</visible>
 			   </control>
 			</control>
@@ -1497,8 +1379,8 @@
 					<label>31324</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>diffuse_20_bold</font>
-					<textcolor>white</textcolor>
+					<font>diffuse_18_rss</font>
+			        <textcolor>grey</textcolor>
 				<visible>Control.HasFocus(8009) | Control.HasFocus(8086)</visible>
 			   </control>
 			</control>
@@ -1539,8 +1421,8 @@
 					<label>31324</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>diffuse_20_bold</font>
-					<textcolor>white</textcolor>
+					<font>diffuse_18_rss</font>
+			        <textcolor>grey</textcolor>
 				<visible>Control.HasFocus(8010) | Control.HasFocus(8087) + [Skin.HasSetting(homepageNowplayingInfo) | !VideoPlayer.Content(Episodes)]</visible>
 			   </control>
 			</control>
@@ -1581,8 +1463,8 @@
 					<label>31324</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>diffuse_20_bold</font>
-					<textcolor>white</textcolor>
+					<font>diffuse_18_rss</font>
+			        <textcolor>grey</textcolor>
 				<visible>Control.HasFocus(8011) | Control.HasFocus(8088)</visible>
 			   </control>
 			</control>
