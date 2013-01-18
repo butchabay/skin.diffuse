@@ -108,6 +108,7 @@
 					<onright>36</onright>
 					<onup>14</onup>
 					<ondown>14</ondown>
+					<onfocus>SetFocus(14)</onfocus>
 				</control>
 				<control type="button" id="36">
 					<description>Search</description>
@@ -183,12 +184,12 @@
 		</control>
 		</control>
 		<control type="group">
-			<posx>680</posx>
-			<posy>487</posy>
+			<posx>630</posx>
+			<posy>490</posy>
 			<control type="label" id="30">
 			<include>transition_Fanart</include>
 			<visible>[Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13) | Control.IsVisible(14) | Control.IsVisible(15) | Control.IsVisible(16) | Control.IsVisible(17)]</visible>
-			<textcolor>grey2</textcolor>
+			<textcolor>white</textcolor>
 			<font>diffuse_16_rss</font>
 			<height>80</height>
 			<width>600</width>
@@ -197,7 +198,7 @@
 		</control>
 	</control>
 		<control type="group">
-			<posx>680</posx>
+			<posx>630</posx>
 			<posy>467</posy>
 			<include>transition_Fanart</include>
 			<control type="label" id="29">
