@@ -332,7 +332,7 @@
 		       <posx>70</posx>
 		       <posy>75</posy>
 			    <include>transition_Fanart</include>
-		       <visible>Container(9000).Hasfocus(13) + PVR.HasTimer</visible>
+		       <visible>Container(9000).Hasfocus(13) + PVR.HasTimer + !PVR.IsRecording</visible>
 		       <control type="group">
 			           <posx>0</posx>
 				       <posy>400</posy>
@@ -346,7 +346,7 @@
 			       <control type="label">
 				       <description>Next Timer Header label</description>
 				       <posx>370</posx>
-				       <posy>15</posy>
+				       <posy>17</posy>
 				       <height>25</height>
 				       <width>400</width>
 				       <label>$LOCALIZE[19157]</label>
@@ -358,27 +358,69 @@
 			       <control type="label">
 				       <description>NextRecordingTitle</description>
 				       <posx>370</posx>
-				       <posy>30</posy>
+				       <posy>32</posy>
 				       <height>30</height>
-				       <width>440</width>
+				       <width>600</width>
 				       <label>$INFO[PVR.NextRecordingTitle]</label>
 				       <align>left</align>
 				       <aligny>center</aligny>
-				       <font>diffuse_18_rss</font>
-				        <textcolor>lightgrey</textcolor>
+				       <font>diffuse_16_rss</font>
+				        <textcolor>white</textcolor>
 				       <scroll>true</scroll>
 			       </control>
 			       <control type="label">
 				       <description>NextRecordingDateTime</description>
 				       <posx>370</posx>
-				       <posy>50</posy>
+				       <posy>55</posy>
 				       <height>25</height>
 				       <width>440</width>
 				       <label>$INFO[PVR.NextRecordingDateTime]</label>
 				       <align>left</align>
 				       <aligny>center</aligny>
-				       <font>diffuse_16_rss</font>
+				       <font>diffuse_14_rss</font>
 				       <textcolor>lightgrey</textcolor>
+			       </control>
+		       </control>
+	       </control>
+		    <control type="group">
+		       <posx>70</posx>
+		       <posy>75</posy>
+			    <include>transition_Fanart</include>
+		       <visible>Container(9000).Hasfocus(13) + PVR.IsRecording</visible>
+		       <control type="group">
+			           <posx>0</posx>
+				       <posy>400</posy>
+				    <control type="image">
+				       <posx>320</posx>
+				       <posy>22</posy>
+				       <width>35</width>
+				       <height>35</height>
+					   <info>PVR.NowRecordingChannelIcon</info>
+			       </control>
+			       <control type="label">
+				       <description>Recording</description>
+				       <posx>370</posx>
+				       <posy>17</posy>
+				       <height>25</height>
+				       <width>400</width>
+				       <label>19043</label>
+				       <align>left</align>
+				       <aligny>center</aligny>
+				       <font>diffuse_16_rss</font>
+				       <textcolor>red</textcolor>
+			       </control>
+			       <control type="label">
+				       <description>RecordingTitle</description>
+				       <posx>370</posx>
+				       <posy>33</posy>
+				       <height>30</height>
+				       <width>600</width>
+				       <label>$INFO[PVR.NowRecordingTitle]</label>
+				       <align>left</align>
+				       <aligny>center</aligny>
+				       <font>diffuse_16_rss</font>
+				        <textcolor>lightgrey</textcolor>
+				       <scroll>true</scroll>
 			       </control>
 		       </control>
 	       </control>
@@ -519,48 +561,61 @@
 		    <animation effect="slide" start="0,0" end="0,600" time="0" delay="0" reversible="false" easing="in" tween="cubic" condition="!Player.HasVideo + Window.IsVisible(Home)">Conditional</animation>
 		</control>
 	 </control>
-		 <!-- NOW PLAYING INFO LiveTV -->
+		 <!-- NOW PLAYING LiveTV -->
       <control type="group">
         <visible>VideoPlayer.Content(LiveTV)</visible>
 		<control type="image">
           <description>Cover image</description>
-          <posx>150</posx>
-          <posy>525</posy>
-          <width>100</width>
-          <height>100</height>
+          <posx>1105</posx>
+          <posy>510</posy>
+          <width>40</width>
+          <height>40</height>
           <aspectratio>keep</aspectratio>
           <texture>$INFO[VideoPlayer.Cover]</texture>
         </control>
 		<control type="grouplist">
-		  <posx>372</posx>
-          <posy>515</posy>
+		  <posx>100</posx>
+          <posy>510</posy>
           <height>30</height>
           <width>800</width>
 		  <orientation>horizontal</orientation>
         <control type="label">
         <description>Title label</description>
-         <posx>372</posx>
-          <posy>515</posy>
+         <posx>100</posx>
+          <posy>510</posy>
           <height>30</height>
           <width min="29" max="800">auto</width>
-          <label>$INFO[VideoPlayer.Title][COLOR=grey2]  $INFO[VideoPlayer.Genre] - $INFO[VideoPlayer.Duration][/COLOR]</label>
+		  <label>$INFO[VideoPlayer.Title]  [COLOR=lightgrey]$INFO[VideoPlayer.StartTime]$INFO[VideoPlayer.EndTime,-][/COLOR]</label>
           <align>left</align>
           <aligny>center</aligny>
-          <font>diffuse_18_rss</font>
-		  <textcolor>lightgrey</textcolor>
+          <font>diffuse_16_rss</font>
+		  <textcolor>white</textcolor>
         </control>
 		<include>MovieFlagsPosterPlayerHome</include>
 		</control>
+		<control type="label">
+		 <description>Genre label</description>
+         <posx>100</posx>
+          <posy>530</posy>
+          <height>30</height>
+		  <width>800</width>
+		  <label>$INFO[VideoPlayer.Genre,$LOCALIZE[41327]: ]</label>
+          <align>left</align>
+          <aligny>center</aligny>
+          <font>diffuse_14_rss</font>
+		  <textcolor>grey</textcolor>
+        </control>
 		 <control type="textbox">
 		  <description>plot</description>
-		  <posx>372</posx>
-		  <posy>550</posy>
-		  <height>80</height>
-		  <width>750</width>
-		  <label>[COLOR=white]$INFO[VideoPlayer.Plot][/COLOR]</label>
-		  <autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+		  <posx>100</posx>
+		  <posy>570</posy>
+		  <height>50</height>
+		  <width>1070</width>
+		  <label>$INFO[VideoPlayer.Plot]</label>
+		  <autoscroll time="3000" delay="7000" repeat="5000">true</autoscroll>
 		  <align>left</align>
-		  <font>diffuse_18_alt_bold</font>
+		  <font>diffuse_16_alt_bold</font>
+		  <textcolor>lightgrey</textcolor>
 		 </control>
 		 <control type="label">
 		    <description>Title label</description>
@@ -574,36 +629,6 @@
 		    <angle>90</angle>
 			<align>left</align>
 			<animation effect="slide" start="0,600" end="0,0" time="1000" delay="1800" reversible="false" easing="out" tween="cubic" condition="Player.HasVideo + !PVR.IsRecording + Window.IsVisible(Home)">Conditional</animation>
-		    <animation effect="slide" start="0,0" end="0,600" time="0" delay="0" reversible="false" easing="in" tween="cubic" condition="!Player.HasVideo + Window.IsVisible(Home)">Conditional</animation>
-			<visible>!PVR.IsRecording</visible>
-		</control>
-		<control type="label">
-		    <description>Title label</description>
-			<posx>0</posx>
-			<posy>500</posy>
-			<height>80</height>
-			<width>600</width>
-			<label>41151</label>
-			<font>diffuse_30_rss</font>
-			<textcolor>lightgrey</textcolor>
-		    <angle>90</angle>
-			<align>left</align>
-			<animation effect="slide" start="0,600" end="0,0" time="1000" delay="1800" reversible="false" easing="out" tween="cubic" condition="PVR.IsRecording + Window.IsVisible(Home)">Conditional</animation>
-		    <animation effect="slide" start="0,0" end="0,600" time="0" delay="0" reversible="false" easing="in" tween="cubic" condition="!PVR.IsRecording + Window.IsVisible(Home)">Conditional</animation>
-			<visible>PVR.IsRecording</visible>
-		</control>
-       <control type="label">
-		    <description>Time label</description>
-			<posx>1180</posx>
-			<posy>500</posy>
-			<height>80</height>
-			<width>600</width>
-			<label>$INFO[Player.Time]</label>
-			<font>diffuse_50_bold</font>
-			<textcolor>orange2</textcolor>
-		    <angle>90</angle>
-			<align>left</align>
-			<animation effect="slide" start="0,600" end="0,0" time="1000" delay="1800" reversible="false" easing="out" tween="cubic" condition="Player.HasVideo + Window.IsVisible(Home)">Conditional</animation>
 		    <animation effect="slide" start="0,0" end="0,600" time="0" delay="0" reversible="false" easing="in" tween="cubic" condition="!Player.HasVideo + Window.IsVisible(Home)">Conditional</animation>
 		</control>
         </control>

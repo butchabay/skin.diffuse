@@ -55,7 +55,7 @@
 				</control>
 			</focusedlayout>
 			<content>
-				<!-- SearchSUBMENU Butchabay -->
+				<!-- SearchSUBMENU -->
 				   <item id="90100">
 						<label>31331</label>
 						<onclick>ActivateWindow(Videos,Root)</onclick>
@@ -197,7 +197,7 @@
 				</control>
 			</focusedlayout>
 			<content>
-		        <!-- SearchSUBMENU Butchabay -->
+		        <!-- SearchSUBMENU -->
                  <item id="90110">
 						<label>31331</label>
 						<onclick>ActivateWindow(MusicLibrary)</onclick>

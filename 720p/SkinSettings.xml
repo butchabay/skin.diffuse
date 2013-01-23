@@ -2418,7 +2418,7 @@
 						<visible>Skin.HasSetting(MovieButton24) + Skin.HasSetting(MovieItems)</visible>
 					</control>
 					
-					<!-- TV Submenu Mod -->
+					<!-- TV Shows Submenu Mod -->
 					
 					<control type="radiobutton" id="730">
 					    <include>DiffuseButtonsSettings5</include>
@@ -2803,37 +2803,35 @@
 					<onright>9000</onright>
 					<onup>9006</onup>
 					<ondown>9006</ondown>
-					<!-- <control type="label" id="1110">
+					<control type="label" id="1110">
 						<include>DiffuseButtonsSettings3</include>
-						<label>41104</label>
+						<label>41369</label>
 						<aligny>center</aligny>
-					</control> -->
-					<!-- <control type="radiobutton" id="1112">
-				       <description>Enable ExtraFanart Music</description>
+					</control>
+					 <control type="radiobutton" id="1112">
+				       <description>Music Open Albums</description>
 					   <include>DiffuseButtonsSettings</include>
-						<label>41192</label>
-						<onclick>Skin.ToggleSetting(ExtraFanMusic)</onclick>
-						<selected>Skin.HasSetting(ExtraFanMusic)</selected>
-					</control> -->
-					<!-- <control type="label" id="1077">
-						<include>DiffuseButtonsSettings3</include>
-						<label>41099</label>
-						<aligny>center</aligny>
-					</control> -->
-					<!-- <control type="radiobutton" id="1003">
-						<description>Enable ClearArt</description>
+						<label>41370</label>
+						<onclick>Skin.ToggleSetting(Musicopenalbums)</onclick>
+						<selected>Skin.HasSetting(Musicopenalbums)</selected>
+						<enable>!Skin.HasSetting(Musicopenartists) + !Skin.HasSetting(Musicopenfiles)</enable>
+					</control> 
+					<control type="radiobutton" id="1003">
+						<description>Music Open Artists</description>
 						<include>DiffuseButtonsSettings</include>
-						<label>41009</label>
-						<onclick>Skin.ToggleSetting(clearart)</onclick>
-						<selected>Skin.HasSetting(clearart)</selected>
-					</control> -->
-				<!-- <control type="radiobutton" id="1030">
-						<description>Enable jpg for TV Banner</description>
+						<label>41371</label>
+						<onclick>Skin.ToggleSetting(Musicopenartists)</onclick>
+						<selected>Skin.HasSetting(Musicopenartists)</selected>
+						<enable>!Skin.HasSetting(Musicopenalbums) + !Skin.HasSetting(Musicopenfiles)</enable>
+					</control>
+				       <control type="radiobutton" id="1030">
+						<description>Music Open Files</description>
 						<include>DiffuseButtonsSettings</include>
-						<label>41085</label>
-						<onclick>Skin.ToggleSetting(jpgsupport)</onclick>
-						<selected>Skin.HasSetting(jpgsupport)</selected>
-					</control> -->
+						<label>41372</label>
+						<onclick>Skin.ToggleSetting(Musicopenfiles)</onclick>
+						<selected>Skin.HasSetting(Musicopenfiles)</selected>
+						<enable>!Skin.HasSetting(Musicopenalbums) + !Skin.HasSetting(Musicopenartists)</enable>
+					</control>
 				<!-- <control type="label" id="1078">
 						<include>DiffuseButtonsSettings3</include>
 						<label>41102</label>

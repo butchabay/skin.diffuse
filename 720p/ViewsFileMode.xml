@@ -96,7 +96,7 @@
 			<posx>100</posx>
 			<posy>4</posy>
 			<width>800</width>
-			<font>diffuse_24_title_bold</font>
+			<font>diffuse_20_rss</font>
 			<label>$INFO[ListItem.Label]</label>
 			<textcolor>grey2</textcolor>
 			<selectedcolor>bluegrey</selectedcolor>
@@ -216,7 +216,7 @@
 			<posx>100</posx>
 			<posy>4</posy>
 			<width>800</width>
-			<font>diffuse_24_title_bold</font>
+			<font>diffuse_20_rss</font>
 			<label>$INFO[ListItem.Label]</label>
 			<textcolor>lightgrey</textcolor>
 			<selectedcolor>bluegrey</selectedcolor>

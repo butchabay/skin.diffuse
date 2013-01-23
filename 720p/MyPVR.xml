@@ -3,7 +3,7 @@
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<include>TVBackgrounds</include>
-		<include condition="!Skin.HasSetting(nobreadcrumb)">Breadcrumps</include>
+		<include condition="!Skin.HasSetting(nobreadcrumb)">BreadcrumpsTV</include>
 		<include>LiveTVNowPlayingInfo</include>
 		<include>LiveTVGuideChannel</include>
         <include>LiveTVChannel</include>
@@ -184,31 +184,71 @@
 		</control>
 		</control>
 		<control type="group">
-			<posx>630</posx>
+			<posx>930</posx>
 			<posy>490</posy>
 			<control type="label" id="30">
+			<posx>220</posx>
 			<include>transition_Fanart</include>
 			<visible>[Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(12) | Control.IsVisible(13) | Control.IsVisible(14) | Control.IsVisible(15) | Control.IsVisible(16) | Control.IsVisible(17)]</visible>
 			<textcolor>white</textcolor>
 			<font>diffuse_16_rss</font>
 			<height>80</height>
 			<width>600</width>
+			<align>right</align>
+			<aligny>center</aligny>
 			<include>WindowTitleCommons</include>
-			<posx>220</posx>
 		</control>
 	</control>
 		<control type="group">
-			<posx>630</posx>
+			<posx>930</posx>
 			<posy>467</posy>
 			<include>transition_Fanart</include>
 			<control type="label" id="29">
+			<posx>220</posx>
 			<textcolor>lightgrey</textcolor>
 			<font>diffuse_18_rss</font>
 			<height>80</height>
 			<width>600</width>
-				<include>WindowTitleCommons</include>
-				<posx>220</posx>
+			<align>right</align>
+			<aligny>center</aligny>
+			<include>WindowTitleCommons</include>
 			</control>
 		</control>
+	<!-- 	<control type="label">
+		    <posx>135</posx>
+			<posy>580</posy>
+			<textcolor>lightgrey</textcolor>
+			<font>diffuse_16_rss</font>
+			<height>80</height>
+			<width>600</width>
+		    <label>41366</label>
+		</control>
+		<control type="label">
+		    <posx>135</posx>
+			<posy>600</posy>
+			<textcolor>grey2</textcolor>
+			<font>diffuse_14_rss</font>
+			<height>80</height>
+			<width>600</width>
+		    <info>Pvr.ActStreamSignal</info>
+		</control>
+		<control type="label">
+		    <posx>135</posx>
+			<posy>620</posy>
+			<textcolor>lightgrey</textcolor>
+			<font>diffuse_16_rss</font>
+			<height>80</height>
+			<width>600</width>
+		    <label>Status</label>
+		</control>
+		<control type="label">
+		    <posx>135</posx>
+			<posy>640</posy>
+			<textcolor>grey2</textcolor>
+			<font>diffuse_14_rss</font>
+			<height>80</height>
+			<width>600</width>
+		    <info>Pvr.ActStreamStatus</info>
+		</control> -->
 	</controls>
 </window>

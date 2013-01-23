@@ -9,355 +9,264 @@
 			<control type="group">
 				<description>TV Search group</description>
 				<visible>Control.IsVisible(17)</visible>
-				<include>VisibleFadeEffect</include>
 				<include>transition_Fanart</include>
+				<control type="image"> <!-- Home Background -->
+			    <posx>388</posx>
+		        <posy>68</posy>
+		        <width>770</width>
+		        <height>396</height>
+			    <aspectratio>stretch</aspectratio>
+ 			    <texture background="true">backgroundblue.jpg</texture>
+			    <colordiffuse>99FFFFFF</colordiffuse>
+			</control>
+			<control type="image"> <!-- Home Background -->
+			    <posx>388</posx>
+		        <posy>68</posy>
+		        <width>770</width>
+		        <height>397</height>
+			    <aspectratio>stretch</aspectratio>
+ 			    <texture background="true">black-back.png</texture>
+			</control>
+			<control type="image">
+			    <posx>388</posx>
+				<posy>85</posy>
+				<width>770</width>
+				<height>50</height>
+				<texture>views/list/other/list_fo.png</texture>
+			</control>
 				<control type="group">
 					<posx>80</posx>
 					<posy>60</posy>
 					<control type="label">
 						<description>Time label</description>
-						<posx>0</posx>
-						<posy>20</posy>
+						<posx>35</posx>
+						<posy>40</posy>
 						<width>300</width>
 						<height>20</height>
-						<font>diffuse_30</font>
-						<textcolor>orange</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>center</align>
+						<font>diffuse_18_rss</font>
+						<textcolor>grey</textcolor>
+						<align>left</align>
 						<aligny>center</aligny>
 						<label>21820</label>
 					</control>
 					<control type="label">
-						<description>Channel label</description>
-						<posx>300</posx>
-						<posy>20</posy>
-						<width>250</width>
-						<height>20</height>
-						<font>diffuse_30</font>
-						<textcolor>orange</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>19148</label>
-					</control>
-					<control type="label">
 						<description>Title</description>
-						<posx>550</posx>
-						<posy>20</posy>
-						<width>350</width>
+						<posx>330</posx>
+						<posy>40</posy>
+						<width>600</width>
 						<height>20</height>
-						<font>diffuse_30</font>
-						<textcolor>orange</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>center</align>
+						<font>diffuse_18_rss</font>
+						<textcolor>grey</textcolor>
+						<align>left</align>
 						<aligny>center</aligny>
 						<label>369</label>
 					</control>
 					<control type="label">
 						<description>Status header label</description>
-						<posx>960</posx>
-						<posy>20</posy>
+						<posx>950</posx>
+						<posy>40</posy>
 						<width>140</width>
 						<height>20</height>
-						<font>diffuse_30</font>
-						<textcolor>orange</textcolor>
-						<shadowcolor>black</shadowcolor>
+						<font>diffuse_18_rss</font>
+						<textcolor>grey</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>126</label>
 					</control>
-					<control type="image">
-						<description>separator image</description>
-						<posx>0</posx>
-						<posy>50</posy>
-						<width>1100</width>
-						<height>1</height>
-						<colordiffuse>88FFFFFF</colordiffuse>
-						<texture>separator2.png</texture>
-					</control>
 					<control type="list" id="17">
 						<posx>0</posx>
-						<posy>55</posy>
-						<width>1100</width>
-						<height>520</height>
+					    <posy>75</posy>
+					    <width>1100</width>
+					    <height>295</height>
 						<onup>17</onup>
 						<ondown>17</ondown>
 						<onleft>36</onleft>
 						<onright>77</onright>
-						<pagecontrol>77</pagecontrol>
+						<pagecontrol>-</pagecontrol>
 						<scrolltime>200</scrolltime>
-						<itemlayout height="40">
+						<itemlayout height="50">
 							<control type="image">
-								<posx>0</posx>
+								<posx>308</posx>
 								<posy>0</posy>
-								<width>1100</width>
-								<height>41</height>
-								<texture border="5">MenuItemNF.png</texture>
-							</control>
-							<control type="image">
-								<posx>300</posx>
-								<posy>0</posy>
-								<width>250</width>
-								<height>40</height>
-								<colordiffuse>33FFFFFF</colordiffuse>
-								<texture border="5">0.png</texture>
-							</control>
-							<control type="image">
-								<posx>960</posx>
-								<posy>0</posy>
-								<width>140</width>
-								<height>40</height>
-								<colordiffuse>33FFFFFF</colordiffuse>
-								<texture border="5">0.png</texture>
+								<width>770</width>
+								<height>1</height>
+								<texture>views/list/other/list_line.png</texture>
 							</control>
 							<control type="label">
-								<posx>150</posx>
-								<posy>0</posy>
-								<width>300</width>
-								<height>40</height>
-								<font>diffuse_20</font>
-								<align>center</align>
-								<aligny>center</aligny>
-								<textcolor>grey2</textcolor>
-								<selectedcolor>selected</selectedcolor>
-								<info>ListItem.Date</info>
-							</control>
-							<control type="image">
-								<posx>310</posx>
-								<posy>5</posy>
-								<width>30</width>
-								<height>30</height>
-								<info>ListItem.Icon</info>
-							</control>
-							<control type="label">
-								<posx>350</posx>
-								<posy>0</posy>
-								<width>190</width>
-								<height>35</height>
-								<font>diffuse_20</font>
+								<posx>35</posx>
+								<posy>15</posy>
+								<width>200</width>
+								<height>50</height>
+								<font>diffuse_14_rss</font>
 								<align>left</align>
 								<aligny>center</aligny>
 								<textcolor>grey2</textcolor>
-								<selectedcolor>selected</selectedcolor>
+								<selectedcolor>white</selectedcolor>
+								<info>ListItem.Date</info>
+							</control>
+							<control type="label">
+								<posx>35</posx>
+								<posy>-10</posy>
+								<width>200</width>
+								<height>50</height>
+								<font>diffuse_16_rss</font>
+								<align>left</align>
+								<aligny>center</aligny>
+								<textcolor>lightgrey</textcolor>
+								<selectedcolor>white</selectedcolor>
 								<info>ListItem.ChannelName</info>
 							</control>
 							<control type="label">
-								<posx>560</posx>
+								<posx>330</posx>
 								<posy>0</posy>
-								<width>390</width>
-								<height>35</height>
-								<font>diffuse_20</font>
+								<width>640</width>
+								<height>50</height>
+								<font>diffuse_16_rss</font>
 								<align>left</align>
 								<aligny>center</aligny>
-								<textcolor>grey2</textcolor>
-								<selectedcolor>selected</selectedcolor>
+								<textcolor>lightgrey</textcolor>
+								<selectedcolor>white</selectedcolor>
 								<info>ListItem.Label</info>
 							</control>
 							<control type="image">
-								<posx>970</posx>
+								<posx>920</posx>
 								<posy>10</posy>
 								<width>30</width>
-								<height>20</height>
-								<texture>PVR-IsRecording.png</texture>
+								<height>30</height>
+								<texture>osd/fullscreen/rec-fo.png</texture>
 								<visible>ListItem.IsRecording</visible>
 							</control>
 							<control type="label">
-								<posx>1005</posx>
+								<posx>1055</posx>
 								<posy>0</posy>
-								<width>80</width>
-								<height>40</height>
-								<font>diffuse_20</font>
-								<align>left</align>
+								<width>120</width>
+								<height>50</height>
+								<font>diffuse_16_rss</font>
+								<align>right</align>
 								<aligny>center</aligny>
-								<textcolor>grey2</textcolor>
-								<selectedcolor>selected</selectedcolor>
+								<textcolor>lightgrey</textcolor>
+								<selectedcolor>white</selectedcolor>
 								<label>19043</label>
 								<visible>ListItem.IsRecording</visible>
 							</control>
 							<control type="image">
-								<posx>970</posx>
+								<posx>920</posx>
 								<posy>10</posy>
-								<width>20</width>
-								<height>20</height>
-								<texture>PVR-HasTimer.png</texture>
-								<visible>ListItem.HasTimer</visible>
+								<width>30</width>
+								<height>30</height>
+								<texture>osd/fullscreen/button_suspendFO.png</texture>
+								<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
 							</control>
 							<control type="label">
-								<posx>1000</posx>
+								<posx>1055</posx>
 								<posy>0</posy>
-								<width>80</width>
-								<height>40</height>
-								<font>diffuse_20</font>
-								<align>left</align>
+								<width>120</width>
+								<height>50</height>
+								<font>diffuse_16_rss</font>
+								<align>right</align>
 								<aligny>center</aligny>
-								<textcolor>grey2</textcolor>
-								<selectedcolor>selected</selectedcolor>
+								<textcolor>lightgrey</textcolor>
+								<selectedcolor>white</selectedcolor>
 								<label>31510</label>
-								<visible>ListItem.HasTimer</visible>
+								<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
 							</control>
 						</itemlayout>
-						<focusedlayout height="40">
+						<focusedlayout height="50">
 							<control type="image">
-								<posx>0</posx>
+								<posx>21</posx>
 								<posy>0</posy>
-								<width>1100</width>
-								<height>41</height>
-								<texture border="5">MenuItemNF.png</texture>
-							</control>
-							<control type="image">
-								<posx>300</posx>
-								<posy>0</posy>
-								<width>250</width>
-								<height>40</height>
-								<colordiffuse>33FFFFFF</colordiffuse>
-								<texture border="5">0.png</texture>
-								<visible>!Control.HasFocus(17)</visible>
-							</control>
-							<control type="image">
-								<posx>960</posx>
-								<posy>0</posy>
-								<width>140</width>
-								<height>40</height>
-								<colordiffuse>33FFFFFF</colordiffuse>
-								<texture border="5">0.png</texture>
-								<visible>!Control.HasFocus(17)</visible>
-							</control>
-							<control type="image">
-								<posx>300</posx>
-								<posy>0</posy>
-								<width>250</width>
-								<height>40</height>
-								<colordiffuse>88FFFFFF</colordiffuse>
-								<texture border="5">0.png</texture>
+								<width>264</width>
+								<height>50</height>
+								<texture>views/list/other/list_fo.png</texture>
 								<visible>Control.HasFocus(17)</visible>
 							</control>
 							<control type="image">
-								<posx>960</posx>
+								<posx>308</posx>
 								<posy>0</posy>
-								<width>140</width>
-								<height>40</height>
-								<colordiffuse>88FFFFFF</colordiffuse>
-								<texture border="5">0.png</texture>
-								<visible>Control.HasFocus(17)</visible>
+								<width>770</width>
+								<height>50</height>
+								<texture>views/list/other/list_fo.png</texture>
 							</control>
 							<control type="label">
-								<posx>150</posx>
-								<posy>0</posy>
-								<width>300</width>
-								<height>40</height>
-								<font>diffuse_20</font>
-								<align>center</align>
-								<aligny>center</aligny>
-								<textcolor>orange</textcolor>
-								<selectedcolor>selected</selectedcolor>
-								<info>ListItem.Date</info>
-							</control>
-							<control type="image">
-								<posx>310</posx>
-								<posy>5</posy>
-								<width>30</width>
-								<height>30</height>
-								<info>ListItem.Icon</info>
-							</control>
-							<control type="label">
-								<posx>350</posx>
-								<posy>0</posy>
-								<width>190</width>
-								<height>35</height>
-								<font>diffuse_20</font>
+								<posx>35</posx>
+								<posy>15</posy>
+								<width>200</width>
+								<height>50</height>
+								<font>diffuse_14_rss</font>
 								<align>left</align>
 								<aligny>center</aligny>
-								<textcolor>orange</textcolor>
-								<selectedcolor>selected</selectedcolor>
+								<textcolor>white</textcolor>
+								<selectedcolor>white</selectedcolor>
+								<info>ListItem.Date</info>
+							</control>
+							<control type="label">
+								<posx>35</posx>
+								<posy>-10</posy>
+								<width>200</width>
+								<height>50</height>
+								<font>diffuse_16_rss</font>
+								<align>left</align>
+								<aligny>center</aligny>
+								<textcolor>white</textcolor>
+								<selectedcolor>white</selectedcolor>
 								<info>ListItem.ChannelName</info>
 							</control>
 							<control type="label">
-								<posx>560</posx>
+								<posx>330</posx>
 								<posy>0</posy>
-								<width>390</width>
-								<height>35</height>
-								<font>diffuse_20</font>
+								<width>640</width>
+								<height>50</height>
+								<font>diffuse_16_rss</font>
 								<align>left</align>
 								<aligny>center</aligny>
-								<textcolor>orange</textcolor>
-								<selectedcolor>selected</selectedcolor>
+								<textcolor>white</textcolor>
+								<selectedcolor>white</selectedcolor>
 								<info>ListItem.Label</info>
 							</control>
 							<control type="image">
-								<posx>970</posx>
+								<posx>920</posx>
 								<posy>10</posy>
 								<width>30</width>
-								<height>20</height>
-								<texture>PVR-IsRecording.png</texture>
+								<height>30</height>
+								<texture>osd/fullscreen/rec-fo.png</texture>
 								<visible>ListItem.IsRecording</visible>
 							</control>
 							<control type="label">
-								<posx>1005</posx>
+								<posx>1055</posx>
 								<posy>0</posy>
-								<width>80</width>
-								<height>40</height>
-								<font>diffuse_20</font>
-								<align>left</align>
+								<width>120</width>
+								<height>50</height>
+								<font>diffuse_16_rss</font>
+								<align>right</align>
 								<aligny>center</aligny>
-								<textcolor>orange</textcolor>
-								<selectedcolor>selected</selectedcolor>
+								<textcolor>white</textcolor>
+								<selectedcolor>white</selectedcolor>
 								<label>19043</label>
 								<visible>ListItem.IsRecording</visible>
 							</control>
 							<control type="image">
-								<posx>970</posx>
+								<posx>920</posx>
 								<posy>10</posy>
-								<width>20</width>
-								<height>20</height>
-								<texture>PVR-HasTimer.png</texture>
-								<visible>ListItem.HasTimer</visible>
+								<width>30</width>
+								<height>30</height>
+								<texture>osd/fullscreen/button_suspendFO.png</texture>
+								<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
 							</control>
 							<control type="label">
-								<posx>1000</posx>
+								<posx>1055</posx>
 								<posy>0</posy>
-								<width>80</width>
-								<height>40</height>
-								<font>diffuse_20</font>
-								<align>left</align>
+								<width>120</width>
+								<height>50</height>
+								<font>diffuse_16_rss</font>
+								<align>right</align>
 								<aligny>center</aligny>
-								<textcolor>orange</textcolor>
-								<selectedcolor>selected</selectedcolor>
+								<textcolor>white</textcolor>
+								<selectedcolor>white</selectedcolor>
 								<label>31510</label>
-								<visible>ListItem.HasTimer</visible>
+								<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
 							</control>
 						</focusedlayout>
 					</control>
-					<control type="scrollbar" id="77">
-						<posx>1105</posx>
-						<posy>50</posy>
-						<width>25</width>
-						<height>520</height>
-						<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-						<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
-						<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
-						<textureslidernib>ScrollBarNib.png</textureslidernib>
-						<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
-						<onleft>16</onleft>
-						<onright>31</onright>
-						<ondown>77</ondown>
-						<onup>77</onup>
-						<showonepage>false</showonepage>
-						<orientation>vertical</orientation>
-						<visible>Control.IsVisible(17)</visible>
-					</control>
-				</control>
-				<control type="label">
-					<description>Page Count Label</description>
-					<posx>40r</posx>
-					<posy>30r</posy>
-					<width>500</width>
-					<height>20</height>
-					<font>diffuse_20</font>
-					<textcolor>grey</textcolor>
-					<scroll>false</scroll>
-					<align>right</align>
-					<aligny>center</aligny>
-					<label>([COLOR=orange]$INFO[Container(17).NumItems][/COLOR]) $LOCALIZE[31025] - $LOCALIZE[31024] ([COLOR=orange]$INFO[Container(17).CurrentPage]/$INFO[Container(17).NumPages][/COLOR])</label>
 				</control>
 			</control>
 		

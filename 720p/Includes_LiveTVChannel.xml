@@ -10,27 +10,26 @@
 				<visible>Control.IsVisible(11)</visible>
 				<include>transition_Fanart</include>
 				<control type="group">
-					<posx>15</posx>
+					<posx>-260</posx>
 					<posy>60</posy>
 					<control type="label">
 						<posx>372</posx>
 						<posy>515</posy>
 						<height>30</height>
 						<width>750</width>
-						<font>diffuse_18_rss</font>
+						<font>diffuse_16_rss</font>
 						<textcolor>white</textcolor>
 						<scroll>true</scroll>
 						<align>left</align>
-						<aligny>center</aligny>
 						<label>$INFO[Container(11).ListItem.Title]  [COLOR=lightgrey]$INFO[Container(11).ListItem.StartTime]$INFO[Container(11).ListItem.EndTime,-][/COLOR]</label>
 					</control>
 					<control type="label">
 						<posx>372</posx>
-						<posy>535</posy>
+						<posy>565</posy>
 						<height>30</height>
 						<width>660</width>
 						<font>diffuse_14_rss</font>
-						<textcolor>grey</textcolor>
+						<textcolor>lightgrey</textcolor>
 						<scroll>true</scroll>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -39,7 +38,7 @@
 				<control type="progress">
 					<description>Progressbar</description>
 					<posx>370</posx>
-					<posy>560</posy>
+					<posy>542</posy>
 					<width>320</width>
                     <height>16</height>
 		            <texturebg border="10">osd/fullscreen/progressBackground.png</texturebg>
@@ -49,20 +48,20 @@
 					<info>Container(11).ListItem.Progress</info>
 				</control>
 					<control type="image">
-						 <posx>170</posx>
-						 <posy>523</posy>
-						 <width>100</width>
-						 <height>100</height>
-						<info>ListItem.Icon</info>
+						 <posx>1370</posx>
+						 <posy>520</posy>
+						 <width>40</width>
+						 <height>40</height>
+						 <info>ListItem.Icon</info>
 					</control>
 					<control type="textbox">
 						<description>Plot</description>
 						<posx>372</posx>
-		                <posy>590</posy>
-		                <height>40</height>
-					    <width>750</width>
-						<font>diffuse_14_rss</font>
-						<align>justify</align>
+		                <posy>600</posy>
+		                <height>50</height>
+					    <width>1070</width>
+						<font>diffuse_16_alt_bold</font>
+						<align>left</align>
 						<textcolor>lightgrey</textcolor>
 						<label>$INFO[Container(11).ListItem.Plot]</label>
 						<autoscroll time="3000" delay="7000" repeat="5000">true</autoscroll>
@@ -157,6 +156,7 @@
 							<width>264</width>
 							<height>50</height>
 							<texture>views/list/other/list_fo.png</texture>
+							<visible>Control.HasFocus(11)</visible>
 						</control>
 						<control type="label">
 							<posx>30</posx>

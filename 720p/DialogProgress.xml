@@ -3,7 +3,7 @@
 		<controls>
 				<control type="group">
 				        <posx>0</posx>
-						<posy>-20</posy>
+						<posy>560</posy>
 						<animation effect="fade" start="0" end="100" time="1000" reversible="true">WindowOpen</animation>
 			            <animation effect="fade" start="100" end="0" time="1000" reversible="true">WindowClose</animation>
 						<animation type="Conditional" condition="Window.IsVisible(133) | Window.IsVisible(112)" reversible="true">

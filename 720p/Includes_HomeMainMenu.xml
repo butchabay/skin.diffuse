@@ -52,7 +52,7 @@
 					<width>250</width>
 					<height>40</height>
 					 <font>diffuse_20_rss</font>
-					<textcolor>grey2</textcolor>
+					<textcolor>white</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
@@ -65,13 +65,13 @@
 					<width>250</width>
 					<height>40</height>
 					<font>diffuse_20_rss</font>
-					<textcolor>lightgrey</textcolor>
+					<textcolor>white</textcolor>
 					<texturefocus>windows/common/list_fo.png</texturefocus>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
-					<animation effect="zoom" time="300" center="50,20" start="100" end="120" tween="sine" easing="out" reversible="false">focus</animation>
-					<animation effect="zoom" time="200" center="50,20" start="120" end="100" tween="sine" easing="in" reversible="false">unfocus</animation>
+					<animation effect="zoom" time="220" center="52,20" start="100" end="120" tween="sine" easing="out" reversible="false">focus</animation>
+					<animation effect="zoom" time="250" center="52,20" start="120" end="100" tween="sine" easing="in" reversible="false">unfocus</animation>
 				</control>
 			</focusedlayout>
 			<content>
@@ -191,12 +191,33 @@
 					<onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
 					<visible>!Skin.HasSetting(HomeMenuNoConcertsButton)</visible>
 				</item>
-			<item id="14">
+				<item id="14">
 					<label>2</label>
 					<onclick>ActivateWindow(Music)</onclick>
 					<icon background="true" fallback="special://skin/backgrounds/musicfanart.jpg">$INFO[Skin.String(Home_Custom_Back_Music_Image)]</icon>
 					<thumb background="true">$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</thumb>
-					<visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
+					<visible>!Skin.HasSetting(HomeMenuNoMusicButton) + !Skin.HasSetting(Musicopenfiles) + !Skin.HasSetting(Musicopenartists) + !Skin.HasSetting(Musicopenalbums)</visible>
+				</item>
+			<item id="14">
+					<label>2</label>
+					<onclick>ActivateWindow(MusicFiles)</onclick>
+					<icon background="true" fallback="special://skin/backgrounds/musicfanart.jpg">$INFO[Skin.String(Home_Custom_Back_Music_Image)]</icon>
+					<thumb background="true">$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</thumb>
+					<visible>!Skin.HasSetting(HomeMenuNoMusicButton) + Skin.HasSetting(Musicopenfiles)</visible>
+				</item>
+				<item id="14">
+					<label>2</label>
+					<onclick>ActivateWindow(MusicLibrary,Artists,return)</onclick>
+					<icon background="true" fallback="special://skin/backgrounds/musicfanart.jpg">$INFO[Skin.String(Home_Custom_Back_Music_Image)]</icon>
+					<thumb background="true">$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</thumb>
+					<visible>!Skin.HasSetting(HomeMenuNoMusicButton) + Skin.HasSetting(Musicopenartists)</visible>
+				</item>
+				<item id="14">
+					<label>2</label>
+					<onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
+					<icon background="true" fallback="special://skin/backgrounds/musicfanart.jpg">$INFO[Skin.String(Home_Custom_Back_Music_Image)]</icon>
+					<thumb background="true">$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</thumb>
+					<visible>!Skin.HasSetting(HomeMenuNoMusicButton) + Skin.HasSetting(Musicopenalbums)</visible>
 				</item>
 			<item id="15">
 					<description>Custom FAV Three</description>

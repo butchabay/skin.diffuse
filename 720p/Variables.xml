@@ -125,16 +125,27 @@
 		<value condition="Container.Content(Directors)">[COLOR=grey2]$INFO[System.Time]  [COLOR=grey2]$LOCALIZE[20348]  $INFO[Container.NumItems] $LOCALIZE[31025]  $LOCALIZE[31024] $INFO[Container.CurrentPage]/$INFO[Container.NumPages][/COLOR]</value>
 		<value condition="Container.Content(Addons)">$INFO[System.Time]  [COLOR=grey2]$LOCALIZE[41106]  $INFO[Container.NumItems] $LOCALIZE[31025]  $LOCALIZE[31024] $INFO[Container.CurrentPage]/$INFO[Container.NumPages][/COLOR]</value>
 		<value condition="substring(container.folderpath,plugin://plugin.program.advanced.launcher)">$INFO[System.Time]  [COLOR=grey2]Advanced Launcher Library  $INFO[Container.NumItems] $LOCALIZE[31025]  $LOCALIZE[31024] $INFO[Container.CurrentPage]/$INFO[Container.NumPages][/COLOR]</value>
-		<value condition="Container.Content(Files)">$INFO[System.Time]  [COLOR=grey2]$LOCALIZE[31021]  $INFO[Container.NumItems] $LOCALIZE[31025]  $LOCALIZE[31024] $INFO[Container.CurrentPage]/$INFO[Container.NumPages][/COLOR]</value>
+		<value condition="Container.Content(Videos)">$INFO[System.Time]  [COLOR=grey2]$LOCALIZE[31021]  $INFO[Container.NumItems] $LOCALIZE[31025]  $LOCALIZE[31024] $INFO[Container.CurrentPage]/$INFO[Container.NumPages][/COLOR]</value>
 		<value condition="Container.Content(Artists)">$INFO[System.Time]  [COLOR=grey2]$LOCALIZE[133]  $INFO[Container.NumItems] $LOCALIZE[31025]  $LOCALIZE[31024] $INFO[Container.CurrentPage]/$INFO[Container.NumPages][/COLOR]</value>
 		<value condition="Container.Content(Albums)">$INFO[System.Time]  [COLOR=grey2]$LOCALIZE[132]  $INFO[Container.NumItems] $LOCALIZE[31025]  $LOCALIZE[31024] $INFO[Container.CurrentPage]/$INFO[Container.NumPages][/COLOR]</value>
 		<value condition="Container.Content(Songs)">$INFO[System.Time]  [COLOR=grey2]$LOCALIZE[134]  $INFO[Container.NumItems] $LOCALIZE[31025]  $LOCALIZE[31024] $INFO[Container.CurrentPage]/$INFO[Container.NumPages][/COLOR]</value>
-		<value condition="Control.IsVisible(11)">$INFO[System.Time]  [COLOR=grey2]$INFO[Container(11).NumItems] $LOCALIZE[19019]  $LOCALIZE[31024] $INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages][/COLOR]</value>
-		<value condition="Control.IsVisible(12)">$INFO[System.Time]  [COLOR=grey2]$INFO[Container(12).NumItems] $LOCALIZE[19019]  $LOCALIZE[31024] $INFO[Container(12).CurrentPage]/$INFO[Container(12).NumPages][/COLOR]</value>
 		<value condition="Window.IsActive(3)">$INFO[System.Time]  [COLOR=grey2]$LOCALIZE[7][/COLOR]</value>
 		<value condition="Window.IsActive(2)">$INFO[System.Time]  [COLOR=grey2]$LOCALIZE[41321]  $INFO[Container.NumItems] $LOCALIZE[31025]  $LOCALIZE[31024] $INFO[Container.CurrentPage]/$INFO[Container.NumPages][/COLOR]</value>
 		<value condition="Window.IsActive(28)">$INFO[System.Time]  [COLOR=grey2]$LOCALIZE[41339]  $INFO[Container.NumItems] $LOCALIZE[31025]  $LOCALIZE[31024] $INFO[Container.CurrentPage]/$INFO[Container.NumPages][/COLOR]</value>
 		<value condition="Window.IsActive(502) + ![Container.Content(Genres) | Container.Content(Years) | Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Container.Content(Addons)]">$INFO[System.Time]  [COLOR=grey2]$LOCALIZE[41104]  $INFO[Container.NumItems] $LOCALIZE[31025]  $LOCALIZE[31024] $INFO[Container.CurrentPage]/$INFO[Container.NumPages][/COLOR]</value>
+		<value condition="Window.IsVisible(503)">$INFO[System.Time]  [COLOR=grey2]$LOCALIZE[10503]  $INFO[Container.NumItems] $LOCALIZE[31025]  $LOCALIZE[31024] $INFO[Container.CurrentPage]/$INFO[Container.NumPages][/COLOR]</value>
+	</variable>
+	
+	<variable name="breadcrumpslabelsTV">
+		
+		<value condition="Control.IsVisible(11)">$INFO[System.Time]  [COLOR=grey2]$INFO[Container(11).NumItems] $LOCALIZE[19019]  $LOCALIZE[31024] $INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages][/COLOR]</value>
+		<value condition="Control.IsVisible(12)">$INFO[System.Time]  [COLOR=grey2]$INFO[Container(12).NumItems] $LOCALIZE[19019]  $LOCALIZE[31024] $INFO[Container(12).CurrentPage]/$INFO[Container(12).NumPages][/COLOR]</value>
+		<value condition="Control.IsVisible(13)">$INFO[System.Time]  [COLOR=grey2]$INFO[Container(13).NumItems] $LOCALIZE[41367]  $LOCALIZE[31024] $INFO[Container(13).CurrentPage]/$INFO[Container(13).NumPages][/COLOR]</value>
+		<value condition="Control.IsVisible(17)">$INFO[System.Time]  [COLOR=grey2]$INFO[Container(17).NumItems] $LOCALIZE[41368]  $LOCALIZE[31024] $INFO[Container(17).CurrentPage]/$INFO[Container(17).NumPages][/COLOR]</value>
+		<value condition="Control.IsVisible(14)">$INFO[System.Time]</value>
+		<value condition="Control.HasFocus(31)">$INFO[System.Time]</value>
+		
+		
 	</variable>
 	
 	<variable name="backgroundsfullscreen">

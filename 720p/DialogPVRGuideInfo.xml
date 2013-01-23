@@ -59,7 +59,7 @@
 				<posy>70</posy>
 				<width>400</width>
 				<height>30</height>
-				<font>diffuse_30_rss</font>
+				<font>diffuse_20_rss</font>
 				<label>$INFO[ListItem.Title]</label>
 				<align>center</align>
 				<aligny>center</aligny>

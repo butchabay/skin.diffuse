@@ -78,6 +78,34 @@
 	</control>
 </control>
 	</include>
+	
+	<include name="BreadcrumpsTV">
+	<control type="image">
+		<description>top</description>
+		<posx>0</posx>
+		<posy>-120</posy>
+		<width>1280</width>
+		<height>720</height>
+		<texture flipy="true">menuBackgroundvertical.png</texture>
+		<aspectratio>stretch</aspectratio>
+		<include>AnimationBreadcrumps</include>
+	</control>
+<!-- LABELS BREADCRUMB TRAIL -->
+    <control type="group">
+        <posx>0</posx>
+		<posy>0</posy>
+		<include>AnimationBreadcrumps</include>
+	<control type="group">
+		<posx>110</posx>
+		<posy>10</posy>
+		<control type="label">
+		<include>WindowTitleCommons</include>
+		<posx>0</posx>
+		<label>$VAR[breadcrumpslabelsTV]</label>
+		</control>
+	</control>
+</control>
+	</include>
   
   <include name="WindowTitleCommonsSort">
     <posx>615</posx>
