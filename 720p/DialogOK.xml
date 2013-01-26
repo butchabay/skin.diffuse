@@ -40,9 +40,9 @@
 								<posy>200</posy>
 								<width>360</width>
 								<align>center</align>
-								<font>diffuse_18_title_bold</font>
+								<font>diffuse_18_rss</font>
 								<label>-</label>
-								<textcolor>darkgrey</textcolor>
+								<textcolor>blue</textcolor>
 						</control>
 						<control type="label" id="2">
 								<description>dialog line 1</description>
@@ -51,7 +51,7 @@
 								<width>360</width>
 								<align>center</align>
 								<label>-</label>
-								<font>diffuse_15_bold</font>
+								<font>diffuse_16_rss</font>
 								<textcolor>darkgrey</textcolor>
 						</control>
 						<control type="label" id="3">
@@ -61,17 +61,17 @@
 								<width>360</width>
 								<align>center</align>
 								<label>-</label>
-								<font>diffuse_15_bold</font>
+								<font>diffuse_16_rss</font>
 								<textcolor>darkgrey</textcolor>					
 						</control>
 						<control type="label" id="4">
 								<description>dialog line 3</description>
-								<posx>400</posx>
+								<posx>460</posx>
 								<posy>290</posy>
-								<width>470</width>
+								<width>360</width>
 								<align>center</align>
 								<label>-</label>
-								<font>diffuse_15_bold</font>
+								<font>diffuse_16_rss</font>
 								<textcolor>midgrey</textcolor>
 						</control>					
 						<control type="button" id="10">

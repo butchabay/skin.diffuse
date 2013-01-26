@@ -43,10 +43,10 @@
 			<posy>145</posy>
 			<width>530</width>
 			<height>37</height>
-			<font>diffuse_20_title_bold</font>
+			<font>diffuse_20_rss</font>
 			<align>left</align>
 			<aligny>center</aligny>
-			<textcolor>darkgrey</textcolor>
+			<textcolor>blue</textcolor>
 		</control>
 		 <control type="image">
 	       <description>Header Line</description>

@@ -285,8 +285,8 @@
 					<label>$INFO[System.Time]</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>diffuse_30_title_bold</font>
-					 <textcolor>44ffffff</textcolor>
+					<font>diffuse_20_rss</font>
+					<textcolor>lightgrey</textcolor>
 				</control>
 					<control type="group"> <!-- Center labels -->
 				<posx>0</posx>
@@ -709,8 +709,8 @@
 					<label>$INFO[System.Time]</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>diffuse_30_title_bold</font>
-					 <textcolor>44ffffff</textcolor>
+					<font>diffuse_20_rss</font>
+				    <textcolor>lightgrey</textcolor>
 				</control>
 					<control type="group"> <!-- Center labels -->
 				<posx>0</posx>

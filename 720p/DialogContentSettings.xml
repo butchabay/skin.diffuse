@@ -46,7 +46,7 @@
 			<posy>145</posy>
 			<width>703</width>
 			<height>37</height>
-			<font>diffuse_24_title_bold</font>
+			<font>diffuse_20_rss</font>
 			<aligny>center</aligny>
 			<texturefocus>-</texturefocus>
 			<texturenofocus border="3">-</texturenofocus>
@@ -77,9 +77,9 @@
 			<width>556</width>
 			<height>25</height>
 			<align>left</align>
-			<textcolor>grey2</textcolor>
-			<font>diffuse_20_title_bold</font>
-			<label>[B][UPPERCASE]$LOCALIZE[33063][/UPPERCASE][/B]</label>
+			<textcolor>blue</textcolor>
+			<font>diffuse_20_rss</font>
+			<label>$LOCALIZE[33063]</label>
 		</control> 
 		
 		<control type="list" id="4">

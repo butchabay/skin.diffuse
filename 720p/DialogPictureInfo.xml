@@ -38,20 +38,20 @@
 				</control>
       <control type="label">
         <description>header label</description>
-        <posx>120</posx>
+        <posx>200</posx>
         <posy>40</posy>
         <width>590</width>
         <height>30</height>
-        <font>diffuse_30_title_bold</font>
+        <font>diffuse_20_rss</font>
         <label>$LOCALIZE[13406]</label>
-        <align>center</align>
+        <align>left</align>
         <aligny>center</aligny>
         <textcolor>blue</textcolor>
       </control>
       <control type="list" id="5">
-        <posx>181</posx>
+        <posx>150</posx>
         <posy>90</posy>
-        <width>538</width>
+        <width>568</width>
         <height>440</height>
         <onleft>-</onleft>
         <onright>-</onright>
@@ -61,9 +61,9 @@
         <scrolltime>200</scrolltime>
         <itemlayout height="40">
           <control type="image">
-            <posx>0</posx>
+            <posx>31</posx>
             <posy>0</posy>
-            <width>600</width>
+            <width>631</width>
             <height>41</height>
             <texture>dialogs/context/listline.png</texture>
           </control>
@@ -82,9 +82,9 @@
         </itemlayout>
         <focusedlayout height="40">
           <control type="image">
-            <posx>0</posx>
+            <posx>31</posx>
             <posy>0</posy>
-            <width>560</width>
+            <width>590</width>
             <height>41</height>
             <texture>dialogs/context/listfo.png</texture>
           </control>

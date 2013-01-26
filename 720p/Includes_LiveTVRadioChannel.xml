@@ -9,102 +9,62 @@
 				<description>Radio Channels group</description>
 				<visible>Control.IsVisible(12)</visible>
 				<include>transition_Fanart</include>
-				<control type="group">
-					<posx>15</posx>
-					<posy>70</posy>
+                 <control type="group">
+					<posx>-260</posx>
+					<posy>60</posy>
 					<control type="label">
 						<posx>372</posx>
 						<posy>515</posy>
 						<height>30</height>
+						<width>750</width>
+						<font>diffuse_16_rss</font>
+						<textcolor>white</textcolor>
+						<scroll>true</scroll>
+						<align>left</align>
+						<label>$INFO[Container(12).ListItem.Title]  [COLOR=lightgrey]$INFO[Container(12).ListItem.StartTime]$INFO[Container(12).ListItem.EndTime,-][/COLOR]</label>
+					</control>
+					<control type="label">
+						<posx>372</posx>
+						<posy>565</posy>
+						<height>30</height>
 						<width>660</width>
-						<font>diffuse_18_rss</font>
+						<font>diffuse_14_rss</font>
 						<textcolor>lightgrey</textcolor>
 						<scroll>true</scroll>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[Container(12).ListItem.Title]  $INFO[Container(12).ListItem.Duration]</label>
+						<label>$INFO[Container(12).ListItem.NextTitle,$LOCALIZE[19031]: ]  $INFO[Container(12).ListItem.NextStartTime]$INFO[Container(12).ListItem.NextEndTime,-]</label>
 					</control>
-					<control type="label">
-						<posx>372</posx>
-						<posy>540</posy>
-						<height>30</height>
-						<width>660</width>
-						<font>diffuse_16_rss</font>
-						<textcolor>grey2</textcolor>
-						<scroll>true</scroll>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.ChannelName]</label>
-					</control>
+				<control type="progress">
+					<description>Progressbar</description>
+					<posx>370</posx>
+					<posy>542</posy>
+					<width>320</width>
+                    <height>16</height>
+		            <texturebg border="10">osd/fullscreen/progressBackground.png</texturebg>
+		            <midtexture border="10.5">osd/fullscreen/progressSlider.png</midtexture>
+		            <colordiffuse>lightgrey</colordiffuse>
+		             <reveal>true</reveal>
+					<info>Container(12).ListItem.Progress</info>
+				</control>
 					<control type="image">
-						 <posx>120</posx>
-						 <posy>523</posy>
-						 <width>200</width>
-						 <height>100</height>
-						<info>ListItem.Icon</info>
+						 <posx>1370</posx>
+						 <posy>520</posy>
+						 <width>40</width>
+						 <height>40</height>
+						 <info>ListItem.Icon</info>
 					</control>
 					<control type="textbox">
 						<description>Plot</description>
 						<posx>372</posx>
-		                <posy>580</posy>
-		                <height>45</height>
-					    <width>750</width>
-						<font>diffuse_16_rss</font>
-						<align>justify</align>
-						<textcolor>white</textcolor>
+		                <posy>600</posy>
+		                <height>50</height>
+					    <width>1070</width>
+						<font>diffuse_16_alt_bold</font>
+						<align>left</align>
+						<textcolor>lightgrey</textcolor>
 						<label>$INFO[Container(12).ListItem.Plot]</label>
 						<autoscroll time="3000" delay="7000" repeat="5000">true</autoscroll>
-					</control>
-					<control type="label">
-					<posx>120</posx>
-					<posy>520</posy>
-					<width>80</width>
-					<height>20</height>
-					<align>lef</align>
-					<aligny>center</aligny>
-					<font>diffuse_16_rss</font>
-					<textcolor>grey2</textcolor>
-					<label>start</label>
-				</control>
-				<control type="label">
-					<posx>120</posx>
-					<posy>540</posy>
-					<width>200</width>
-					<height>20</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>diffuse_16_rss</font>
-					<textcolor>white</textcolor>
-					<label>$INFO[Container(12).ListItem.StartTime]</label>
-				</control>
-				<control type="label">
-					<posx>120</posx>
-					<posy>580</posy>
-					<width>80</width>
-					<height>20</height>
-					<align>lef</align>
-					<aligny>center</aligny>
-					<font>diffuse_16_rss</font>
-					<textcolor>grey2</textcolor>
-					<label>end</label>
-				</control>
-				<control type="label">
-					<posx>120</posx>
-					<posy>600</posy>
-					<width>200</width>
-					<height>20</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>diffuse_16_rss</font>
-					<textcolor>white</textcolor>
-					<label>$INFO[Container(12).ListItem.EndTime]</label>
-				</control>
-					<control type="image">
-						 <posx>250</posx>
-						 <posy>523</posy>
-						 <width>100</width>
-						 <height>100</height>
-						<info>ListItem.Icon</info>
 					</control>
 				</control>
 				<control type="list" id="12">

@@ -33,7 +33,7 @@
 			<posy>180r</posy>
 			<visible>Player.ShowInfo + Player.HasMedia</visible>
 			<include>VisibleFadeEffect</include>
-			<include>SmallMusicInfo</include>
+			<!-- <include>SmallMusicInfo</include> -->
 		</control>
 	</controls>
 </window>

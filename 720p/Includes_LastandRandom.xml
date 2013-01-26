@@ -761,106 +761,104 @@
 						</focusedlayout>
 					<content>
 						<item id="1">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.Title)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.TVShowTitle)]</label2>
-							<onclick>$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.Play)]</onclick> 
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.Art(tvshow.poster))]</icon>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.Art(fanart))]</property>
-					        <property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.Fanart)]</property>
+							<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.1.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.1.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.1.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.1.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.EpisodeNo)]</property>
 							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.ShowThumb)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.1.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu4.1.EpisodeTitle))</visible>
 						</item>
 						<item id="2">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.Title)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.TVShowTitle)]</label2>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.Fanart)]</property>
+							<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.2.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.2.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.2.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.2.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.ShowThumb)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.2.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu4.2.EpisodeTitle))</visible>
 						</item>
 						<item id="3">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu4.3.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu4.3.ShowTitle)]</label2>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu4.3.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu4.3.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu4.3.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.3.Fanart)]</property>
+							<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.3.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.3.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.3.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.3.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.3.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu4.3.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu4.3.ShowThumb)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.3.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu4.3.EpisodeTitle))</visible>
 						</item>
 						<item id="4">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu4.4.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu4.4.ShowTitle)]</label2>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu4.4.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu4.4.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu4.4.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.4.Fanart)]</property>
+							<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.4.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.4.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.4.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.4.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.4.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu4.4.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu4.4.ShowThumb)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.4.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu4.4.EpisodeTitle))</visible>
 						</item>
 						<item id="5">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu4.5.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu4.5.ShowTitle)]</label2>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu4.5.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu4.5.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu4.5.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.5.Fanart)]</property>
+						<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.5.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.5.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.5.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.5.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.5.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu4.5.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu4.5.ShowThumb)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.5.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu4.5.EpisodeTitle))</visible>
 						</item>
 						<item id="6">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu4.6.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu4.6.ShowTitle)]</label2>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu4.6.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu4.6.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu4.6.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.6.Fanart)]</property>
+							<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.6.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.6.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.6.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.6.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.6.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu4.6.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu4.6.ShowThumb)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.6.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu4.6.EpisodeTitle))</visible>
 						</item>
 						<item id="7">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu4.7.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu4.7.ShowTitle)]</label2>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu4.7.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu4.7.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu4.7.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.7.Fanart)]</property>
+							<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.7.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.7.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.7.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.7.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.7.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu4.7.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu4.7.ShowThumb)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.7.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu4.7.EpisodeTitle))</visible>
 						</item>
 						<item id="8">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu4.8.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu4.8.ShowTitle)]</label2>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu4.8.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu4.8.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu4.8.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.8.Fanart)]</property>
+							<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.8.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.8.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.8.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.8.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.8.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu4.8.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu4.8.ShowThumb)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.8.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu4.8.EpisodeTitle))</visible>
 						</item>
 						<item id="9">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu4.9.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu4.9.ShowTitle)]</label2>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu4.9.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu4.9.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu4.9.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.9.Fanart)]</property>
+							<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.9.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.9.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.9.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.9.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.9.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu4.9.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu4.9.ShowThumb)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.9.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu4.9.EpisodeTitle))</visible>
 						</item>
 						<item id="10">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu4.10.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu4.10.ShowTitle)]</label2>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu4.10.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu4.10.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu4.10.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.10.Fanart)]</property>
+							<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.10.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.10.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.10.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu4.10.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu4.10.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu4.10.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu4.10.ShowThumb)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu4.10.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu4.10.EpisodeTitle))</visible>
 						</item>
 					</content>
 				</control>
@@ -914,104 +912,104 @@
 						</focusedlayout>
 					<content>
 						<item id="1">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu5.1.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu5.1.ShowTitle)]</label2>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu5.1.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu5.1.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu5.1.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.1.Fanart)]</property>
+							<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.1.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.1.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.1.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.1.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.1.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu5.1.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu5.1.ShowThumb)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.1.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu5.1.EpisodeTitle))</visible>
 						</item>
 						<item id="2">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu5.2.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu5.2.ShowTitle)]</label2>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu5.2.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu5.2.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu5.2.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.2.Fanart)]</property>
+							<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.2.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.2.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.2.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.2.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.2.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu5.2.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu5.2.ShowThumb)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.2.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu5.2.EpisodeTitle))</visible>
 						</item>
 						<item id="3">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu5.3.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu5.3.ShowTitle)]</label2>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu5.3.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu5.3.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu5.3.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.3.Fanart)]</property>
+							<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.3.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.3.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.3.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.3.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.3.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu5.3.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu5.3.ShowThumb)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.3.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu5.3.EpisodeTitle))</visible>
 						</item>
 						<item id="4">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu5.4.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu5.4.ShowTitle)]</label2>
-						    <onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu5.4.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu5.4.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu5.4.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.4.Fanart)]</property>
+							<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.4.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.4.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.4.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.4.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.4.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu5.4.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu5.4.ShowThumb)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.4.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu5.4.EpisodeTitle))</visible>
 						</item>
 						<item id="5">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu5.5.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu5.5.ShowTitle)]</label2>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu5.5.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu5.5.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu5.5.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.5.Fanart)]</property>
+							<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.5.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.5.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.5.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.5.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.5.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu5.5.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu5.5.ShowThumb)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.5.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu5.5.EpisodeTitle))</visible>
 						</item>
 						<item id="6">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.ShowTitle)]</label2>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.Fanart)]</property>
+							<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.6.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.6.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.6.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.6.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.ShowThumb)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu5.6.EpisodeTitle))</visible>
 						</item>
 						<item id="7">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu5.7.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu5.7.ShowTitle)]</label2>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu5.7.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu5.7.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu5.7.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.7.Fanart)]</property>
-							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.7.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu5.7.EpisodeTitle))</visible>
+							<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.6.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.6.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.6.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.6.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.ShowThumb)]</property>
+							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.6.Plot)]</property>
 						</item>
 						<item id="8">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu5.8.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu5.8.ShowTitle)]</label2>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu5.8.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu5.8.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu5.8.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.8.Fanart)]</property>
-							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.8.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu5.8.EpisodeTitle))</visible>
+							<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.7.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.7.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.7.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.7.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.7.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu5.7.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu5.7.ShowThumb)]</property>
+							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.7.Plot)]</property>
 						</item>
 						<item id="9">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu5.9.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu5.9.ShowTitle)]</label2>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu5.9.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu5.9.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu5.9.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.9.Fanart)]</property>
+							<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.9.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.9.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.9.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.9.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.9.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu5.9.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu5.9.ShowThumb)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.9.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu5.9.EpisodeTitle))</visible>
 						</item>
 						<item id="10">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu5.10.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu5.10.ShowTitle)]</label2>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu5.10.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu5.10.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu5.10.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.10.Fanart)]</property>
+							<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.10.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.10.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.10.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu5.10.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu5.10.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu5.10.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu5.10.ShowThumb)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu5.10.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu5.10.EpisodeTitle))</visible>
 						</item>
 					</content>
 				</control>
@@ -1065,104 +1063,104 @@
 						</focusedlayout>
 					<content>
 						<item id="1">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu6.1.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu6.1.ShowTitle)]</label2>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu6.1.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu6.1.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu6.1.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.1.Fanart)]</property>
+							<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.1.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.1.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.1.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.1.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.1.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu6.1.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu6.1.ShowThumb)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.1.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu6.1.EpisodeTitle))</visible>
 						</item>
 						<item id="2">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu6.2.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu6.2.ShowTitle)]</label2>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu6.2.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu6.2.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu6.2.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.2.Fanart)]</property>
+							<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.2.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.2.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.2.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.2.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.2.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu6.2.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu6.2.ShowThumb)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.2.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu6.2.EpisodeTitle))</visible>
 						</item>
 						<item id="3">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu6.3.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu6.3.ShowTitle)]</label2>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu6.3.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu6.3.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu6.3.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.3.Fanart)]</property>
+                        <label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.3.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.3.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.3.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.3.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.3.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu6.3.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu6.3.ShowThumb)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.3.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu6.3.EpisodeTitle))</visible>
 						</item>
 						<item id="4">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu6.4.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu6.4.ShowTitle)]</label2>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu6.4.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu6.4.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu6.4.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.4.Fanart)]</property>
+							<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.4.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.4.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.4.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.4.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.4.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu6.4.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu6.4.ShowThumb)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.4.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu6.4.EpisodeTitle))</visible>
 						</item>
 						<item id="5">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu6.5.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu6.5.ShowTitle)]</label2>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu6.5.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu6.5.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu6.5.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.5.Fanart)]</property>
+							<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.5.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.5.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.5.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.5.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.5.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu6.5.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu6.5.ShowThumb)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.5.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu6.5.EpisodeTitle))</visible>
 						</item>
 						<item id="6">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu6.6.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu6.6.ShowTitle)]</label2>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu6.6.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu6.6.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu6.6.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.6.Fanart)]</property>
+							<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.6.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.6.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.6.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.6.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.6.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu6.6.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu6.6.ShowThumb)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.6.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu6.6.EpisodeTitle))</visible>
 						</item>
 						<item id="7">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu6.7.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu6.7.ShowTitle)]</label2>
-							 <onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu6.7.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu6.7.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu6.7.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.7.Fanart)]</property>
+							<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.7.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.7.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.7.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.7.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.7.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu6.7.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu6.7.ShowThumb)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.7.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu6.7.EpisodeTitle))</visible>
 						</item>
 						<item id="8">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu6.8.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu6.8.ShowTitle)]</label2>
-							 <onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu6.8.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu6.8.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu6.8.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.8.Fanart)]</property>
+							<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.8.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.8.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.8.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.8.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.8.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu6.8.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu6.8.ShowThumb)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.8.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu6.8.EpisodeTitle))</visible>
 						</item>
 						<item id="9">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu6.9.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu6.9.ShowTitle)]</label2>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu6.9.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu6.9.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu6.9.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.9.Fanart)]</property>
+							<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.9.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.9.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.9.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.9.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.9.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu6.9.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu6.9.ShowThumb)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.9.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu6.9.EpisodeTitle))</visible>
 						</item>
 						<item id="10">
-							<label>$INFO[Window.Property(PlaylistLastEpisodeMenu6.10.EpisodeTitle)]</label>
-							<label2>$INFO[Window.Property(PlaylistLastEpisodeMenu6.10.ShowTitle)]</label2>
-							<onclick>PlayMedia(&quot;$INFO[Window.Property(PlaylistLastEpisodeMenu6.10.Path)]&quot;)</onclick>
-							<icon>$INFO[Window.Property(PlaylistLastEpisodeMenu6.10.TVShowThumb)]</icon>
-							<property name="EpisodeSeasonWidget">$INFO[Window.Property(PlaylistLastEpisodeMenu6.10.EpisodeNo)]</property>
-							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.10.Fanart)]</property>
+							<label>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.10.Title)]</label>
+							<label2>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.10.TVShowTitle)]</label2>
+							<onclick>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.10.Play)]</onclick> 
+							<icon>$INFO[Window(Home).Property(PlaylistLastEpisodeMenu6.10.Art(tvshow.poster))]</icon>
+							<property name="Fanart">$INFO[Window.Property(PlaylistLastEpisodeMenu6.10.Art(tvshow.fanart))]</property>
+					        <property name="EpisodeSeason">$INFO[Window.Property(PlaylistLastEpisodeMenu6.10.EpisodeNo)]</property>
+							<property name="Cover">$INFO[Window.Property(PlaylistLastEpisodeMenu6.10.ShowThumb)]</property>
 							<property name="Plot">$INFO[Window.Property(PlaylistLastEpisodeMenu6.10.Plot)]</property>
-							<visible>!IsEmpty(Window.Property(PlaylistLastEpisodeMenu6.10.EpisodeTitle))</visible>
 						</item>
 					</content>
 				</control>

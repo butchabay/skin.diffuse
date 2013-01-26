@@ -269,7 +269,7 @@
 <scroll>false</scroll>
 </control>
 <control type="label">
-<posx>95</posx>
+<posx>85</posx>
 <posy>5</posy>
 <width>70</width>
 <font>diffuse_18_title_bold</font>
@@ -354,7 +354,7 @@
 <selectedcolor>bluegrey</selectedcolor>
 </control>
 <control type="label">
-<posx>95</posx>
+<posx>85</posx>
 <posy>5</posy>
 <width>70</width>
 <font>diffuse_18_bold</font>

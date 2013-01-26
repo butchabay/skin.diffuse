@@ -24,16 +24,29 @@
 			<colordiffuse>bluegrey</colordiffuse>
 		</control>
 
-		<control type="label">
+		<!-- <control type="label">
 			<posx>222</posx>
 			<posy>145</posy>
 			<width>600</width>
 			<height>37</height>
-			<font>diffuse_20_title_bold</font>
+			<font>diffuse_20_rss</font>
+			<align>left</align>
+			<aligny>center</aligny>
+			<label>$LOCALIZE[13406]</label>
+			<textcolor>darkgrey</textcolor>
+			<focusedcolor>lightgrey</focusedcolor>
+			<selectedcolor>blue</selectedcolor>
+		</control> -->
+		<control type="label">
+			<posx>230</posx>
+			<posy>145</posy>
+			<width>600</width>
+			<height>37</height>
+			<font>diffuse_18_rss</font>
 			<align>left</align>
 			<aligny>center</aligny>
 			<label>1021</label>
-			<textcolor>darkgrey</textcolor>
+			<textcolor>blue</textcolor>
 			<focusedcolor>lightgrey</focusedcolor>
 			<selectedcolor>blue</selectedcolor>
 		</control>
@@ -98,32 +111,35 @@
 				</control>
 			</focusedlayout>
 		</control>
-
+         <control type="label">
+			<description>Name label</description>
+			<posx>120</posx>
+			<posy>480</posy>
+			<width>600</width>
+			<height>28</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>diffuse_18_rss</font>
+			<label>1022</label>
+			<textcolor>darkgrey</textcolor>
+		</control>
 		<control type="button" id="12">
 			<description>Name Button</description>
 			<posx>222</posx>
 			<posy>512</posy>
 			<height>38</height>
-			<width>665</width>		
+			<width>665</width>	
+            <font>diffuse_24_alt_bold</font>	
+            <textcolor>white</textcolor>
+            <focusedcolor>lightgrey</focusedcolor>			
 			<onup>10</onup>
 			<onleft>-</onleft>
 			<onright>9000</onright>
 			<ondown>10</ondown>
-			<texturefocus>dialog/astextbox.png</texturefocus>
-     		<texturenofocus>dialog/astextbox.png</texturenofocus>
+			<texturefocus>dialogs/context/listfo.png</texturefocus>
+     		<texturenofocus>dialogs/context/listfo.png</texturenofocus>
 		</control>
-		<control type="label">
-			<description>Name label</description>
-			<posx>185</posx>
-			<posy>480</posy>
-			<width>466</width>
-			<height>28</height>
-			<align>center</align>
-			<aligny>center</aligny>
-			<font>diffuse_20_title_bold</font>
-			<label>1022</label>
-			<textcolor>darkgrey</textcolor>
-		</control>
+	
 
 	
 		<control type="group" id="9000">

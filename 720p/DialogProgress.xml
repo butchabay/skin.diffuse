@@ -6,9 +6,6 @@
 						<posy>560</posy>
 						<animation effect="fade" start="0" end="100" time="1000" reversible="true">WindowOpen</animation>
 			            <animation effect="fade" start="100" end="0" time="1000" reversible="true">WindowClose</animation>
-						<animation type="Conditional" condition="Window.IsVisible(133) | Window.IsVisible(112)" reversible="true">
-							<effect type="slide" end="0,60" time="200" easing="out" />
-						</animation>
 				 <control type="image">
 						<description>background image</description>
 						<posx>400</posx>

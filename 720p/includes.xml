@@ -129,32 +129,6 @@
     <aligny>center</aligny>
 	</control>		
   </include>
-  <include name="ButtonCommonValues">
-    <height>30</height>
-    <width>310</width>
-    <textoffsetx>10</textoffsetx>
-    <textwidth>280</textwidth>
-    <aligny>center</aligny>
-    <font>diffuse_24</font>
-    <texturefocus>windows/common/list_fo.png</texturefocus>
-    <texturenofocus>-</texturenofocus>
-    <focusedcolor>white</focusedcolor>
-    <pulseonselect>false</pulseonselect>
-	<disabledcolor>midgrey</disabledcolor>
-  </include>
-  
-   <include name="ButtonCommonValuesContext">
-    <height>30</height>
-    <width>310</width>
-    <textoffsetx>10</textoffsetx>
-    <textwidth>300</textwidth>
-    <aligny>center</aligny>
-    <font>-</font>
-    <texturefocus>dialogs/context/contextmenu.png</texturefocus>
-    <texturenofocus>-</texturenofocus>
-    <focusedcolor>-</focusedcolor>
-    <pulseonselect>true</pulseonselect>
-  </include>
   
    <include name="ButtonCommonValuesMediaMenu">
     <height>30</height>
@@ -290,18 +264,6 @@
     <pulseonselect>false</pulseonselect>
 	<disabledcolor>midgrey</disabledcolor>
   </include>
-  <include name="ButtonMediaSubCommonValues">
-    <height>40</height>
-    <width>200</width>
-    <textoffsetx>10</textoffsetx>
-    <textwidth>215</textwidth>
-    <aligny>center</aligny>
-    <font>diffuse_20</font>
-    <texturefocus border="0">button-backFO.png</texturefocus>
-    <texturenofocus>-</texturenofocus>
-    <focusedcolor>black</focusedcolor>
-    <pulseonselect>false</pulseonselect>
-  </include>
   <include name="ButtonInfoDialogsCommonValues">
     <height>40</height>
     <width>150</width>
@@ -311,17 +273,6 @@
     <font>diffuse_16</font>
     <texturefocus border="0" flipx="true">button-backFO.png</texturefocus>
     <texturenofocus border="0">button-backNF.png</texturenofocus>
-    <pulseonselect>false</pulseonselect>
-  </include>
-    <include name="ButtonVideoInfoCommonValues"> <!-- buttons on video info screen -->
-    <height>40</height>
-    <width>150</width>
-    <textoffsetx>20</textoffsetx>
-    <align>center</align>
-    <aligny>center</aligny>
-    <font>diffuse_16</font>
-    <texturefocus border="0">button-focus.png</texturefocus>
-    <texturenofocus border="0">button-nofocus.png</texturenofocus>
     <pulseonselect>false</pulseonselect>
   </include>
   <include name="MovieHDFlagsPoster">
@@ -374,45 +325,6 @@
 	  <texture>$INFO[VideoPlayer.VideoResolution,extras/flagging/playerflags/,.png]</texture>
 	</control>
 	</include>
-	
-	<include name="MovieFlags2PosterPlayer">
-	<control type="image">
-	<description>Video rez Image</description>
-	<posx>0</posx>
-	<posy>-5</posy>
-	<width>55</width>
-	<height>30</height>
-	<aspectratio>keep</aspectratio>
-	<texture>$INFO[VideoPlayer.VideoResolution,extras/flagging/video/,.png]</texture>
-</control>
-<control type="image">
-	<description>Video rez Image</description>
-	<posx>0</posx>
-	<posy>-5</posy>
-	<width>55</width>
-	<height>30</height>
-	<aspectratio>keep</aspectratio>
-	<texture>$INFO[VideoPlayer.VideoCodec,extras/flagging/video/,.png]</texture>
-</control>
-<control type="image">
-	<description>Audio Codec Image</description>
-	<posx>0</posx>
-	<posy>-5</posy>
-	<width>55</width>
-	<height>30</height>
-	<aspectratio>keep</aspectratio>
-	<texture>$INFO[VideoPlayer.AudioCodec,extras/flagging/audio/,.png]</texture>
-</control>
-<control type="image">
-	<description>Audio Channels Image</description>
-	<posx>0</posx>
-	<posy>-5</posy>
-	<width>55</width>
-	<height>30</height>
-	<aspectratio>keep</aspectratio>
-	<texture>$INFO[VideoPlayer.AudioChannels,extras/flagging/audio/,.png]</texture>
-</control>
-</include>
 
 <include name="MovieInfoSkinWidgets">
 <control type="image">
@@ -978,6 +890,17 @@
 			<aligny>center</aligny>
 			<fadetime>500</fadetime>
 		<texture background="true" fallback="special://skin/backgrounds/tv_shows.jpg">$VAR[randomandlastfanart]</texture>
+		</control>
+		<control type="image">
+			<description>Border</description>
+			<posx>90</posx>
+			<posy>506</posy>
+			<width>261</width>
+			<height>140</height>
+			<aspectratio>stretch</aspectratio>
+			<align>left</align>
+			<aligny>center</aligny>
+			<texture background="true">views/frames/frame_Landscape.png</texture>
 		</control>
 	</include>
 </includes>

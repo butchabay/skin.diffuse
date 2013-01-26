@@ -815,45 +815,6 @@
 			<onclick>XBMC.RunScript(script.cinema.experience)</onclick>
             <visible>Container.Content(Movies) + System.HasAddon(script.cinema.experience) + !SubString(Container.FolderPath,plugin://plugin,Left)</visible>
 			</control>
-			<!-- <control type="button" id="14">
-			<description>Get Artwork TV Shows</description>
-			<align>left</align>
-		    <aligny>center</aligny>
-            <include>ButtonCommonValuesInfo</include>
-			<label>41110</label>
-			<onclick>Dialog.Close(MovieInformation)</onclick>
-			<onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader,mode=gui, mediatype=tvshow, medianame=$INFO[ListItem.TVShowTitle])</onclick>
-			<visible>Container.Content(TVShows) + System.HasAddon(script.artwork.downloader)</visible>
-		  </control>
-		  <control type="button" id="131">
-			<description>Get Artwork TV Shows Extrafanart</description>
-			<align>left</align>
-		    <aligny>center</aligny>
-            <include>ButtonCommonValuesInfo</include>
-			<label>41200</label>
-			<onclick>Dialog.Close(MovieInformation)</onclick>
-			<onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader,mode=custom,mediatype=tvshow,medianame=$INFO[ListItem.TVShowTitle],extrafanart)</onclick>
-			<visible>Container.Content(TVShows) + System.HasAddon(script.artwork.downloader)</visible>
-		  </control> -->
-		   <!-- <control type="button" id="132">
-			<description>Edit library</description>
-			<visible>Container.content(movies) + System.HasAddon(script.library.editor)</visible>
-			<align>left</align>
-		    <aligny>center</aligny>
-            <include>ButtonCommonValuesInfo</include>
-			<onclick>XBMC.RunScript(script.library.editor)</onclick>
-			<label>41127</label>
-		  </control>
-			<control type="button" id="133">
-			<description>Edit Library</description>
-			<visible>Container.content(episodes) | container.content(TVShows) | container.content(seasons)</visible>
-			<visible>System.HasAddon(script.library.editor)</visible>
-			<align>left</align>
-		    <aligny>center</aligny>
-            <include>ButtonCommonValuesInfo</include>
-			<onclick>XBMC.RunScript(script.library.editor)</onclick>
-			<label>41127</label>
-			</control> -->
         </control>
 		</control>
       </control>

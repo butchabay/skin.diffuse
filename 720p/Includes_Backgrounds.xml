@@ -58,26 +58,6 @@
 			<animation effect="fade" start="100" end="0" time="1500" reversible="true">WindowClose</animation>
 		</control>
 	 </include>
-	 <include name="DialogOverlay2">
-      <control type="image"> <!-- Background Overlay -->
-			<posx>0</posx>
-		    <posy>0</posy>
-		    <width>1280</width>
-		    <height>720</height>
-			<aspectratio>stretch</aspectratio>
-			<texture background="true">backgroundblue.jpg</texture>
-			<colordiffuse>99FFFFFF</colordiffuse>
-			</control>
-	 <control type="image"> <!-- Background Overlay -->
-			<posx>0</posx>
-		    <posy>0</posy>
-		    <width>1280</width>
-		    <height>720</height>
-			<aspectratio>stretch</aspectratio>
-			<texture background="true">backgroundblue.jpg</texture>
-			<colordiffuse>99FFFFFF</colordiffuse>
-			</control>
-	 </include>
 	 
 	 <include name="Blueoverlay">
 	   <control type="image"> <!-- Background Overlay -->

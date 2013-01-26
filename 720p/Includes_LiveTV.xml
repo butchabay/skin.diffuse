@@ -140,22 +140,8 @@
 			<textcolor>lightgrey</textcolor>
 			<visible>Pvr.IsPlayingTv + !Control.IsVisible(10)</visible>	
 		</control>
-		<!-- 
-		  <control type="label">
-		    <description>Time label</description>
-			<posx>985</posx>
-			<posy>512</posy>
-			<height>40</height>
-			<width>200</width>
-			<label>[COLOR=lightgrey]$INFO[Player.Time][/COLOR]  $INFO[Player.Duration]</label>
-			<font>diffuse_14_rss</font>
-			<textcolor>grey</textcolor>
-			<align>right</align>
-		 </control> -->
 	   </control>
 	</control>
 </include>
 </includes>
 
-<!------------------------------------------------------------------------------------------------------>
-<!------------------------------------------------------------------------------------------------------>

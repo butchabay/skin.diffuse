@@ -36,11 +36,6 @@
 			<filename>DejaVuSans.ttf</filename>
 			<size>30</size>
 		</font>
-	 	<font>
-			<name>fontContextMenu</name>
-			<filename>DejaVuSans.ttf</filename>
-			<size>18</size>
-		</font>
 		
 		
 <!-- diffuse fonts light -->
