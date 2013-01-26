@@ -16,7 +16,7 @@
 		        <height>396</height>
 			    <aspectratio>stretch</aspectratio>
  			    <texture background="true">backgroundblue.jpg</texture>
-			    <colordiffuse>99FFFFFF</colordiffuse>
+			    <colordiffuse>diffuse1</colordiffuse>
 			</control>
 			<control type="image"> <!-- Home Background -->
 			    <posx>388</posx>

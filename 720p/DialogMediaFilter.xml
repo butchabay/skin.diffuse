@@ -14,7 +14,7 @@
 		    <height>720</height>
 			<aspectratio>stretch</aspectratio>
 			<texture background="true">backgroundblue.jpg</texture>
-			<colordiffuse>99FFFFFF</colordiffuse>
+			<colordiffuse>diffuse1</colordiffuse>
 			</control>
 	       <control type="image"> <!-- Background Overlay -->
 			<posx>-420</posx>
@@ -23,7 +23,7 @@
 		    <height>720</height>
 			<aspectratio>stretch</aspectratio>
 			<texture background="true">black-back.png</texture>
-			<colordiffuse>99FFFFFF</colordiffuse>
+			<colordiffuse>diffuse1</colordiffuse>
 	   </control>
 	   <control type="group">
 	   <include>PanelRotate</include>

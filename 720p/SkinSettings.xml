@@ -32,7 +32,7 @@
      <height>720</height>
 	 <aspectratio>stretch</aspectratio>
  	 <texture background="true">backgroundblue.jpg</texture>
-	 <colordiffuse>99FFFFFF</colordiffuse>
+	 <colordiffuse>diffuse1</colordiffuse>
   </control>
   </control>
    <control type="group">

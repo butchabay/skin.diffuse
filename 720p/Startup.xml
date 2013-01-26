@@ -25,7 +25,7 @@
                 <width>1280</width>
                 <height>720</height>
                 <texture>diffuseback.jpg</texture>
-			    <colordiffuse>99FFFFFF</colordiffuse>
+			    <colordiffuse>diffuse1</colordiffuse>
           </control>
 		  <control type="label">
 				<description>Busy label</description>

@@ -168,7 +168,7 @@
     <aligny>center</aligny>
     <font>diffuse_24_title_bold</font>
     <texturefocus>windows/common/list_fo.png</texturefocus>
-	<colordiffuse>99FFFFFF</colordiffuse>
+	<colordiffuse>diffuse1</colordiffuse>
 	<texturenofocus>-</texturenofocus>
     <focusedcolor>lightgrey</focusedcolor>
 	<textcolor>grey</textcolor>
@@ -618,7 +618,7 @@
 	<height>228</height>
 	<aspectratio>keep</aspectratio>
 	<texture>osd-back-info.png</texture>
-	<colordiffuse>99FFFFFF</colordiffuse>
+	<colordiffuse>diffuse1</colordiffuse>
 	</control>
 <control type="label">
 	<description>Album Label</description>

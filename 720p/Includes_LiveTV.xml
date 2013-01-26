@@ -37,7 +37,7 @@
 		    <height>396</height>
 			<aspectratio>stretch</aspectratio>
  			<texture background="true">backgroundblue.jpg</texture>
-			<colordiffuse>99FFFFFF</colordiffuse>
+			<colordiffuse>diffuse1</colordiffuse>
 			<visible>!Player.HasVideo</visible>
 			</control>
 		<control type="group">

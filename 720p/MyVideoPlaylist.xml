@@ -20,7 +20,7 @@
 		    <height>720</height>
 			<aspectratio>stretch</aspectratio>
 			<texture background="true">backgroundblue.jpg</texture>
-			<colordiffuse>99FFFFFF</colordiffuse>
+			<colordiffuse>diffuse1</colordiffuse>
 			<include>transition_Fanart4</include>
 		</control>
 	<include>CommonRootView</include> <!-- view id = 55 -->
@@ -32,7 +32,7 @@
 		    <height>720</height>
 			<aspectratio>stretch</aspectratio>
 			<texture background="true">backgroundblue.jpg</texture>
-			<colordiffuse>99FFFFFF</colordiffuse>
+			<colordiffuse>diffuse1</colordiffuse>
 			<animation effect="fade" start="0" end="100" time="1000" reversible="false" condition="ControlGroup(9000).HasFocus">Conditional</animation>
 			<animation effect="fade" start="100" end="0" time="1000" condition="!ControlGroup(9000).HasFocus">Conditional</animation>
 			</control>
@@ -43,7 +43,7 @@
 		    <height>720</height>
 			<aspectratio>stretch</aspectratio>
 			<texture background="true">black-back.png</texture>
-			<colordiffuse>99FFFFFF</colordiffuse>
+			<colordiffuse>diffuse1</colordiffuse>
 			<animation effect="fade" start="0" end="100" time="1000" reversible="false" condition="ControlGroup(9000).HasFocus">Conditional</animation>
 			<animation effect="fade" start="100" end="0" time="1000" condition="!ControlGroup(9000).HasFocus">Conditional</animation>
 	   </control>
