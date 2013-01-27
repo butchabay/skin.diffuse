@@ -150,7 +150,7 @@
 	
 	<variable name="backgroundsfullscreen">
 	
-		<value condition="!Skin.HasSetting(VideoLibraryMovieFanart) + [Container.Content(Movies) | Container.Content(Files) | Library.HasContent(Moviesets)]">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="!Skin.HasSetting(VideoLibraryMovieFanart) + [Container.Content(Movies) | Container.Content(Files)]">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="!Skin.HasSetting(VideoLibraryTVFanart) + [Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]">$INFO[ListItem.Art(fanart)]</value>
 		<!-- <value condition="Container.Content(genres)"background="true" fallback="backgrounds/movies.jpg">special://skin/extras/moviegenrefanart/$INFO[ListItem.Label].jpg</value> -->
 		<value condition="!Skin.HasSetting(AddonFanart) + Container.Content(Addons)">$INFO[ListItem.Art(fanart)]</value>

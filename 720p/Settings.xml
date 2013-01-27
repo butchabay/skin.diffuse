@@ -57,7 +57,7 @@
 						<width>455</width>
 						<height>40</height>
 						<font>diffuse_40_title_bold</font>
-						<textcolor>orange2</textcolor>
+						<textcolor>grey</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
@@ -90,7 +90,7 @@
 						<width>455</width>
 						<height>40</height>
 						<font>diffuse_40_title_bold</font>
-						<textcolor>darkgrey</textcolor>
+						<textcolor>grey2</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">

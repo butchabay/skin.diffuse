@@ -91,10 +91,10 @@
 <control type="label">
 <posx>76</posx>
 <posy>97</posy>
-<width>220</width>
-<font>diffuse_18_title_bold</font>
+<width>300</width>
+<font>diffuse_18_rss</font>
 <label>[COLOR=grey2]$LOCALIZE[41325]: [/COLOR]$INFO[ListItem.Duration] $LOCALIZE[41311]</label>
-<textcolor>lightgrey</textcolor>
+<textcolor>grey2</textcolor>
 <align>left</align>
 <visible>!substring(Container.Listitem.Label,..,left) + !IsEmpty(ListItem.foldername)</visible>
 <visible>!ListItem.IsFolder</visible>
@@ -158,10 +158,10 @@
 <control type="label">
 <posx>76</posx>
 <posy>97</posy>
-<width>220</width>
-<font>diffuse_18_title_bold</font>
+<width>300</width>
+<font>diffuse_18_rss</font>
 <label>[COLOR=grey2]$LOCALIZE[41325]: [/COLOR]$INFO[ListItem.Duration] $LOCALIZE[41311]</label>
-<textcolor>lightgrey</textcolor>
+<textcolor>grey2</textcolor>
 <align>left</align>
 <visible>!substring(Container.Listitem.Label,..,left) + !IsEmpty(ListItem.foldername)</visible>
 <visible>!ListItem.IsFolder</visible>
@@ -262,19 +262,19 @@
 <posx>110</posx>
 <posy>5</posy>
 <width>375</width>
-<font>diffuse_18_title_bold</font>
+<font>diffuse_18_rss</font>
 <label>$INFO[ListItem.Label]</label>
-<textcolor>grey2</textcolor>
+<textcolor>grey</textcolor>
 <selectedcolor>bluegrey</selectedcolor>
 <scroll>false</scroll>
 </control>
 <control type="label">
 <posx>85</posx>
-<posy>5</posy>
+<posy>7</posy>
 <width>70</width>
 <font>diffuse_18_title_bold</font>
 <label>$INFO[ListItem.Year]</label>
-<textcolor>grey2</textcolor>
+<textcolor>grey</textcolor>
 <selectedcolor>bluegrey</selectedcolor>
 <scroll>false</scroll>
 <align>right</align>
@@ -283,7 +283,7 @@
 </control>
 <control type="image">
 <posx>30</posx>
-<posy>2</posy>
+<posy>3</posy>
 <height>30</height>
 <width>70</width>
 <aspectratio>keep</aspectratio>
@@ -294,7 +294,7 @@
 </control>
 <control type="image">
 <posx>30</posx>
-<posy>2</posy>
+<posy>3</posy>
 <height>30</height>
 <width>70</width>
 <aspectratio>keep</aspectratio>
@@ -307,9 +307,9 @@
 <posx>515</posx>
 <posy>5</posy>
 <width>70</width>
-<font>diffuse_18_bold</font>
+<font>diffuse_18_rss</font>
 <label>$INFO[ListItem.rating]</label>
-<textcolor>grey2</textcolor>
+<textcolor>grey</textcolor>
 <selectedcolor>bluegrey</selectedcolor>
 <scroll>false</scroll>
 <align>left</align>
@@ -349,17 +349,17 @@
 <posy>5</posy>
 <width>375</width>
 <label>$INFO[ListItem.Label]</label>
-<font>diffuse_18_title_bold</font>
-<textcolor>lightgrey</textcolor>
+<font>diffuse_18_rss</font>
+<textcolor>grey2</textcolor>
 <selectedcolor>bluegrey</selectedcolor>
 </control>
 <control type="label">
 <posx>85</posx>
-<posy>5</posy>
+<posy>7</posy>
 <width>70</width>
 <font>diffuse_18_bold</font>
 <label>$INFO[ListItem.Year]</label>
-<textcolor>lightgrey</textcolor>
+<textcolor>grey2</textcolor>
 <selectedcolor>bluegrey</selectedcolor>
 <scroll>false</scroll>
 <align>right</align>
@@ -368,31 +368,33 @@
 </control>
 <control type="image">
 <posx>30</posx>
-<posy>2</posy>
+<posy>3</posy>
 <height>30</height>
 <width>70</width>
 <aspectratio>keep</aspectratio>
 <texture>extras/flagging/def/sdfo.png</texture>
 <visible>!IsEmpty(ListItem.videoresolution) + !IntegerGreaterThan(ListItem.videoresolution,719)</visible>
 <visible>Skin.HasSetting(ShowFlag52)</visible>
+<colordiffuse>grey2</colordiffuse>
 </control>
 <control type="image">
 <posx>30</posx>
-<posy>2</posy>
+<posy>3</posy>
 <height>30</height>
 <width>70</width>
 <aspectratio>keep</aspectratio>
 <texture>extras/flagging/def/hdfo.png</texture>
 <visible>IntegerGreaterThan(ListItem.videoresolution,719)</visible>
 <visible>Skin.HasSetting(ShowFlag52)</visible>
+<colordiffuse>grey2</colordiffuse>
 </control>
 <control type="label">
 <posx>515</posx>
 <posy>5</posy>
 <width>70</width>
-<font>diffuse_18_bold</font>
+<font>diffuse_18_rss</font>
 <label>$INFO[ListItem.rating]</label>
-<textcolor>lightgrey</textcolor>
+<textcolor>grey2</textcolor>
 <selectedcolor>bluegrey</selectedcolor>
 <scroll>false</scroll>
 <align>left</align>
@@ -408,6 +410,7 @@
 <visible>!IsEmpty(ListItem.Thumb)</visible>
 <visible>!substring(Container.Listitem.Label,..,left) + !IsEmpty(ListItem.foldername)</visible>
 <visible>!ListItem.IsFolder</visible>
+<colordiffuse>grey2</colordiffuse>
 </control>
 </focusedlayout>
 </control>
@@ -437,12 +440,12 @@
 <texture>$INFO[Skin.String(Studios_Folder_Path)]$INFO[ListItem.Studio,,.png]</texture>
 </control>
 <control type="label">
-<posx>60</posx>
-<posy>50</posy>
-<width>500</width>
-<font>diffuse_18_title_bold</font>
+<posx>610</posx>
+<posy>580</posy>
+<width>320</width>
+<font>diffuse_16_rss</font>
 <label>$INFO[ListItem.Tagline]</label>
-<textcolor>lightgrey</textcolor>
+<textcolor>grey2</textcolor>
 <scroll>false</scroll>
 <align>left</align>
 <visible>!substring(Container.Listitem.Label,..,left) + !IsEmpty(ListItem.foldername)</visible>
@@ -562,9 +565,9 @@
 <posx>76</posx>
 <posy>97</posy>
 <width>300</width>
-<font>diffuse_18_title_bold</font>
-<label fallback="416">$LOCALIZE[16102] $INFO[ListItem.Property(WatchedEpisodes)] • $LOCALIZE[16101] $INFO[ListItem.Property(UnWatchedEpisodes)]</label>
-<textcolor>lightgrey</textcolor>
+<font>diffuse_18_rss</font>
+<label fallback="416">$LOCALIZE[16102] $INFO[ListItem.Property(WatchedEpisodes)]  $LOCALIZE[16101] $INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+<textcolor>grey2</textcolor>
 <align>left</align>
 <visible>!substring(Container.Listitem.Label,..,left) + !IsEmpty(ListItem.foldername)</visible>
 <visible>!IsEmpty(ListItem.Thumb)</visible> 
@@ -573,10 +576,10 @@
 <control type="fadelabel">
 <posx>76</posx>
 <posy>130</posy>
-<width>220</width>
-<font>diffuse_18_title_bold</font>
+<width>300</width>
+<font>diffuse_18_rss</font>
 <label>$LOCALIZE[41315]  $INFO[Window(Home).Property(NextAired.NextDate)]</label>
-<textcolor>grey2</textcolor>
+<textcolor>lightgrey</textcolor>
 <align>left</align>
 <visible>!substring(Container.Listitem.Label,..,left) + !IsEmpty(ListItem.foldername)</visible>
 <visible>!IsEmpty(Window(Home).Property(NextAired.Label)) + !IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
@@ -644,9 +647,9 @@
 <posx>76</posx>
 <posy>97</posy>
 <width>300</width>
-<font>diffuse_18_title_bold</font>
-<label fallback="416">$LOCALIZE[16102] $INFO[ListItem.Property(WatchedEpisodes)] • $LOCALIZE[16101] $INFO[ListItem.Property(UnWatchedEpisodes)]</label>
-<textcolor>lightgrey</textcolor>
+<font>diffuse_18_rss</font>
+<label fallback="416">$LOCALIZE[16102] $INFO[ListItem.Property(WatchedEpisodes)]  $LOCALIZE[16101] $INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+<textcolor>grey2</textcolor>
 <align>left</align>
 <visible>!substring(Container.Listitem.Label,..,left) + !IsEmpty(ListItem.foldername)</visible>
 <visible>!IsEmpty(ListItem.Thumb)</visible> 
@@ -655,10 +658,10 @@
 <control type="fadelabel">
 <posx>76</posx>
 <posy>130</posy>
-<width>220</width>
-<font>diffuse_18_title_bold</font>
+<width>300</width>
+<font>diffuse_18_rss</font>
 <label>$LOCALIZE[41315]  $INFO[Window(Home).Property(NextAired.NextDate)]</label>
-<textcolor>grey2</textcolor>
+<textcolor>lightgrey</textcolor>
 <align>left</align>
 <visible>!substring(Container.Listitem.Label,..,left) + !IsEmpty(ListItem.foldername)</visible>
 <visible>!IsEmpty(Window(Home).Property(NextAired.Label)) + !IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
@@ -763,19 +766,19 @@
 <posx>110</posx>
 <posy>5</posy>
 <width>375</width>
-<font>diffuse_18_title_bold</font>
+<font>diffuse_18_rss</font>
 <label>$INFO[ListItem.Label]</label>
-<textcolor>grey2</textcolor>
+<textcolor>grey</textcolor>
 <selectedcolor>bluegrey</selectedcolor>
 <scroll>false</scroll>
 </control>
 <control type="label">
-<posx>95</posx>
-<posy>5</posy>
+<posx>85</posx>
+<posy>7</posy>
 <width>70</width>
-<font>diffuse_18_title_bold</font>
+<font>diffuse_18_bold</font>
 <label>$INFO[ListItem.Year]</label>
-<textcolor>grey2</textcolor>
+<textcolor>grey</textcolor>
 <selectedcolor>bluegrey</selectedcolor>
 <scroll>false</scroll>
 <align>right</align>
@@ -785,9 +788,9 @@
 <posx>515</posx>
 <posy>5</posy>
 <width>70</width>
-<font>diffuse_18_bold</font>
+<font>diffuse_18_rss</font>
 <label>$INFO[ListItem.rating]</label>
-<textcolor>grey2</textcolor>
+<textcolor>grey</textcolor>
 <selectedcolor>bluegrey</selectedcolor>
 <scroll>false</scroll>
 <align>left</align>
@@ -826,17 +829,17 @@
 <posy>5</posy>
 <width>375</width>
 <label>$INFO[ListItem.Label]</label>
-<font>diffuse_18_title_bold</font>
-<textcolor>lightgrey</textcolor>
+<font>diffuse_18_rss</font>
+<textcolor>grey2</textcolor>
 <selectedcolor>bluegrey</selectedcolor>
 </control>
 <control type="label">
-<posx>95</posx>
-<posy>5</posy>
+<posx>85</posx>
+<posy>7</posy>
 <width>70</width>
 <font>diffuse_18_bold</font>
 <label>$INFO[ListItem.Year]</label>
-<textcolor>lightgrey</textcolor>
+<textcolor>grey2</textcolor>
 <selectedcolor>bluegrey</selectedcolor>
 <scroll>false</scroll>
 <align>right</align>
@@ -846,9 +849,9 @@
 <posx>515</posx>
 <posy>5</posy>
 <width>70</width>
-<font>diffuse_18_bold</font>
+<font>diffuse_18_rss</font>
 <label>$INFO[ListItem.rating]</label>
-<textcolor>lightgrey</textcolor>
+<textcolor>grey2</textcolor>
 <selectedcolor>bluegrey</selectedcolor>
 <scroll>false</scroll>
 <align>left</align>
@@ -863,6 +866,7 @@
 <texture>views/list/other/star_fo.png</texture>
 <visible>!IsEmpty(ListItem.Thumb)</visible>
 <visible>!substring(Container.Listitem.Label,..,left) + !IsEmpty(ListItem.foldername)</visible>
+<colordiffuse>grey2</colordiffuse>
 </control>
 </focusedlayout>
 </control>

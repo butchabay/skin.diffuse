@@ -480,6 +480,11 @@
 			<size>20</size>
 		</font>
 		<font>
+			<name>diffuse_24_rss</name>
+			<filename>Fat.ttf</filename>
+			<size>24</size>
+		</font>
+		<font>
 			<name>diffuse_30_rss</name>
 			<filename>Fat.ttf</filename>
 			<size>30</size>

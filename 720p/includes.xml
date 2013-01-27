@@ -136,7 +136,7 @@
     <textoffsetx>10</textoffsetx>
     <textwidth>280</textwidth>
     <aligny>center</aligny>
-    <font>diffuse_24_bold</font>
+    <font>diffuse_18_rss</font>
     <texturefocus>dialogs/context/listfo.png</texturefocus>
 	<texturenofocus>dialogs/context/listline.png</texturenofocus>
     <focusedcolor>white</focusedcolor>
@@ -154,8 +154,8 @@
     <font>diffuse_24_bold</font>
     <texturefocus>windows/common/list_fo.png</texturefocus>
 	<texturenofocus>-</texturenofocus>
-    <focusedcolor>lightgrey</focusedcolor>
-	<textcolor>lightgrey</textcolor>
+    <focusedcolor>grey2</focusedcolor>
+	<textcolor>grey</textcolor>
 	<disabledcolor>midgrey</disabledcolor>
     <pulseonselect>false</pulseonselect>
   </include>
@@ -170,7 +170,7 @@
     <texturefocus>windows/common/list_fo.png</texturefocus>
 	<colordiffuse>diffuse1</colordiffuse>
 	<texturenofocus>-</texturenofocus>
-    <focusedcolor>lightgrey</focusedcolor>
+    <focusedcolor>grey2</focusedcolor>
 	<textcolor>grey</textcolor>
 	<disabledcolor>midgrey</disabledcolor>
     <pulseonselect>false</pulseonselect>
@@ -181,8 +181,8 @@
 	<height>40</height>
 	<textoffsetx>15</textoffsetx>
 	<font>diffuse_20_bold</font>
-	<textcolor>white</textcolor>
-	<focusedcolor>white</focusedcolor>
+	<textcolor>grey</textcolor>
+	<focusedcolor>grey2</focusedcolor>
     <texturefocus>windows/common/list_fo.png</texturefocus>
 	<texturenofocus>dialogs/context/listline.png</texturenofocus>
 	<disabledcolor>midgrey</disabledcolor>
@@ -193,8 +193,8 @@
 	<height>40</height>
 	<font>diffuse_20_bold</font>
 	<textoffsetx>15</textoffsetx>
-	<textcolor>white</textcolor>
-	<focusedcolor>white</focusedcolor>
+	<textcolor>grey</textcolor>
+	<focusedcolor>grey2</focusedcolor>
     <texturefocus>windows/common/list_fo.png</texturefocus>
 	<texturenofocus>dialogs/context/listline.png</texturenofocus>
 	<disabledcolor>midgrey</disabledcolor>
@@ -205,8 +205,8 @@
 	<height>40</height>
 	<font>diffuse_18_bold</font>
 	<textoffsetx>15</textoffsetx>
-	<textcolor>white</textcolor>
-	<focusedcolor>white</focusedcolor>
+	<textcolor>grey</textcolor>
+	<focusedcolor>grey2</focusedcolor>
     <texturefocus>windows/common/list_fo.png</texturefocus>
 	<texturenofocus>dialogs/context/listline.png</texturenofocus>
 	<disabledcolor>midgrey</disabledcolor>
@@ -217,8 +217,8 @@
 	<height>35</height>
 	<textoffsetx>15</textoffsetx>
 	<font>diffuse_18_title_bold</font>
-	<textcolor>midgrey</textcolor>
-	<focusedcolor>-</focusedcolor>
+	<textcolor>grey</textcolor>
+	<focusedcolor>grey2</focusedcolor>
     <texturefocus>windows/common/list_fo.png</texturefocus>
 	<texturenofocus>-</texturenofocus>
 	<disabledcolor>midgrey</disabledcolor>
@@ -230,8 +230,8 @@
 	<textoffsetx>10</textoffsetx>
     <textwidth>600</textwidth>
 	<font>diffuse_20_bold</font>
-	<textcolor>lightgrey</textcolor>
-	<disabledcolor>midgrey</disabledcolor>
+	<textcolor>grey2</textcolor>
+	<disabledcolor>grey2</disabledcolor>
 	<focusedcolor>-</focusedcolor>
     <texturefocus>windows/common/list_fo.png</texturefocus>
 	<texturenofocus>dialogs/context/listline.png</texturenofocus>
@@ -243,8 +243,8 @@
 	<textoffsetx>15</textoffsetx>
     <textwidth>280</textwidth>
 	<font>diffuse_20_title_bold</font>
-	<textcolor>lightgrey</textcolor>
-	<disabledcolor>midgrey</disabledcolor>
+	<textcolor>grey</textcolor>
+	<disabledcolor>grey2</disabledcolor>
 	<focusedcolor>-</focusedcolor>
     <texturefocus>windows/common/list_fo.png</texturefocus>
 	<texturenofocus>dialogs/context/listline.png</texturenofocus>

@@ -67,7 +67,7 @@
         <label>$LOCALIZE[5]</label>
         <align>left</align>
         <aligny>center</aligny>
-        <textcolor>midgrey</textcolor>
+        <textcolor>grey2</textcolor>
       </control>
 			<control type="list" id="9000">
 				<posx>102</posx>
@@ -85,19 +85,11 @@
 						<posx>10</posx>
 						<posy>0</posy>
 						<width>250</width>
-						<height>40</height>
+						<height>50</height>
 						<font>diffuse_24_title_bold</font>
-						<textcolor>orange2</textcolor>
+						<textcolor>grey</textcolor>
+						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
-					</control>
-					<control type="label">
-						<posx>10</posx>
-						<posy>30</posy>
-						<width>300</width>
-						<height>16</height>
-						<font>diffuse_15_bold</font>
-						<textcolor>darkgrey2</textcolor>
-						<label>$INFO[ListItem.Label2]</label>
 					</control>
 				</itemlayout>
 			<focusedlayout width="263" height="50">
@@ -110,19 +102,11 @@
 						<posx>10</posx>
 						<posy>0</posy>
 						<width>250</width>
-						<height>40</height>
+						<height>50</height>
 						<font>diffuse_24_title_bold</font>
-						<textcolor>white</textcolor>
+						<textcolor>grey2</textcolor>
+						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
-					</control>
-					<control type="label">
-						<posx>10</posx>
-						<posy>30</posy>
-						<width>250</width>
-						<height>16</height>
-						<font>diffuse_15_bold</font>
-						<textcolor>lightgrey</textcolor>
-						<label>$INFO[ListItem.Label2]</label>
 					</control>
 				</focusedlayout>
 			 	<content>

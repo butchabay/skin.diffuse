@@ -23,7 +23,7 @@
 			<onright>9000</onright>
 			<onup>9010</onup>
 			<ondown>9010</ondown>
-			<scrolltime tween="sine" easing="out">300</scrolltime>
+			<scrolltime tween="sine">250</scrolltime>
 			<focusposition>2</focusposition>
 			<visible>Container(9000).HasFocus(12)</visible>
              <itemlayout height="50" width="200">
@@ -32,8 +32,8 @@
 					<posy>0</posy>
 					<width>250</width>
 					<height>40</height>
-					<font>diffuse_24_bold</font>
-					<textcolor>lightgrey</textcolor>
+					<font>diffuse_18_rss</font>
+					<textcolor>grey</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
@@ -45,13 +45,13 @@
 					<posy>0</posy>
 					<width>250</width>
 					<height>40</height>
-					<font>diffuse_24_bold</font>
-					<textcolor>white</textcolor>
+					<font>diffuse_18_rss</font>
+					<textcolor>grey2</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
-					<animation effect="zoom" time="300" center="50,20" start="100" end="120" tween="sine" easing="out" reversible="false">focus</animation>
-					<animation effect="zoom" time="350" center="50,20" start="120" end="100" tween="sine" easing="in" reversible="false">unfocus</animation>
+					<!-- <animation effect="zoom" time="300" center="50,20" start="100" end="120" tween="sine" easing="out" reversible="false">focus</animation>
+					<animation effect="zoom" time="350" center="50,20" start="120" end="100" tween="sine" easing="in" reversible="false">unfocus</animation> -->
 				</control>
 			</focusedlayout>
 			<content>
@@ -100,7 +100,7 @@
 			<onright>8025</onright>
 			<onup>9010</onup>
 			<ondown>9010</ondown>
-			<scrolltime tween="sine" easing="out">300</scrolltime>
+			<scrolltime tween="sine">250</scrolltime>
 			<focusposition>2</focusposition>
 			<visible>Container(9000).HasFocus(6)</visible>
              <itemlayout height="50" width="200">
@@ -109,8 +109,8 @@
 					<posy>0</posy>
 					<width>250</width>
 					<height>40</height>
-					<font>diffuse_24_bold</font>
-					<textcolor>lightgrey</textcolor>
+					<font>diffuse_18_rss</font>
+					<textcolor>grey</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
@@ -122,13 +122,13 @@
 					<posy>0</posy>
 					<width>250</width>
 					<height>40</height>
-					<font>diffuse_24_bold</font>
-					<textcolor>white</textcolor>
+					<font>diffuse_18_rss</font>
+					<textcolor>grey2</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
-					<animation effect="zoom" time="300" center="50,20" start="100" end="120" tween="sine" easing="out" reversible="false">focus</animation>
-					<animation effect="zoom" time="350" center="50,20" start="120" end="100" tween="sine" easing="in" reversible="false">unfocus</animation>
+					<!-- <animation effect="zoom" time="300" center="50,20" start="100" end="120" tween="sine" easing="out" reversible="false">focus</animation>
+					<animation effect="zoom" time="350" center="50,20" start="120" end="100" tween="sine" easing="in" reversible="false">unfocus</animation> -->
 				</control>
 			</focusedlayout>
 			<content>
@@ -165,7 +165,7 @@
 			<onright>8061</onright>
 			<onup>9010</onup>
 			<ondown>9010</ondown>
-			<scrolltime tween="sine" easing="out">300</scrolltime>
+			<scrolltime tween="sine">250</scrolltime>
 			<focusposition>2</focusposition>
 			<visible>Container(9000).HasFocus(14)</visible>
             <itemlayout height="50" width="200">
@@ -174,8 +174,8 @@
 					<posy>0</posy>
 					<width>250</width>
 					<height>40</height>
-					<font>diffuse_24_bold</font>
-					<textcolor>lightgrey</textcolor>
+					<font>diffuse_18_rss</font>
+					<textcolor>grey</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
@@ -187,13 +187,13 @@
 					<posy>0</posy>
 					<width>250</width>
 					<height>40</height>
-					<font>diffuse_24_bold</font>
-					<textcolor>white</textcolor>
+					<font>diffuse_18_rss</font>
+					<textcolor>grey2</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
-					<animation effect="zoom" time="300" center="50,20" start="100" end="120" tween="sine" easing="out" reversible="false">focus</animation>
-					<animation effect="zoom" time="350" center="50,20" start="120" end="100" tween="sine" easing="in" reversible="false">unfocus</animation>
+					<!-- <animation effect="zoom" time="300" center="50,20" start="100" end="120" tween="sine" easing="out" reversible="false">focus</animation>
+					<animation effect="zoom" time="350" center="50,20" start="120" end="100" tween="sine" easing="in" reversible="false">unfocus</animation> -->
 				</control>
 			</focusedlayout>
 			<content>
@@ -244,7 +244,7 @@
 			<onright>9000</onright>
 			<onup>9010</onup>
 			<ondown>9010</ondown>
-			<scrolltime tween="sine" easing="out">300</scrolltime>
+			<scrolltime tween="sine">250</scrolltime>
 			<focusposition>2</focusposition>
 			<visible>Container(9000).HasFocus(25)</visible>
             <itemlayout height="50" width="200">
@@ -253,8 +253,8 @@
 					<posy>0</posy>
 					<width>250</width>
 					<height>40</height>
-					<font>diffuse_24_bold</font>
-					<textcolor>lightgrey</textcolor>
+					<font>diffuse_18_rss</font>
+					<textcolor>grey</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
@@ -266,13 +266,13 @@
 					<posy>0</posy>
 					<width>250</width>
 					<height>40</height>
-					<font>diffuse_24_bold</font>
-					<textcolor>white</textcolor>
+					<font>diffuse_18_rss</font>
+					<textcolor>grey2</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
-					<animation effect="zoom" time="300" center="50,20" start="100" end="120" tween="sine" easing="out" reversible="false">focus</animation>
-					<animation effect="zoom" time="350" center="50,20" start="120" end="100" tween="sine" easing="in" reversible="false">unfocus</animation>
+					<!-- <animation effect="zoom" time="300" center="50,20" start="100" end="120" tween="sine" easing="out" reversible="false">focus</animation>
+					<animation effect="zoom" time="350" center="50,20" start="120" end="100" tween="sine" easing="in" reversible="false">unfocus</animation> -->
 				</control>
 			</focusedlayout>
 			<content>
@@ -316,7 +316,7 @@
 			<onright>8005</onright>
 			<onup>9010</onup>
 			<ondown>9010</ondown>
-			<scrolltime tween="sine" easing="out">300</scrolltime>
+			<scrolltime tween="sine">250</scrolltime>
 			<focusposition>2</focusposition>
 			<visible>Container(9000).HasFocus(18) + [[Skin.HasSetting(HomeScriptButton1) + !IsEmpty(Skin.String(HomeScriptButton1_label))] | [Skin.HasSetting(HomeScriptButton2) + !IsEmpty(Skin.String(HomeScriptButton2_label))] | [Skin.HasSetting(HomeScriptButton3) + !IsEmpty(Skin.String(HomeScriptButton3_label))] | [Skin.HasSetting(HomeScriptButton4) + !IsEmpty(Skin.String(HomeScriptButton4_label))] | [Skin.HasSetting(HomeScriptButton5) + !IsEmpty(Skin.String(HomeScriptButton5_label))] | [Skin.HasSetting(HomeScriptButton6) + !IsEmpty(Skin.String(HomeScriptButton6_label))]]</visible>
             <itemlayout height="50" width="200">
@@ -325,8 +325,8 @@
 					<posy>0</posy>
 					<width>250</width>
 					<height>40</height>
-					<font>diffuse_24_bold</font>
-					<textcolor>lightgrey</textcolor>
+					<font>diffuse_18_rss</font>
+					<textcolor>grey</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
@@ -338,13 +338,13 @@
 					<posy>0</posy>
 					<width>250</width>
 					<height>40</height>
-					<font>diffuse_24_bold</font>
-					<textcolor>white</textcolor>
+					<font>diffuse_18_rss</font>
+					<textcolor>grey2</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
-					<animation effect="zoom" time="300" center="50,20" start="100" end="120" tween="sine" easing="out" reversible="false">focus</animation>
-					<animation effect="zoom" time="350" center="50,20" start="120" end="100" tween="sine" easing="in" reversible="false">unfocus</animation>
+					<!-- <animation effect="zoom" time="300" center="50,20" start="100" end="120" tween="sine" easing="out" reversible="false">focus</animation>
+					<animation effect="zoom" time="350" center="50,20" start="120" end="100" tween="sine" easing="in" reversible="false">unfocus</animation> -->
 				</control>
 			</focusedlayout>
 			<content>
@@ -438,7 +438,7 @@
 			<onright>8041</onright>
 			<onup>9010</onup>
 			<ondown>9010</ondown>
-			<scrolltime tween="sine" easing="out">300</scrolltime>
+			<scrolltime tween="sine">250</scrolltime>
 			<focusposition>2</focusposition>
 			<visible>Container(9000).HasFocus(1)</visible>
             <itemlayout height="50" width="200">
@@ -447,8 +447,8 @@
 					<posy>0</posy>
 					<width>250</width>
 					<height>40</height>
-					<font>diffuse_24_bold</font>
-					<textcolor>lightgrey</textcolor>
+					<font>diffuse_18_rss</font>
+					<textcolor>grey</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
@@ -460,13 +460,13 @@
 					<posy>0</posy>
 					<width>250</width>
 					<height>40</height>
-					<font>diffuse_24_bold</font>
-					<textcolor>white</textcolor>
+					<font>diffuse_18_rss</font>
+					<textcolor>grey2</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
-					<animation effect="zoom" time="300" center="50,20" start="100" end="120" tween="sine" easing="out" reversible="false">focus</animation>
-					<animation effect="zoom" time="350" center="50,20" start="120" end="100" tween="sine" easing="in" reversible="false">unfocus</animation>
+					<!-- <animation effect="zoom" time="300" center="50,20" start="100" end="120" tween="sine" easing="out" reversible="false">focus</animation>
+					<animation effect="zoom" time="350" center="50,20" start="120" end="100" tween="sine" easing="in" reversible="false">unfocus</animation> -->
 				</control>
 			</focusedlayout>
 			<content>
@@ -645,7 +645,7 @@
 			<onright>8051</onright>
 			<onup>9010</onup>
 			<ondown>9010</ondown>
-			<scrolltime tween="sine" easing="out">300</scrolltime>
+			<scrolltime tween="sine">250</scrolltime>
 			<focusposition>2</focusposition>
 			<visible>Container(9000).HasFocus(7)</visible>
            <itemlayout height="50" width="200">
@@ -654,8 +654,8 @@
 					<posy>0</posy>
 					<width>250</width>
 					<height>40</height>
-					<font>diffuse_24_bold</font>
-					<textcolor>lightgrey</textcolor>
+					<font>diffuse_18_rss</font>
+					<textcolor>grey</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
@@ -667,13 +667,13 @@
 					<posy>0</posy>
 					<width>250</width>
 					<height>40</height>
-					<font>diffuse_24_bold</font>
-					<textcolor>white</textcolor>
+					<font>diffuse_18_rss</font>
+					<textcolor>grey2</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
-					<animation effect="zoom" time="300" center="50,20" start="100" end="120" tween="sine" easing="out" reversible="false">focus</animation>
-					<animation effect="zoom" time="350" center="50,20" start="120" end="100" tween="sine" easing="in" reversible="false">unfocus</animation>
+					<!-- <animation effect="zoom" time="300" center="50,20" start="100" end="120" tween="sine" easing="out" reversible="false">focus</animation>
+					<animation effect="zoom" time="350" center="50,20" start="120" end="100" tween="sine" easing="in" reversible="false">unfocus</animation> -->
 				</control>
 			</focusedlayout>
 			<content>

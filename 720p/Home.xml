@@ -57,8 +57,8 @@
 			<height>23</height>
 			<align>left</align>
 			<aligny>top</aligny>
-			<font>diffuse_20_rss</font>
-			<textcolor>lightgrey</textcolor>
+			<font>diffuse_18_rss</font>
+			<textcolor>grey2</textcolor>
 			<label>$INFO[System.Time]</label>
 		</control>  
                 <control type="image">

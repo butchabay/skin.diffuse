@@ -98,7 +98,7 @@
 			<width>800</width>
 			<font>diffuse_20_rss</font>
 			<label>$INFO[ListItem.Label]</label>
-			<textcolor>grey2</textcolor>
+			<textcolor>grey</textcolor>
 			<selectedcolor>bluegrey</selectedcolor>
 			<scroll>false</scroll>
 		</control>
@@ -218,7 +218,7 @@
 			<width>800</width>
 			<font>diffuse_20_rss</font>
 			<label>$INFO[ListItem.Label]</label>
-			<textcolor>lightgrey</textcolor>
+			<textcolor>grey2</textcolor>
 			<selectedcolor>bluegrey</selectedcolor>
 			<scroll>false</scroll>
 		</control>
@@ -253,7 +253,7 @@
 			<width>800</width>
 			<font>diffuse_16_bold</font>
 			<label>$INFO[ListItem.TVShowTitle]</label>
-			<textcolor>grey</textcolor>
+			<textcolor>grey2</textcolor>
 			<selectedcolor>bluegrey</selectedcolor>
 			<scroll>false</scroll>
 			<visible>Container.Content(Episodes) | Container.Content(Seasons)</visible>
@@ -264,7 +264,7 @@
 			<width>800</width>
 			<font>diffuse_16_bold</font>
 			<label>$INFO[ListItem.Property(Addon.Version)]  $INFO[ListItem.Property(Addon.Status)]</label>
-			<textcolor>grey</textcolor>
+			<textcolor>grey2</textcolor>
 			<selectedcolor>bluegrey</selectedcolor>
 			<scroll>false</scroll>
 			<visible>Container.Content(Addons)</visible>

@@ -44,11 +44,11 @@
 	  </control>
 	<control type="label">
 		<posx>50</posx>
-		<posy>4</posy>
+		<posy>7</posy>
 		<width>800</width>
-		<font>diffuse_20_title_bold</font>
+		<font>diffuse_18_rss</font>
 		<label>$INFO[ListItem.Label]</label>
-		<textcolor>grey2</textcolor>
+		<textcolor>grey</textcolor>
 		<selectedcolor>bluegrey</selectedcolor>
 		<scroll>false</scroll>
 	   </control>
@@ -65,11 +65,11 @@
 	  </control>
 	<control type="label">
 		<posx>50</posx>
-		<posy>4</posy>
+		<posy>7</posy>
 		<width>800</width>
-		<font>diffuse_20_title_bold</font>
+		<font>diffuse_18_rss</font>
 		<label>$INFO[ListItem.Label]</label>
-		<textcolor>lightgrey</textcolor>
+		<textcolor>grey2</textcolor>
 		<selectedcolor>bluegrey</selectedcolor>
 		<scroll>false</scroll>
 	  </control>
@@ -86,9 +86,9 @@
 		<posx>50</posx>
 		<posy>4</posy>
 		<width>485</width>
-		<font>diffuse_20_title_bold</font>
+		<font>diffuse_18_rss</font>
 		<label>$INFO[ListItem.Label]</label>
-		<textcolor>grey2</textcolor>
+		<textcolor>grey</textcolor>
 		<selectedcolor>bluegrey</selectedcolor>
 		<scroll>false</scroll>
 	  </control>
@@ -96,9 +96,9 @@
 		<posx>670</posx>
 		<posy>4</posy>
 		<width>200</width>
-		<font>diffuse_22_title_bold</font>
+		<font>diffuse_18_rss</font>
 		<label>$INFO[ListItem.Year]</label>
-		<textcolor>grey2</textcolor>
+		<textcolor>grey</textcolor>
 		<selectedcolor>bluegrey</selectedcolor>
 		<scroll>false</scroll>
 	  </control>
@@ -108,7 +108,7 @@
 		<width>800</width>
 		<font>diffuse_16_title_bold</font>
 		<label>$INFO[ListItem.Label2]</label>
-		<textcolor>midgrey</textcolor>
+		<textcolor>lightgrey</textcolor>
 		<selectedcolor>bluegrey</selectedcolor>
 		<scroll>false</scroll>
 	  </control>
@@ -135,9 +135,9 @@
 		<posx>50</posx>
 		<posy>4</posy>
 		<width>485</width>
-		<font>diffuse_20_title_bold</font>
+		<font>diffuse_18_rss</font>
 		<label>$INFO[ListItem.Label]</label>
-		<textcolor>white</textcolor>
+		<textcolor>grey2</textcolor>
 		<selectedcolor>white</selectedcolor>
 		<scroll>false</scroll>
 	  </control>
@@ -145,9 +145,9 @@
 		<posx>670</posx>
 		<posy>4</posy>
 		<width>200</width>
-		<font>diffuse_22_title_bold</font>
+		<font>diffuse_18_rss</font>
 		<label>$INFO[ListItem.Year]</label>
-		<textcolor>white</textcolor>
+		<textcolor>grey2</textcolor>
 		<selectedcolor>white</selectedcolor>
 		<scroll>false</scroll>
 	  </control>
@@ -157,7 +157,7 @@
 		<width>485</width>
 		<font>diffuse_16_title_bold</font>
 		<label>$INFO[ListItem.Label2]</label>
-		<textcolor>white</textcolor>
+		<textcolor>grey2</textcolor>
 		<selectedcolor>white</selectedcolor>
 		<scroll>false</scroll>
 		</control>

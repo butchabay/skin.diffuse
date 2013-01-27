@@ -27,8 +27,8 @@
           <posy>20</posy>
           <width>460</width>
           <height>30</height>
-          <font>diffuse_20_title_bold</font>
-          <textcolor>lightgrey</textcolor>
+          <font>diffuse_20_rss</font>
+          <textcolor>grey</textcolor>
           <scroll>false</scroll>
           <align>center</align>
           <aligny>center</aligny>
@@ -36,11 +36,11 @@
         </control>
         <control type="label">
           <description>current temp Value</description>
-          <posx>195</posx>
+          <posx>170</posx>
           <posy>80</posy>
           <width>200</width>
           <height>50</height>
-          <font>diffuse_50_title_bold</font>
+          <font>diffuse_30_rss</font>
           <align>right</align>
           <aligny>top</aligny>
           <label>$INFO[Window.Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
@@ -48,24 +48,24 @@
         </control>
         <control type="image">
           <description>current weather icon</description>
-          <posx>210</posx>
-          <posy>40</posy>
-          <width>230</width>
-          <height>180</height>
+          <posx>170</posx>
+          <posy>50</posy>
+          <width>170</width>
+          <height>120</height>
           <info>Window.Property(Current.ConditionIcon)</info>
           <aspectratio>keep</aspectratio>
         </control>
         <control type="label">
           <description>current condition label</description>
-          <posx>195</posx>
-          <posy>150</posy>
+          <posx>20</posx>
+          <posy>170</posy>
           <width>460</width>
           <height>30</height>
           <info>Window.Property(Current.Condition)</info>
-          <align>right</align>
+          <align>center</align>
           <aligny>top</aligny>
-          <font>diffuse_20_bold</font>
-          <textcolor>grey2</textcolor>
+          <font>diffuse_16_rss</font>
+          <textcolor>grey</textcolor>
         </control>
 		 <control type="image">
 			<description>background image</description>
@@ -103,7 +103,7 @@
           <posy>225</posy>
           <width>400</width>
           <height>30</height>
-          <font>diffuse_20_alt_bold</font>
+          <font>diffuse_18_rss</font>
           <align>center</align>
           <aligny>center</aligny>
           <label>$LOCALIZE[402]: $INFO[Window.Property(Current.FeelsLike)] $INFO[System.TemperatureUnits]</label>
@@ -115,7 +115,7 @@
           <posy>250</posy>
           <width>400</width>
           <height>30</height>
-          <font>diffuse_20_alt_bold</font>
+          <font>diffuse_18_rss</font>
           <align>center</align>
           <aligny>center</aligny>
           <label>$LOCALIZE[405]: $INFO[Window.Property(Current.DewPoint)] $INFO[System.TemperatureUnits]</label>
@@ -157,7 +157,7 @@
           <posy>315</posy>
           <width>400</width>
           <height>35</height>
-          <font>diffuse_20_alt_bold</font>
+          <font>diffuse_18_rss</font>
           <align>center</align>
           <aligny>center</aligny>
           <label>$LOCALIZE[406]: $INFO[Window.Property(Current.Humidity)]</label>
@@ -169,7 +169,7 @@
           <posy>340</posy>
           <width>400</width>
           <height>35</height>
-          <font>diffuse_20_alt_bold</font>
+          <font>diffuse_18_rss</font>
           <align>center</align>
           <aligny>center</aligny>
           <label>$LOCALIZE[403]: $INFO[Window.Property(Current.UVIndex)]</label>
@@ -211,7 +211,7 @@
           <posy>405</posy>
           <width>400</width>
           <height>35</height>
-          <font>diffuse_20_alt_bold</font>
+          <font>diffuse_18_rss</font>
           <align>center</align>
           <aligny>center</aligny>
           <label>$LOCALIZE[404]: $INFO[Window.Property(Current.Wind)]</label>
@@ -223,8 +223,8 @@
           <posy>430</posy>
           <width>400</width>
           <height>35</height>
-          <font>diffuse_20_alt_bold</font>
-          <textcolor>darkgrey2</textcolor>
+          <font>diffuse_14_rss</font>
+          <textcolor>grey2</textcolor>
           <scroll>false</scroll>
           <align>center</align>
           <aligny>center</aligny>
@@ -241,7 +241,7 @@
             <posy>10</posy>
             <width>460</width>
             <height>35</height>
-            <font>diffuse_24_title_bold</font>
+            <font>diffuse_20_rss</font>
             <info>Window.Property(Day0.Title)</info>
             <align>left</align>
             <aligny>center</aligny>
@@ -262,7 +262,8 @@
             <posx>365</posx>
             <posy>15</posy>
             <height>20</height>
-            <font>diffuse_20_title_bold</font>
+			<width>100</width>
+            <font>diffuse_18_rss</font>
             <align>center</align>
             <aligny>center</aligny>
             <label>$LOCALIZE[393]: $INFO[Window.Property(Day0.HighTemp)]$INFO[System.TemperatureUnits]</label>
@@ -271,10 +272,11 @@
           </control>
           <control type="label">
             <description>low label</description>
-            <posx>375</posx>
+            <posx>365</posx>
             <posy>68</posy>
             <height>20</height>
-            <font>diffuse_20_title_bold</font>
+			<width>100</width>
+            <font>diffuse_18_rss</font>
             <align>center</align>
             <aligny>center</aligny>
             <label>$LOCALIZE[391]: $INFO[Window.Property(Day0.LowTemp)]$INFO[System.TemperatureUnits]</label>
@@ -288,7 +290,7 @@
             <width>320</width>
             <height>20</height>
             <info>Window.Property(Day0.Outlook)</info>
-            <font>diffuse_20_alt_bold</font>
+            <font>diffuse_18_rss</font>
             <align>left</align>
             <aligny>center</aligny>
             <textcolor>grey2</textcolor>
@@ -304,7 +306,7 @@
             <posy>10</posy>
             <width>460</width>
             <height>35</height>
-            <font>diffuse_24_title_bold</font>
+            <font>diffuse_20_rss</font>
             <info>Window.Property(Day1.Title)</info>
             <align>left</align>
             <aligny>center</aligny>
@@ -325,7 +327,8 @@
             <posx>365</posx>
             <posy>15</posy>
             <height>20</height>
-            <font>diffuse_20_title_bold</font>
+			<width>100</width>
+            <font>diffuse_18_rss</font>
             <align>center</align>
             <aligny>center</aligny>
             <label>$LOCALIZE[393]: $INFO[Window.Property(Day1.HighTemp)]$INFO[System.TemperatureUnits]</label>
@@ -334,10 +337,11 @@
           </control>
           <control type="label">
             <description>low label</description>
-            <posx>375</posx>
+            <posx>365</posx>
             <posy>68</posy>
             <height>20</height>
-            <font>diffuse_20_title_bold</font>
+			<width>100</width>
+            <font>diffuse_18_rss</font>
             <align>center</align>
             <aligny>center</aligny>
             <label>$LOCALIZE[391]: $INFO[Window.Property(Day1.LowTemp)]$INFO[System.TemperatureUnits]</label>
@@ -351,7 +355,7 @@
             <width>320</width>
             <height>20</height>
             <info>Window.Property(Day1.Outlook)</info>
-            <font>diffuse_20_alt_bold</font>
+            <font>diffuse_18_rss</font>
             <align>left</align>
             <aligny>center</aligny>
             <textcolor>grey2</textcolor>
@@ -367,7 +371,7 @@
             <posy>10</posy>
             <width>460</width>
             <height>35</height>
-            <font>diffuse_24_title_bold</font>
+            <font>diffuse_20_rss</font>
             <info>Window.Property(Day2.Title)</info>
             <align>left</align>
             <aligny>center</aligny>
@@ -388,7 +392,8 @@
             <posx>365</posx>
             <posy>15</posy>
             <height>20</height>
-            <font>diffuse_20_title_bold</font>
+			<width>100</width>
+            <font>diffuse_18_rss</font>
             <align>center</align>
             <aligny>center</aligny>
             <label>$LOCALIZE[393]: $INFO[Window.Property(Day2.HighTemp)]$INFO[System.TemperatureUnits]</label>
@@ -397,10 +402,11 @@
           </control>
           <control type="label">
             <description>low label</description>
-            <posx>375</posx>
+            <posx>365</posx>
             <posy>68</posy>
             <height>20</height>
-            <font>diffuse_20_title_bold</font>
+			<width>100</width>
+            <font>diffuse_18_rss</font>
             <align>center</align>
             <aligny>center</aligny>
             <label>$LOCALIZE[391]: $INFO[Window.Property(Day2.LowTemp)]$INFO[System.TemperatureUnits]</label>
@@ -414,7 +420,7 @@
             <width>320</width>
             <height>20</height>
             <info>Window.Property(Day2.Outlook)</info>
-            <font>diffuse_20_alt_bold</font>
+            <font>diffuse_18_rss</font>
             <align>left</align>
             <aligny>center</aligny>
             <textcolor>grey2</textcolor>
@@ -430,7 +436,7 @@
             <posy>10</posy>
             <width>460</width>
             <height>35</height>
-            <font>diffuse_24_title_bold</font>
+            <font>diffuse_20_rss</font>
             <info>Window.Property(Day3.Title)</info>
             <align>left</align>
             <aligny>center</aligny>
@@ -451,7 +457,8 @@
             <posx>365</posx>
             <posy>15</posy>
             <height>20</height>
-            <font>diffuse_20_title_bold</font>
+			<width>100</width>
+            <font>diffuse_18_rss</font>
             <align>center</align>
             <aligny>center</aligny>
             <label>$LOCALIZE[393]: $INFO[Window.Property(Day3.HighTemp)]$INFO[System.TemperatureUnits]</label>
@@ -460,10 +467,11 @@
           </control>
           <control type="label">
             <description>low label</description>
-            <posx>375</posx>
+            <posx>365</posx>
             <posy>68</posy>
             <height>20</height>
-            <font>diffuse_20_title_bold</font>
+			<width>100</width>
+            <font>diffuse_18_rss</font>
             <align>center</align>
             <aligny>center</aligny>
             <label>$LOCALIZE[391]: $INFO[Window.Property(Day3.LowTemp)]$INFO[System.TemperatureUnits]</label>
@@ -477,7 +485,7 @@
             <width>320</width>
             <height>20</height>
             <info>Window.Property(Day3.Outlook)</info>
-            <font>diffuse_20_alt_bold</font>
+            <font>diffuse_18_rss</font>
             <align>left</align>
             <aligny>center</aligny>
             <textcolor>grey2</textcolor>

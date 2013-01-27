@@ -21,10 +21,11 @@
 			
 		<!-- !!! MAIN MENU !!! -->
 		<control type="wraplist" id="9000">
+		<include>transition_Fanart</include>
 			<posx>80</posx>
-			<posy>90</posy>
+			<posy>85</posy>
 			<width>500</width>
-			<height>440</height>
+			<height>450</height>
 			<onleft>ActivateWindow(ShutdownMenu)</onleft>
 			<onright condition="[Container(9000).Hasfocus(1) + Skin.HasSetting(homesubmenu)] | [Container(9000).Hasfocus(25) + Skin.HasSetting(homesubmenu)] | [Container(9000).Hasfocus(6) + Skin.HasSetting(homesubmenu)] | [Container(9000).Hasfocus(12) + Skin.HasSetting(homesubmenu)] | [Container(9000).Hasfocus(7) + Skin.HasSetting(homesubmenu)] | [Container(9000).Hasfocus(14) + Skin.HasSetting(homesubmenu)] | [Container(9000).Hasfocus(18) + Skin.HasSetting(AddonItems)] + !Container(9000).Hasfocus(3) + !Container(9000).Hasfocus(4) + !Container(9000).Hasfocus(5) + !Container(9000).Hasfocus(9) + !Container(9000).Hasfocus(10) + !Container(9000).Hasfocus(11)">9001</onright>
 			<onright condition="Container(9000).HasFocus(1) + !Skin.HasSetting(homesubmenu)">8041</onright>     <!-- !!! MOVIES !!! -->
@@ -40,9 +41,8 @@
 			<onright condition="Container(9000).Hasfocus(11)">8011</onright>									<!-- !!! PL 6 TV !!! -->
 			<onup>9000</onup>
 			<ondown>9000</ondown>
-			<scrolltime tween="quadratic" easing="out">350</scrolltime>
+			<scrolltime tween="sine">450</scrolltime>
 			<focusposition>2</focusposition>
-			<include>transition_Fanart</include>
             <animation effect="fade" start="100" end="0" time="300" condition="ControlGroup(9001).HasFocus">conditional</animation>
 			<animation effect="fade" start="0" end="100" time="300" condition="!ControlGroup(9001).HasFocus">conditional</animation>
 			<itemlayout height="50" width="250">
@@ -50,9 +50,9 @@
 					<posx>40</posx>
 					<posy>0</posy>
 					<width>250</width>
-					<height>40</height>
+					<height>50</height>
 					 <font>diffuse_20_rss</font>
-					<textcolor>grey2</textcolor>
+					<textcolor>grey</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
@@ -63,9 +63,9 @@
 					<posx>40</posx>
 					<posy>0</posy>
 					<width>250</width>
-					<height>40</height>
+					<height>50</height>
 					<font>diffuse_20_rss</font>
-					<textcolor>lightgrey</textcolor>
+					<textcolor>grey2</textcolor>
 					<texturefocus>windows/common/list_fo.png</texturefocus>
 					<align>left</align>
 					<aligny>center</aligny>
