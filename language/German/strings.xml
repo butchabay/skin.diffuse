@@ -1,13 +1,354 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
 <strings>
-  <!-- Misc labels -->
+
+  <!-- 28.01.2013 -->
   
+  <!-- Playlist Editor labels -->
+  
+  <string id="31055">Oeffne playlist</string>
+  <string id="31056">Speichere playlist</string>
+  <string id="31057">Schliesse playlist</string>
+  <string id="31058">System music files</string>
+  <string id="31059">Aktuelle playlist</string>
+  <string id="31060"></string>
+  <string id="31061"></string>
+ 
+  <!-- Skin Settings labels -->
+  
+  <string id="31102">Hintergrund</string>
+  <string id="31103">Zeige "Pause" in Diashow</string>
+  <string id="31104">Schaue Trailer</string>
+  <string id="31108">Verstecke Hauptmenü-Tasten</string>
+  <string id="31111">Verstecke</string>
+  <string id="31113">Einzelnes Bild</string>
+  <string id="31114">Mehrere Bilder</string>
+  <string id="31120">Tasten Bezeichnung</string>
+  <string id="31121">Pfad zum Skript</string>
+  <string id="31126">Lyrics in Music OSD</string>
+  <string id="31127">Pfad zu Lyrics Skript</string>
+  <string id="31128">XBMC Lyrics</string>
+  <string id="31129">Untertitel herunterladen in Video-OSD</string>
+  <string id="31130">Pfad zo Untertitel Skript</string>
+  <string id="41000">Submenu</string>
+  <string id="41002">Hauptmenüeinträge</string>
+  <string id="41004">Extended</string>
+  <string id="41005">Extras</string>
+  <string id="41006">Kiosk Modus (deaktiviere Slideout-Menü)</string>
+  <string id="41007">CDArt in der Musik-Visualisierung</string>
+  <string id="41008">CDArt im Hauptmenü</string>
+  <string id="41011">Artist Slideshow</string>
+ 
+  <!-- Home Items Power  -->
+   
+  <string id="41022">Energie</string>
+  <string id="41023">Disk wiedergeben</string>
+  <string id="41024">Favoriten</string>
+  <string id="41026">Spiele</string>
+  
+ <!-- Settings (Addons Submenus)  -->
+ 
+  <string id="41027">Addons Submenu</string>
+  <string id="41028">Addon 1</string>
+  <string id="41029">Addon 2</string>
+  <string id="41030">Addon 3</string>
+  <string id="41031">Addon 4</string>
+  <string id="41032">Addon 5</string>
+  
+   <!-- Settings (Programs Submenus)  -->
+   
+  <string id="41033">Programm 1</string>
+  <string id="41034">Programm 2</string>
+  <string id="41035">Programm 3</string>
+  <string id="41036">Programm 4</string>
+  <string id="41037">Programm 5</string>
+  
+   <!-- Settings (Movie Submenus)  -->
+   
+  <string id="41038">Movie Submenu</string>
+  <string id="41039">Deaktiviere Video Dateien</string>
+  <string id="41040">Deaktiviere Titel</string>
+  <string id="41041">Deaktiviere Genre</string>
+  <string id="41042">Deaktiviere Jahre</string>
+  <string id="41043">Deaktiviere Recently Added</string>
+  <string id="41044">Deaktiviere Schauspieler</string>
+  <string id="41045">Deaktiviere Regisseur</string>
+  <string id="41046">Deaktiviere DB Update</string>
+  <string id="41047">Deaktiviere Video Addons</string>
+  <string id="41048">Playlist 1</string>
+  <string id="41049">Playlist 2</string>
+  <string id="41050">Playlist 3</string>
+  <string id="41051">Playlist 4</string>
+  <string id="41052">Playlist 5</string>
+  <string id="41053">Playlist 6</string>
+  
+   <!-- Settings (Movie Submenus Favourites)  -->
+   
+  <string id="41057">Wähle Favorit 1</string>
+  <string id="41058"> - Label zuweisen</string>
+  <string id="41059"> - Favorit zuweisen</string>
+  <string id="41060">Favorit 2</string>
+  <string id="41061">Favorit 3</string>
+  <string id="41062">Favorit 4</string>
+  <string id="41063">Favorit 5</string>
+  
+   <!-- Settings (Submenus)  -->
+   
+  <string id="41064"></string>
+  <string id="41070"></string>
+  <string id="41072">Playlist 1 (Filme)</string>
+  <string id="41073">Playlist 2 (Filme)</string>
+  <string id="41074">Playlist 3 (Filme)</string>
+  <string id="41075">Playlist 4 (TV Serien)</string>
+  <string id="41076">Playlist 5 (TV Serien)</string>
+  <string id="41077">Playlist 6 (TV Serien)</string>
+  <string id="41078">Playlist 7</string>
+  <string id="41079">Playlist 8</string>
+  
+  <!-- Misc  -->
   <string id="31000">Ändere deine</string>
   <string id="31001">Liebe</string>
   <string id="31002">Hass</string>
   <string id="31003">Energieoptionen</string>
-  <string id="31004">Lade...</string>
-  <string id="31005">Verstecke INFO</string>
+  <string id="31007">Video Addons</string>
+  <string id="31021">Video Dateien</string>
+  <string id="31024">Seite</string>
+  <string id="31025">Items</string>
+  <string id="31040">Jetzt läuft</string>
+  <string id="31046">Audio Eigenschaften</string>
+  <string id="31047">Aktuelle Einstellungen</string>
+  <string id="31048">Visualisierungs-Einstellungen</string>
+  <string id="31049">Endet um</string>
+  <string id="31053">Jahr</string>
+  <string id="31063">Staffel</string>
+  <string id="31064">Folge</string>
+  <string id="31066">Regisseur</string>
   
+  <string id="31067"></string>
+  <string id="41093">Pfad setzen:</string>
+  <string id="41098">Addons</string>
+  <string id="41099">TV Serien</string>
+  <string id="41100">Disk wiedergeben</string>
+  <string id="41101">Ansicht Optionen</string>
+  <string id="41102">Filme</string>
+  <string id="41104">Musik</string>
+  <string id="41105">Video Plugins</string>
+  <string id="41106">Addons</string>
+  <string id="41107">Ansichten Ein/Aus</string>
+  <string id="41108">Ein</string>
+  <string id="41109">Aus</string>
+  <string id="41110">Get Artwork</string>
+  <string id="41127">Editiere DB</string>
+  <string id="41128">Pfad</string>
+  <string id="41129">Total</string>
+  <string id="41130">Gesehen</string>
+  <string id="41131">Ungesehen</string>
+  <string id="41134">Einstellungen</string>
+  <string id="41148">Trailer</string>
+  <string id="41162">Diverses</string>
+  <string id="41163">Style</string>
+  <string id="41172">HD Filme</string>
+  <string id="41175">Künstler Clear Logos</string>
+  <string id="41176">Musik Pfad</string>
+  <string id="31185">Aufgelistete Serien</string>
+  <string id="31186">Ausstrahlung Heute</string>
+  <string id="31187">TV Guide</string>
+  <string id="41181">Genre zufällig</string>
+  <string id="41182">Film zufällig</string>
+  <string id="41183">Movie Sets</string>
+  <string id="41186">Letzte Alben</string>
+  <string id="41187">Random Addons</string>
+  <string id="41188">- Filme</string>
+  <string id="41189">- TV Serien</string>
+  <string id="41190">- Alben</string>
+  <string id="41191">- Addons</string>
+  <string id="41193">Urheber</string>
+  <string id="41194">Zusammenfassung</string>
+  <string id="41202">Dimme Hintergrund</string>
+  <string id="41208">Cinema Experience</string>
+  <string id="41209">Verlassen</string>
+  <string id="41211">Musik Playlist beim starten</string>
+  <string id="41212">Wähle Musik Playlist</string>
+  <string id="41213">Video Playlist beim starten</string>
+  <string id="41214">Wähle Video Playlist</string>
+  <string id="41219">Derzeit verfolgen</string>
+  <string id="41230">Skin Widgets</string>
+  <string id="41244">Daten Anbieter</string>
+  <string id="41245">Zeige Cases</string>
+  <string id="41250">Erscheinungs Jahre</string>
+  <string id="41251">Status</string>
+  <string id="41252">Total Filme</string>
+  <string id="41253">TV Tunes</string>
+  <string id="41254">Root</string>
+  <string id="41255">Musik Addons</string>
+  <string id="41256">Konzerte</string>
+  <string id="41259">Kleine Info</string>
+  <string id="41260">Unter der Regie von:</string>
+  <string id="41263">CD Wall</string>
+  <string id="41264">CD Wall Pfad</string>
+  <string id="41266">Kleine Pause/Suchbar</string>
+  <string id="41271">Total Staffeln</string>
+  <string id="41272">Studio Flags</string>
+  <string id="41277">Verstecke Infos und Zeit (Breadcrumb Trails)</string>
+  <string id="41279">Letzte Filme Playlist1</string>
+  <string id="41280">Letzte Filme Playlist2</string>
+  <string id="41281">Letzte Filme Playlist3</string>
+  <string id="41282">Letzte TV Playlist1</string>
+  <string id="41283">Letzte TV Playlist2</string>
+  <string id="41284">Letzte TV Playlist3</string>
+  <string id="41285">Links and Eingabe für Schauspieler Info</string>
+  <string id="41286">Schauspieler Info</string>
+  <string id="41300">Schaue später</string>
+  <string id="41301">Höre später</string>
+  <string id="41302">Letzte TV Serien</string>
+  <string id="41303">Latest</string>
+  <string id="41304">Serien</string>
+  <string id="41305">Alben</string>
+  <string id="41306">Künstler</string>
+  <string id="41307">Erscheinungsjahr</string>
+  <string id="41308">Track</string>
+  <string id="41309">Extra Info Home Menü</string>
+  <string id="41310">Nexten Track</string>
+  <string id="41311">Minuten</string>
+  <string id="41312">Info Panel</string>
+  <string id="41313">Info Panel verzögert</string>
+  <string id="41315">Wird ausgestrahlt</string>
+  <string id="41316">Mehr Optionen</string>
+  <string id="41328">Scannen:</string>
+  <string id="41329">Setze Bild:</string>
+  <string id="41330">Setze Pfad:</string>
+  <string id="41331">Letzte Playlisten</string>
+  <string id="41332">Generell</string>
+  <string id="41338">Zeige nexte 5 Tracks</string>
+  <string id="41339">Playlist</string>
+  <string id="41340">Skin erneut laden</string>
+  <string id="41341">Neu</string>
+  <string id="41342">Filmtipps</string>
+  <string id="41343">Watching</string>
+  <string id="41344">Meist gespielte Alben</string>
+  <string id="41345">Version</string>
+  <string id="41346">Addon Typ</string>
+  <string id="41347">1080p</string>
+  <string id="41348">720p</string>
+  <string id="41349">In Progress TV</string>
+  <string id="41352">Filme am laufen</string>
+  <string id="41350">Wide Screen</string>
+  <string id="41351">Deaktiviere In Progress</string>
+  <string id="41353">Home</string>
+  <string id="41354">HD Sound</string>
+  <string id="41355">Letzte</string>
+  <string id="41356">HD</string>
+  <string id="41357">Episodentipps</string>
+  <string id="41358">Albentipps</string>
+  <string id="41359">Schaue Fanart</string>
+  <string id="41360">Artwork Downloader</string>
+  <string id="41361">Cast</string>
+  <string id="41362">Film</string>
+  <string id="41363">TV Serie</string>
+  <string id="41364">am laufen</string>
+  <string id="41365">Skin Einstellungen</string>
+  <string id="41366">Signal</string>
+  <string id="41367">Aufnahmen</string>
+  <string id="41368">Items gefunden</string>
+  <string id="41369">Verhalten Musik Item</string>
+  <string id="41370">Oeffne Musik Alben</string>
+  <string id="41371">Oeffne Musik Künstler</string>
+  <string id="41372">Oeffne Musik Dateien</string>
+  <string id="41014">Home Submenus</string>
+  <string id="41021">Animierte Fanart</string>
+  <string id="31307">Kein Fanart</string>
+  <string id="31309">Memory Used:</string>
+  <string id="31319">Gewähltes Profil</string>
+  <string id="31320">Zuletzt eingeloggt</string>
+  <string id="31321">Karaoke Song Selector</string>
+  <string id="31322">Ausgestrahlt</string>
+  <string id="31323">Letzte Filme</string>
+  <string id="31324">Letzte Episoden</string>
+  <string id="31325">Playlist Optionen</string>
+  <string id="31326">Kreiert</string>
+  <string id="31327">Auflösung</string>
+  <string id="31331">Suche</string>
+  
+   <!-- Quick NAV -->
+   
+  <string id="41317">System info</string>
+  <string id="41318">Quick NAV</string>
+  <string id="41319">Einstellungen</string>
+  <string id="41320">Jetzt läuft</string>
+  <string id="41321">Bilder</string>
+  <string id="41322">Wetter</string>
+  <string id="41323">Nächsten</string>
+  <string id="41324">Studio</string>
+  <string id="41325">Laufzeit</string>
+  <string id="41327">Genre</string>
+  
+   <!-- PVR -->
+   
+  <string id="41150">Aufnehmen</string>
+  <string id="41151">am aufnehmen</string>
+  <string id="41152">Kanal Liste</string>
+  <string id="41153">Teletext</string>
+  <string id="31500">Aufnahme Timers</string>
+  <string id="31501">Scheduled Time</string>
+  <string id="31502">Live TV</string>
+  <string id="31503">Gruppe hinzufügen</string>
+  <string id="31504">Gruppe Umbenennen</string>
+  <string id="31505">Gruppe löschen</string>
+  <string id="31506">Verfügbare Gruppen</string>
+  <string id="31507">Nicht gruppierte Kanäle</string>
+  <string id="31508">Kanäle in Gruppen</string>
+  <string id="31509">Kanal Gruppe</string>
+  <string id="31510">Timer gesetzt</string>
+  
+  <!-- Script labels -->
+  
+  <string id="31200">Verknüpfungen</string>
+  <string id="31201">Kategorien</string>
+  <string id="31202">Zeige Cast</string>
+  <string id="31203">Wähle dein Song</string>
+  <string id="31204"></string>
+  <string id="31205"></string>
+
+  <!-- Video and Music OSD Labels  -->
+  
+  <string id="31351">Pause</string>
+  <string id="31352">Stop</string>
+  <string id="31353">Vorspulen</string>
+  <string id="31354">Zurückspulen</string>
+  <string id="31355">Film Menü</string>
+  <string id="31356">Untertitel runterladen</string>
+  <string id="31358">Aktuelle Zeit</string>
+
+  <!-- Description Labels  -->
+  
+  <string id="31400">[B][B]KONFIGURIERE DARSTELLUNG[/B][CR][CR]Ändere den Skin · Wähle Sprache und Region · Ändere die Dateianzeige[CR]Wähle deinen Blidschirmschoner</string>
+  <string id="31401">[B]KONFIGURIERE VIDEO-EINSTELLUNGEN[/B][CR][CR]Manage deine Video-Datenbank · Wähle Video-Wiedergabe Optionen · Ändere die Video-Darstellung[CR]Wähle die Untertitel-Schrift</string>
+  <string id="31402">[B]KONFIGURIERE MUSIK-EINSTELLUNGEN[/B][CR][CR]Manage deine Musik-Datenbank · Wähle Musik-Wiedergabe Optionen · Ändere die Musik-Darstellung[CR]Konfiguriere die Lied Submission · Wähle Karaoke Optionen</string>
+  <string id="31403">[B]KONFIGURIERE BILDER-EINSTELLUNGEN[/B][CR][CR]Ändere die Bilder-Darstellung · Konfiguriere Diashows</string>
+  <string id="31404">[B]KONFIGURIERE WETTER-EINSTELLUNGEN[/B][CR][CR]Wähle drei Städte für die Wetterdaten</string>
+  <string id="31405">[B]KONFIGURIERE NETZWERK-EINSTELLUNGEN[/B][CR][CR]Konfiguriere Remote via UPnp und HTTP · Konfiguriere Netzwerkfreigaben[CR]Internetzugang konfigurieren</string>
+  <string id="31406">[B]KONFIGURIERE SYSTEM-EINSTELLUNGEN[/B][CR][CR]Kalibriere deinen Display · Setze deine Sound-Einstellungen · Fernbedienung konfigurieren[CR]Energieoptionen · Aktiviere Debugging · Benutzerrechte setzen</string>
+  <string id="31407">[B]KONFIGURIERE SKIN-EINSTELLUNGEN[/B][CR][CR]Konfiguriere Cirrus · Hinzufügen und Entfernen von Hauptmenü-Items[CR]Erstelle Verknüpfungen zu Medienquellen und Addons</string>
+  <string id="31409">[B]KONFIGURIERE TV-EINSTELLUNGEN[/B][CR][CR]Ändere die Vollbild-Anzeige · Manage dein EPG</string>
+  <string id="31410">[B]CONFIGURE ADD-ONS SETTINGS[/B][CR][CR]Change fullscreen info · Manage EPG data settings</string>
+  <string id="31421">Wähle dein XBMC User-Profil[CR]zum einloggen und fahre fort</string>
+  
+  <!-- Button Menu -->
+  
+  <string id="31251">System Info</string>
+  <string id="31252">Abmelden</string>
+  <string id="31253">XBMC verlassen</string>
+  <string id="31254">Datei Manager</string>
+  <string id="31255">XBMC neustarten</string>
+  <string id="31258">System herunterfahren</string>
+  <string id="31259">System Ruhezustand</string>
+  <string id="31260">System Hibernate</string>
+  <string id="31261">System neustarten</string>
+  <string id="31262">Auswurf/Laden</string>
+  <string id="31264">Eingeloggt als</string>
+  <string id="31265">Lösche power timer</string>
+  <string id="31266">Benutzdefiniertes power timer</string>
+  <string id="31267">Herunterfahren in 120 min</string>
+  <string id="31268">Herunterfahren in 60 min</string>
+  <string id="31269">Herunterfahren in 30 min</string>
 		
 </strings>

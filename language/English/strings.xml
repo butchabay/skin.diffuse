@@ -153,7 +153,6 @@
   <string id="41181">Random Genre</string>
   <string id="41182">Random Movie</string>
   <string id="41183">Movie Sets</string>
-  <string id="41185">Search</string>
   <string id="41186">Latest Albums</string>
   <string id="41187">Random Addons</string>
   <string id="41188">- Movies</string>
@@ -169,14 +168,10 @@
   <string id="41212">Set Music Playlist</string>
   <string id="41213">Video Playlist at Startup</string>
   <string id="41214">Set Video Playlist</string>
-  <string id="41216">Set Video or Playlist</string>
-  <string id="41218">Remove Weather</string>
   <string id="41219">Currently Watching</string>
-  <string id="41220">Movies In Progress</string>
   <string id="41230">Skin Widgets on Home</string>
   <string id="41244">Data Provider</string>
   <string id="41245">Show Cases</string>
-  <string id="41246">Clear Cases</string>
   <string id="41250">Release Years</string>
   <string id="41251">Status</string>
   <string id="41252">Total Movies</string>
@@ -184,7 +179,6 @@
   <string id="41254">Root</string>
   <string id="41255">Music Addons</string>
   <string id="41256">Concerts</string>
-  <string id="41257">Current</string>
   <string id="41259">Slim Info</string>
   <string id="41260">Directed By:</string>
   <string id="41263">CD Wall</string>
@@ -193,12 +187,12 @@
   <string id="41271">Total Seasons</string>
   <string id="41272">Studio Flags</string>
   <string id="41277">Hide Breadcrumb Trails and Clock</string>
-  <string id="41279">Latest Custom Movie Playlist1</string>
-  <string id="41280">Latest Custom Movie Playlist2</string>
-  <string id="41281">Latest Custom Movie Playlist3</string>
-  <string id="41282">Latest Custom TV Playlist1</string>
-  <string id="41283">Latest Custom TV Playlist2</string>
-  <string id="41284">Latest Custom TV Playlist3</string>
+  <string id="41279">Latest Movie Playlist1</string>
+  <string id="41280">Latest Movie Playlist2</string>
+  <string id="41281">Latest Movie Playlist3</string>
+  <string id="41282">Latest TV Playlist1</string>
+  <string id="41283">Latest TV Playlist2</string>
+  <string id="41284">Latest TV Playlist3</string>
   <string id="41285">Press left and enter for Actor Info</string>
   <string id="41286">Actor Info</string>
   <string id="41300">Watch Later</string>
@@ -215,7 +209,6 @@
   <string id="41311">Minutes</string>
   <string id="41312">Info Panel</string>
   <string id="41313">Info Panel Delay</string>
-  <string id="41314">More Options</string>
   <string id="41315">Airs Next On</string>
   <string id="41316">More Options</string>
   <string id="41328">Now Scanning:</string>
