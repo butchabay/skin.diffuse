@@ -17,7 +17,7 @@
 			<control type="wraplist" id="9010">
 			<posx>-200</posx>
 			<posy>205</posy>
-			<width>500</width>
+			<width>260</width>
 			<height>446</height>
 			<onleft>9000</onleft>
 			<onright>9000</onright>
@@ -94,7 +94,7 @@
 			<control type="wraplist" id="9010">
 			<posx>-200</posx>
 			<posy>205</posy>
-			<width>500</width>
+			<width>260</width>
 			<height>446</height>
 			<onleft>9000</onleft>
 			<onright>8025</onright>
@@ -159,7 +159,7 @@
 			<control type="wraplist" id="9010">
 			<posx>-200</posx>
 			<posy>205</posy>
-			<width>500</width>
+			<width>260</width>
 			<height>446</height>
 			<onleft>9000</onleft>
 			<onright>8061</onright>
@@ -238,7 +238,7 @@
 			<control type="wraplist" id="9010">
 			<posx>-200</posx>
 			<posy>205</posy>
-			<width>500</width>
+			<width>260</width>
 			<height>446</height>
 			<onleft>9000</onleft>
 			<onright>9000</onright>
@@ -310,7 +310,7 @@
 			<control type="wraplist" id="9010">
 			<posx>-200</posx>
 			<posy>205</posy>
-			<width>500</width>
+			<width>260</width>
 			<height>446</height>
 			<onleft>9000</onleft>
 			<onright>8005</onright>
@@ -432,7 +432,7 @@
 			<control type="wraplist" id="9010">
 			<posx>-200</posx>
 			<posy>205</posy>
-			<width>500</width>
+			<width>260</width>
 			<height>446</height>
 			<onleft>9000</onleft>
 			<onright>8041</onright>
@@ -639,7 +639,7 @@
 			<control type="wraplist" id="9010">
 			<posx>-200</posx>
 			<posy>205</posy>
-			<width>500</width>
+			<width>260</width>
 			<height>446</height>
 			<onleft>9000</onleft>
 			<onright>8051</onright>
