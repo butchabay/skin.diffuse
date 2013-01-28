@@ -417,7 +417,7 @@
 				<textcolor>grey</textcolor>
 				<focusedcolor>white</focusedcolor>
 			    <font>diffuse_24_bold</font>
-				<label>[B]$LOCALIZE[41103][/B]</label>
+				<label>[B]$LOCALIZE[41099][/B]</label>
 				<align>left</align>
 				<texturefocus>osd/media-guide/mediaguide-fo.png</texturefocus>
 				<texturenofocus>-</texturenofocus>

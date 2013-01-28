@@ -499,7 +499,7 @@
 						<visible>!Skin.HasSetting(hidemovieyears)</visible>
 					</item>
 					<item id="90166">
-						<label>31328</label>
+						<label>31323</label>
 						<onclick>ActivateWindow(VideoLibrary,RecentlyAddedMovies,return)</onclick>
 						<visible>!Skin.HasSetting(hidemovierecently)</visible>
 					</item>

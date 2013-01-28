@@ -1426,7 +1426,7 @@
 					<control type="radiobutton" id="501">
 						<description>custom home 1</description>
 						<include>DiffuseButtonsSettings</include>
-						<label>41066</label>
+						<label>41057</label>
 						<onfocus>Skin.SetString(MoviesCustom,1)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Custom1)</onclick>
 						<selected>Skin.HasSetting(Menu_Custom1)</selected>
@@ -1452,7 +1452,7 @@
 					<control type="radiobutton" id="502">
 						<description>custom home 2</description>
 						<include>DiffuseButtonsSettings</include>
-						<label>41067</label>
+						<label>41060</label>
 						<onfocus>Skin.SetString(MoviesCustom,2)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Custom2)</onclick>
 						<selected>Skin.HasSetting(Menu_Custom2)</selected>
@@ -1479,7 +1479,7 @@
 					<control type="radiobutton" id="503">
 						<description>custom home 3</description>
 						<include>DiffuseButtonsSettings</include>
-						<label>41068</label>
+						<label>41061</label>
 						<onfocus>Skin.SetString(MoviesCustom,3)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Custom3)</onclick>
 						<selected>Skin.HasSetting(Menu_Custom3)</selected>
@@ -1505,7 +1505,7 @@
 					<control type="radiobutton" id="507">
 						<description>custom home 7</description>
 						<include>DiffuseButtonsSettings</include>
-						<label>41069</label>
+						<label>41062</label>
 						<onfocus>Skin.SetString(MoviesCustom,7)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Custom7)</onclick>
 						<selected>Skin.HasSetting(Menu_Custom7)</selected>
@@ -1532,7 +1532,7 @@
 					<control type="radiobutton" id="508">
 						<description>custom home 8</description>
 						<include>DiffuseButtonsSettings</include>
-						<label>41071</label>
+						<label>41063</label>
 						<onfocus>Skin.SetString(MoviesCustom,8)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Custom8)</onclick>
 						<selected>Skin.HasSetting(Menu_Custom8)</selected>
@@ -2227,7 +2227,7 @@
 					</control>
 					<control type="radiobutton" id="489">
 						<include>DiffuseButtonsSettings</include>
-						<label>41054</label>
+						<label>41028</label>
 						<onclick>Skin.ToggleSetting(MovieScriptButton1)</onclick>
 						<selected>Skin.HasSetting(MovieScriptButton1)</selected>
 						<visible>Skin.HasSetting(MovieItems)</visible>
@@ -2249,7 +2249,7 @@
 					</control>
 					<control type="radiobutton" id="492">
 						<include>DiffuseButtonsSettings</include>
-						<label>41055</label>
+						<label>41029</label>
 						<onclick>Skin.ToggleSetting(MovieScriptButton2)</onclick>
 						<selected>Skin.HasSetting(MovieScriptButton2)</selected>
 						<visible>Skin.HasSetting(MovieItems)</visible>
@@ -2271,7 +2271,7 @@
 					</control>
 					<control type="radiobutton" id="495">
 						<include>DiffuseButtonsSettings</include>
-						<label>41056</label>
+						<label>41030</label>
 						<onclick>Skin.ToggleSetting(MovieScriptButton3)</onclick>
 						<selected>Skin.HasSetting(MovieScriptButton3)</selected>
 						<visible>Skin.HasSetting(MovieItems)</visible>
@@ -2925,7 +2925,7 @@
 					<control type="label" id="1043">
 					<description>Movies and TV Shows</description>
 						<include>DiffuseButtonsSettings3</include>
-						<label>$LOCALIZE[41102] / $LOCALIZE[41103]</label>
+						<label>$LOCALIZE[41102] / $LOCALIZE[41099]</label>
 						<aligny>center</aligny>
 					</control>
 					<control type="radiobutton" id="1045">

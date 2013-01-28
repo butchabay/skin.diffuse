@@ -209,7 +209,7 @@
               <width>570</width>
               <height>30</height>
               <font>diffuse_18_rss</font>
-              <label>[LOWERCASE]$LOCALIZE[41326][/LOWERCASE] [UPPERCASE][COLOR=lightgrey]$INFO[Listitem.Director][/COLOR][/UPPERCASE]</label>
+              <label>[LOWERCASE]$LOCALIZE[31066][/LOWERCASE] [UPPERCASE][COLOR=lightgrey]$INFO[Listitem.Director][/COLOR][/UPPERCASE]</label>
               <align>left</align>
               <aligny>center</aligny>
               <textcolor>grey2</textcolor>
