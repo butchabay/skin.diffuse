@@ -460,7 +460,7 @@
             <font>diffuse_16_rss</font>
             <align>left</align>
             <aligny>center</aligny>
-            <textcolor>lightgrey</textcolor>
+            <textcolor>grey2</textcolor>
             <selectedcolor>white</selectedcolor>
             <info>ListItem.Property(Number)</info>
             <visible>!ListItem.Property(ActiveChannel)</visible>
@@ -473,7 +473,7 @@
             <font>diffuse_16_rss</font>
             <align>left</align>
             <aligny>center</aligny>
-            <textcolor>lightgrey</textcolor>
+            <textcolor>grey2</textcolor>
             <selectedcolor>white</selectedcolor>
             <info>ListItem.Property(Number)</info>
             <visible>ListItem.Property(ActiveChannel)</visible>
@@ -486,7 +486,7 @@
             <font>diffuse_16_rss</font>
             <align>left</align>
             <aligny>center</aligny>
-            <textcolor>lightgrey</textcolor>
+            <textcolor>grey2</textcolor>
             <selectedcolor>white</selectedcolor>
             <info>ListItem.Property(Name)</info>
             <visible>!ListItem.Property(ActiveChannel)</visible>
@@ -499,7 +499,7 @@
             <font>diffuse_16_rss</font>
             <align>left</align>
             <aligny>center</aligny>
-            <textcolor>lightgrey</textcolor>
+            <textcolor>grey2</textcolor>
             <selectedcolor>white</selectedcolor>
             <info>ListItem.Property(Name)</info>
             <visible>ListItem.Property(ActiveChannel)</visible>

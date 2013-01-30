@@ -5,19 +5,19 @@
   
   <!-- Playlist Editor labels -->
   
-  <string id="31055">Oeffne playlist</string>
-  <string id="31056">Speichere playlist</string>
-  <string id="31057">Schliesse playlist</string>
-  <string id="31058">System music files</string>
+  <string id="31055">Oeffne Playlist</string>
+  <string id="31056">Speichere Playlist</string>
+  <string id="31057">Schliesse Playlist</string>
+  <string id="31058">System Musik Dateien</string>
   <string id="31059">Aktuelle playlist</string>
   <string id="31060"></string>
   <string id="31061"></string>
  
   <!-- Skin Settings labels -->
   
-  <string id="31102">Hintergrund</string>
+  <string id="31102">Hintergründe</string>
   <string id="31103">Zeige "Pause" in Diashow</string>
-  <string id="31104">Schaue Trailer</string>
+  <string id="31104">Starte Trailer</string>
   <string id="31108">Verstecke Hauptmenü-Tasten</string>
   <string id="31111">Verstecke</string>
   <string id="31113">Einzelnes Bild</string>
@@ -29,7 +29,7 @@
   <string id="31128">XBMC Lyrics</string>
   <string id="31129">Untertitel herunterladen in Video-OSD</string>
   <string id="31130">Pfad zo Untertitel Skript</string>
-  <string id="41000">Submenu</string>
+  <string id="41000">Submenü</string>
   <string id="41002">Hauptmenü</string>
   <string id="41004">Extended</string>
   <string id="41005">Extras</string>
@@ -41,13 +41,13 @@
   <!-- Home Items Power  -->
    
   <string id="41022">Energie</string>
-  <string id="41023">Disk wiedergeben</string>
+  <string id="41023">Disk Wiedergabe</string>
   <string id="41024">Favoriten</string>
   <string id="41026">Spiele</string>
   
  <!-- Settings (Addons Submenus)  -->
  
-  <string id="41027">Addons Submenu</string>
+  <string id="41027">Addons Submenü</string>
   <string id="41028">Addon 1</string>
   <string id="41029">Addon 2</string>
   <string id="41030">Addon 3</string>
@@ -64,7 +64,7 @@
   
    <!-- Settings (Movie Submenus)  -->
    
-  <string id="41038">Movie Submenu</string>
+  <string id="41038">Movie Submenü</string>
   <string id="41039">Deaktiviere Video Dateien</string>
   <string id="41040">Deaktiviere Titel</string>
   <string id="41041">Deaktiviere Genre</string>
@@ -83,7 +83,7 @@
   
    <!-- Settings (Movie Submenus Favourites)  -->
    
-  <string id="41057">Wähle Favorit 1</string>
+  <string id="41057">Favorit 1</string>
   <string id="41058"> - Label zuweisen</string>
   <string id="41059"> - Favorit zuweisen</string>
   <string id="41060">Favorit 2</string>
@@ -93,8 +93,8 @@
   
    <!-- Settings (Submenus)  -->
    
-  <string id="41064"></string>
-  <string id="41070"></string>
+  <string id="41064">TV Serien Submenü</string>
+  <string id="41070">- Setze Playlist</string>
   <string id="41072">Playlist 1 (Filme)</string>
   <string id="41073">Playlist 2 (Filme)</string>
   <string id="41074">Playlist 3 (Filme)</string>
@@ -105,7 +105,7 @@
   <string id="41079">Playlist 8</string>
   
   <!-- Misc  -->
-  <string id="31000">Ändere deine</string>
+  
   <string id="31001">Liebe</string>
   <string id="31002">Hass</string>
   <string id="31003">Energieoptionen</string>
@@ -122,12 +122,11 @@
   <string id="31063">Staffel</string>
   <string id="31064">Folge</string>
   <string id="31066">Regisseur</string>
-  
-  <string id="31067"></string>
+  <string id="31067">Typ</string>
   <string id="41093">Pfad setzen:</string>
   <string id="41098">Addons</string>
   <string id="41099">TV Serien</string>
-  <string id="41100">Disk wiedergeben</string>
+  <string id="41100">Disk Wiedergabe</string>
   <string id="41101">Ansicht Optionen</string>
   <string id="41102">Filme</string>
   <string id="41104">Musik</string>
@@ -136,7 +135,7 @@
   <string id="41107">Ansichten Ein/Aus</string>
   <string id="41108">Aktiviere</string>
   <string id="41109">Deaktiviere</string>
-  <string id="41110">Get Artwork</string>
+  <string id="41110">Hole Artwork</string>
   <string id="41127">Editiere DB</string>
   <string id="41128">Pfad</string>
   <string id="41129">Total</string>

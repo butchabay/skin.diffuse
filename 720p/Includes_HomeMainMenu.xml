@@ -41,7 +41,7 @@
 			<onright condition="Container(9000).Hasfocus(11)">8011</onright>									<!-- !!! PL 6 TV !!! -->
 			<onup>9000</onup>
 			<ondown>9000</ondown>
-			<scrolltime tween="sine">450</scrolltime>
+			<scrolltime tween="sine">300</scrolltime>
 			<focusposition>2</focusposition>
             <animation effect="fade" start="100" end="0" time="300" condition="ControlGroup(9001).HasFocus">conditional</animation>
 			<animation effect="fade" start="0" end="100" time="300" condition="!ControlGroup(9001).HasFocus">conditional</animation>

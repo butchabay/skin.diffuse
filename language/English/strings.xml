@@ -316,7 +316,8 @@
   <string id="31356">Download Subtitles</string>
   <string id="31358">Current Time</string>
 
-  <!-- Description Labels  -->
+ 
+ <!-- Description Labels  -->
   
   <string id="31400">[B]CONFIGURE APPEARANCE SETTINGS[/B][CR][CR]Change the skin · Set language and region · Change file listing options[CR]Set up a screensaver</string>
   <string id="31401">[B]CONFIGURE VIDEO SETTINGS[/B][CR][CR]Manage your video library · Set video playback options · Change video listing options[CR]Set subtitle fonts</string>
