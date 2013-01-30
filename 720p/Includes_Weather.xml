@@ -224,7 +224,7 @@
           <width>400</width>
           <height>35</height>
           <font>diffuse_14_rss</font>
-          <textcolor>grey2</textcolor>
+          <textcolor>darkgrey2</textcolor>
           <scroll>false</scroll>
           <align>center</align>
           <aligny>center</aligny>
