@@ -1,14 +1,14 @@
 <window id="2">
 <defaultcontrol always="true">55</defaultcontrol>
 <allowoverlay>no</allowoverlay>
-<views>55,511</views>
+<views>55</views>
 <visible>!Skin.HasSetting(kiosk)</visible>
 
 
 <controls>
     <include>PictureBackgrounds</include>
 	<include>CommonRootView</include> <!-- view id = 55 -->
-	<include>PictureThumbView</include> <!-- view id = 55 -->
+	
     <include condition="!Skin.HasSetting(nobreadcrumb)">Breadcrumps</include>
  
 	<control type="image"> <!-- Background Overlay -->
