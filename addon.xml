@@ -14,8 +14,8 @@
   <extension point="xbmc.addon.metadata">
   <res width="1080" height="720" aspect="16:9" default="true" folder="720p" /> 
   <summary lang="en">skin created by butchabay</summary> 
-  <description lang="en">a new skin for xbmc</description>
-  <disclaimer lang="en">no official skin use at your own risk.</disclaimer>
+  <description lang="en">a new skin for xbmc 12 frodo</description>
+  <disclaimer lang="en">this is not a fanart skin</disclaimer>
   <platform>all</platform> 
   </extension>
 </addon>
