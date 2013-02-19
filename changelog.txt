@@ -9,7 +9,15 @@ Changelog: GIT735e9b12132b17eb7e043346230494c6e933c115 (28.01.2013)
 - Colors
 - Themes
 - Dialogs
-- Translations po files
+
+Changelog: 1.0.0 (19.02.2013)
+
+- PVR
+- Dialogs
+- Bugfixes
+- Strings
+- Release
+
 
 
 

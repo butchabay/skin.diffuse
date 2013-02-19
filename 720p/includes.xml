@@ -8,7 +8,6 @@
   <include file="Views_Tripanel.xml" />
   <include file="ViewsFileMode.xml" />
   <include file="ViewsMusic.xml" />
-  <include file="ViewsPictures.xml" />
   <include file="Includes_HomeMainMenu.xml" />
   <include file="Includes_HomeSubmenu.xml" />
   <include file="Includes_SkinWidgetsMovies.xml" />
