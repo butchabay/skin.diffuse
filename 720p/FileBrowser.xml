@@ -80,7 +80,7 @@
 			<width>689</width>
 			<height>341</height>
 			<onup>450</onup>
-			<onleft>-</onleft>
+			<onleft>noop</onleft>
 			<onright>9000</onright>
 			<ondown>450</ondown>
 			<scrolltime>0</scrolltime>

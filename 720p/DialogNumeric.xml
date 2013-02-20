@@ -264,7 +264,7 @@
         <ondown>22</ondown>
       </control>
       <control type="button" id="21">
-        <description>Done button</description>
+        <description><onright>noop</onright> button</description>
         <posx>180</posx>
         <posy>120</posy>
         <width>60</width>

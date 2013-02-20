@@ -76,7 +76,7 @@
 				<posx>30</posx>
 				<posy>135</posy>
 				<control type="button" id="300">
-					<description>DONE button</description>
+					<description><onright>noop</onright> button</description>
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>200</width>

@@ -93,7 +93,7 @@
 <posy>97</posy>
 <width>300</width>
 <font>diffuse_18_rss</font>
-<label>[COLOR=grey2]$LOCALIZE[41325]: [/COLOR]$INFO[ListItem.Duration] $LOCALIZE[41311]</label>
+<label>[COLOR=grey2]$LOCALIZE[41325]: [/COLOR]$INFO[ListItem.Duration] $LOCALIZE[41373]</label>
 <textcolor>grey2</textcolor>
 <align>left</align>
 <visible>!substring(Container.Listitem.Label,..,left) + !IsEmpty(ListItem.foldername)</visible>
@@ -160,7 +160,7 @@
 <posy>97</posy>
 <width>300</width>
 <font>diffuse_18_rss</font>
-<label>[COLOR=grey2]$LOCALIZE[41325]: [/COLOR]$INFO[ListItem.Duration] $LOCALIZE[41311]</label>
+<label>[COLOR=grey2]$LOCALIZE[41325]: [/COLOR]$INFO[ListItem.Duration] $LOCALIZE[41373]</label>
 <textcolor>grey2</textcolor>
 <align>left</align>
 <visible>!substring(Container.Listitem.Label,..,left) + !IsEmpty(ListItem.foldername)</visible>

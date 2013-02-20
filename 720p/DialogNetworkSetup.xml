@@ -240,7 +240,7 @@
 				<height>37</height>	
 				<onup>19</onup>
 				<onleft>10</onleft>
-				<onright>-</onright>
+				<onright>noop</onright>
 				<ondown>19</ondown>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -261,7 +261,7 @@
 				<height>37</height>	
 				<onup>18</onup>
 				<onleft>10</onleft>
-				<onright>-</onright>
+				<onright>noop</onright>
 				<ondown>18</ondown>
 				<align>center</align>
 				<aligny>center</aligny>

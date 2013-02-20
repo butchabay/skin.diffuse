@@ -2,7 +2,7 @@
 
  <include file="Includes_Animations.xml" />
  
-  <include file="defaults.xml" />
+  <include file="Defaults.xml" />
   
   <include file="Views_Diffuse.xml" />
   <include file="Views_Tripanel.xml" />
@@ -151,7 +151,7 @@
     <textwidth>280</textwidth>
     <aligny>center</aligny>
     <font>diffuse_24_bold</font>
-    <texturefocus>windows/common/list_fo.png</texturefocus>
+    <texturefocus>list_fo.png</texturefocus>
 	<texturenofocus>-</texturenofocus>
     <focusedcolor>grey2</focusedcolor>
 	<textcolor>grey</textcolor>
@@ -166,7 +166,7 @@
     <textwidth>280</textwidth>
     <aligny>center</aligny>
     <font>diffuse_24_title_bold</font>
-    <texturefocus>windows/common/list_fo.png</texturefocus>
+    <texturefocus>list_fo.png</texturefocus>
 	<colordiffuse>diffuse1</colordiffuse>
 	<texturenofocus>-</texturenofocus>
     <focusedcolor>grey2</focusedcolor>
@@ -182,7 +182,7 @@
 	<font>diffuse_20_bold</font>
 	<textcolor>grey</textcolor>
 	<focusedcolor>grey2</focusedcolor>
-    <texturefocus>windows/common/list_fo.png</texturefocus>
+    <texturefocus>list_fo.png</texturefocus>
 	<texturenofocus>dialogs/context/listline.png</texturenofocus>
 	<disabledcolor>midgrey</disabledcolor>
   </include>
@@ -194,7 +194,7 @@
 	<textoffsetx>15</textoffsetx>
 	<textcolor>grey</textcolor>
 	<focusedcolor>grey2</focusedcolor>
-    <texturefocus>windows/common/list_fo.png</texturefocus>
+    <texturefocus>list_fo.png</texturefocus>
 	<texturenofocus>dialogs/context/listline.png</texturenofocus>
 	<disabledcolor>midgrey</disabledcolor>
   </include>
@@ -206,7 +206,7 @@
 	<textoffsetx>15</textoffsetx>
 	<textcolor>grey</textcolor>
 	<focusedcolor>grey2</focusedcolor>
-    <texturefocus>windows/common/list_fo.png</texturefocus>
+    <texturefocus>list_fo.png</texturefocus>
 	<texturenofocus>dialogs/context/listline.png</texturenofocus>
 	<disabledcolor>midgrey</disabledcolor>
   </include>
@@ -218,7 +218,7 @@
 	<font>diffuse_18_title_bold</font>
 	<textcolor>grey</textcolor>
 	<focusedcolor>grey2</focusedcolor>
-    <texturefocus>windows/common/list_fo.png</texturefocus>
+    <texturefocus>list_fo.png</texturefocus>
 	<texturenofocus>-</texturenofocus>
 	<disabledcolor>midgrey</disabledcolor>
   </include>
@@ -232,7 +232,7 @@
 	<textcolor>grey2</textcolor>
 	<disabledcolor>grey2</disabledcolor>
 	<focusedcolor>-</focusedcolor>
-    <texturefocus>windows/common/list_fo.png</texturefocus>
+    <texturefocus>list_fo.png</texturefocus>
 	<texturenofocus>dialogs/context/listline.png</texturenofocus>
   </include>
   
@@ -245,7 +245,7 @@
 	<textcolor>grey</textcolor>
 	<disabledcolor>grey2</disabledcolor>
 	<focusedcolor>-</focusedcolor>
-    <texturefocus>windows/common/list_fo.png</texturefocus>
+    <texturefocus>list_fo.png</texturefocus>
 	<texturenofocus>dialogs/context/listline.png</texturenofocus>
   </include>
   

@@ -151,7 +151,7 @@
         <posy>140</posy>
         <width>560</width>
         <height>460</height>
-        <onleft>-</onleft>
+        <onleft>noop</onleft>
         <onright>21</onright>
         <onup>20</onup>
         <ondown>20</ondown>
@@ -279,7 +279,7 @@
         <width>660</width>
         <height>460</height>
         <onleft>20</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
         <onup>21</onup>
         <ondown>21</ondown>
         <pagecontrol>31</pagecontrol>

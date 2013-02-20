@@ -16,7 +16,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture>windows\weather\weather_panel.png</texture>
+			<texture>windows/weather/weather_panel.png</texture>
 		  </control>
       <control type="group">
         <posx>120</posx>

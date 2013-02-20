@@ -36,7 +36,7 @@
 				<font>diffuse_24_title_bold</font>
 				<textcolor>white</textcolor>
 				<align>right</align>
-				<label>loading</label>
+				<label>$LOCALIZE[41404]</label>
 			</control>
 	       <control type="image">
 				<description>Busy animation</description>

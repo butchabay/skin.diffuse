@@ -42,7 +42,7 @@
         <posy>0</posy>
         <width>1280</width>
         <height>720</height>
-        <texture>info/settings_panel-custom.png</texture>
+        <texture>settings_panel-custom.png</texture>
 		<aspectratio>stretch</aspectratio>
       </control>
 	   <control type="label">
@@ -96,7 +96,7 @@
 					<control type="image">
 						<width>263</width>
 						<height>50</height>
-						 <texture>windows/common/list_fo.png</texture>
+						 <texture>list_fo.png</texture>
 					</control>
 					<control type="label">
 						<posx>10</posx>
@@ -112,31 +112,31 @@
 			 	<content>
 				<item id="1">
 					<label>128</label>
-					<onclick>-</onclick>
+					<onclick>noop</onclick>
 				</item>
 				<item id="2">
 					<label>41353</label>
-					<onclick>-</onclick>
+					<onclick>noop</onclick>
 				</item>
 				<item id="3">
 					<label>31102</label>
-					<onclick>-</onclick>
+					<onclick>noop</onclick>
 				</item>
 				<item id="4">
 					<label>41002</label>
-					<onclick>-</onclick>
+					<onclick>noop</onclick>
 				</item>
 				<item id="5">
 					<label>41000</label>
-					<onclick>-</onclick>
+					<onclick>noop</onclick>
 				</item>
 				<item id="6">
 					<label>41004</label>
-					<onclick>-</onclick>
+					<onclick>noop</onclick>
 				</item>
 				<item id="7">
 					<label>41101</label>
-					<onclick>-</onclick>
+					<onclick>noop</onclick>
 				</item>
 			</content>
 		</control>
@@ -2931,14 +2931,14 @@
 					<control type="radiobutton" id="1045">
 						<description>Fanart Diffuse</description>
 						<include>DiffuseButtonsSettings</include>
-						<label>Fanart Diffuse</label>
+						<label>$LOCALIZE[41402]</label>
 						<onclick>Skin.ToggleSetting(fanartdiffuse)</onclick>
 						<selected>Skin.HasSetting(fanartdiffuse)</selected>
 					</control> 
 					<control type="radiobutton" id="1046">
 						<description>TriPanel</description>
 						<include>DiffuseButtonsSettings</include>
-						<label>Tripanel</label>
+						<label>$LOCALIZE[41403]</label>
 						<onclick>Skin.ToggleSetting(tripanel)</onclick>
 						<selected>Skin.HasSetting(tripanel)</selected>
 					</control> 

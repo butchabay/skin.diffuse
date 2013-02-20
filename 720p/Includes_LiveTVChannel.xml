@@ -3,7 +3,7 @@
 	<include name="LiveTVChannel">
 	
 			
-			<!---------------------------------------------------------  TV CHANNEL GROUP  ------------------------------------------------------------------------------->
+			<!-- TV CHANNEL GROUP -->
 			
 			    <control type="group">
 				<description>TV Channels group</description>
@@ -72,7 +72,7 @@
 					<posy>85</posy>
 					<width>500</width>
 					<height>445</height>
-					<onleft>-</onleft>
+					<onleft>noop</onleft>
 					<onright>32</onright>
 					<onup>11</onup>
 					<ondown>11</ondown>

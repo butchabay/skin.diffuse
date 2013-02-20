@@ -24,7 +24,7 @@
 						<height>200</height>
 						<onleft>9000</onleft>
 						<onright>8020</onright>
-						<onup>-</onup>
+						<onup>noop</onup>
 						<ondown>8042</ondown>
 						<align>left</align>
 						<orientation>horizontal</orientation>
@@ -204,7 +204,7 @@
 						<height>200</height>
 						<onleft>9000</onleft>
 						<onright>8030</onright>
-						<onup>-</onup>
+						<onup>noop</onup>
 						<ondown>8043</ondown>
 						<align>left</align>
 						<orientation>horizontal</orientation>
@@ -394,7 +394,7 @@
 						<height>200</height>
 						<onleft>9000</onleft>
 						<onright>8000</onright>
-						<onup>-</onup>
+						<onup>noop</onup>
 						<ondown>8041</ondown>
 						<align>left</align>
 						<orientation>horizontal</orientation>

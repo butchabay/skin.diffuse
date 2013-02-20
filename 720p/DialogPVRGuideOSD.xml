@@ -72,8 +72,8 @@
 				<posy>64</posy>
 				<width>390</width>
 				<height>350</height>
-				<onleft>-</onleft>
-				<onright>-</onright>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
 				<onup>11</onup>
 				<ondown>11</ondown>
 				<viewtype label="535">list</viewtype>

@@ -25,7 +25,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture>info/settings_panel-custom.png</texture>
+			<texture>settings_panel-custom.png</texture>
 			<aspectratio>stretch</aspectratio>
 		</control>
 		<control type="image">
@@ -34,7 +34,7 @@
 			<width>760</width>
 			<height>41</height>
 			<aspectratio>keep</aspectratio>
-			<texture>info/infobar2.png</texture>
+			<texture>infobar2.png</texture>
 			<colordiffuse>60FFFFFF</colordiffuse>
 		</control>
 		
@@ -197,7 +197,7 @@
               <width>570</width>
               <height>30</height>
               <font>diffuse_18_rss</font>
-              <label>[LOWERCASE]$LOCALIZE[41325][/LOWERCASE] [UPPERCASE][COLOR=lightgrey]$INFO[Listitem.Duration] minutes[/COLOR][/UPPERCASE]</label>
+              <label>[LOWERCASE]$LOCALIZE[41325][/LOWERCASE] [UPPERCASE][COLOR=lightgrey]$INFO[Listitem.Duration] $LOCALIZE[41373][/COLOR][/UPPERCASE]</label>
               <align>left</align>
               <aligny>center</aligny>
               <textcolor>grey2</textcolor>
@@ -472,7 +472,7 @@
               <width>570</width>
               <height>30</height>
               <font>diffuse_18_rss</font>
-              <label>$LOCALIZE[41325] [COLOR=lightgrey]$INFO[Listitem.Duration] minutes[/COLOR]</label>
+              <label>$LOCALIZE[41325] [COLOR=lightgrey]$INFO[Listitem.Duration] $LOCALIZE[41373][/COLOR]</label>
               <align>left</align>
               <aligny>center</aligny>
               <textcolor>grey2</textcolor>
@@ -809,7 +809,7 @@
 			<align>left</align>
 		    <aligny>center</aligny>
             <include>ButtonCommonValuesInfo</include>
-			<label>Cinema</label>
+			<label>$LOCALIZE[41381]</label>
 			<onclick>Playlist.Clear</onclick>
 			<onclick>Dialog.Close(MovieInformation)</onclick>
 			<onclick>XBMC.RunScript(script.cinema.experience)</onclick>

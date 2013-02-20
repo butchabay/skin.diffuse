@@ -122,7 +122,7 @@
 					<posx>-31</posx>
 					<posy>90</posy>
 					<include>ButtonCommonValuesMediaMenu</include>
-					<label>Settings</label>
+					<label>$LOCALIZE[41134]</label>
 					<onclick>DialogClose()</onclick>
 					<onclick>ActivateWindow(Settings)</onclick>
 					<onleft>6000</onleft>

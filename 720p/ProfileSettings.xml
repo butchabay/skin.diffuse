@@ -114,7 +114,7 @@
       <itemgap>-1</itemgap>
       <pagecontrol>-</pagecontrol>
       <onleft>28</onleft>
-      <onright>-</onright>
+      <onright>noop</onright>
       <onup>29</onup>
       <ondown>28</ondown>
     </control>
@@ -169,8 +169,8 @@
 	  <texturenofocus>dialogs/context/listline.png</texturenofocus>
 	  <align>center</align>
       <label>186</label>
-	  <onleft>-</onleft>
-      <onright>-</onright>
+	  <onleft>noop</onleft>
+      <onright>noop</onright>
       <onup>5</onup>
       <ondown>29</ondown>
     </control>
@@ -187,8 +187,8 @@
 	  <texturenofocus>dialogs/context/listline.png</texturenofocus>
 	  <align>center</align>
       <label>222</label>
-      <onleft>-</onleft>
-      <onright>-</onright>
+      <onleft>noop</onleft>
+      <onright>noop</onright>
       <onup>28</onup>
       <ondown>5</ondown>
     </control>

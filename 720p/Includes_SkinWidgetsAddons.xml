@@ -24,7 +24,7 @@
 					<height>200</height>
 					<onleft>9000</onleft>
 					<onright>8005</onright>
-					<onup>-</onup>
+					<onup>noop</onup>
 					<ondown>9000</ondown>
 					<align>left</align>
 					<orientation>horizontal</orientation>
@@ -166,7 +166,7 @@
 					<onleft>9000</onleft>
 					<onright>9000</onright>
 					<onup>8005</onup>
-					<ondown>-</ondown>
+					<ondown>noop</ondown>
 				</control>
 				<control type="image">
 					<posx>105</posx>

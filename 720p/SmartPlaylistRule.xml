@@ -60,7 +60,7 @@
 		<texturefocus>-</texturefocus>
 		<texturenofocus>-</texturenofocus>
         <onright>9000</onright>
-        <onleft>-</onleft>
+        <onleft>noop</onleft>
         <onup>17</onup>
         <ondown>16</ondown>
       </control>
@@ -86,7 +86,7 @@
         <texturefocus>-</texturefocus>
         <texturenofocus>-</texturenofocus>
         <onright>9000</onright>
-        <onleft>-</onleft>
+        <onleft>noop</onleft>
         <onup>15</onup>
         <ondown>17</ondown>
       </control>
@@ -156,7 +156,7 @@
 		  <disabledcolor>midgrey</disabledcolor>
           <onup>9000</onup>
           <onleft>17</onleft>
-          <onright>-</onright>
+          <onright>noop</onright>
           <ondown>9000</ondown>
     </control>
     <control type="group" id="9000">
@@ -179,7 +179,7 @@
 		  <disabledcolor>midgrey</disabledcolor>
           <onup>20</onup>
           <onleft>17</onleft>
-          <onright>-</onright>
+          <onright>noop</onright>
           <ondown>19</ondown>
       </control>
       <control type="button" id="19">
@@ -201,7 +201,7 @@
 		  <disabledcolor>midgrey</disabledcolor>
         <onup>18</onup>
         <onleft>17</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
         <ondown>20</ondown>
       </control>
     </control>

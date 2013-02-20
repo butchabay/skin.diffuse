@@ -1,5 +1,6 @@
 <includes>
 <!-- ==============VIDEO FLAGS================= -->
+
 	<include name="VideoCodecFlaggingConditions">
 		<control type="image">
 			<description>Video rez Image</description>
@@ -57,15 +58,6 @@
 			<texture>$VAR[mpaa]</texture>
 			<visible>Container.Content(movies)</visible>
 		</control>
-		<!-- No Rating -->
-		<control type="image">
-			<description>No Rating</description>
-			<width>75</width>
-			<height>48</height>
-			<aspectratio>keep</aspectratio>
-			<texture>extras/flagging/ratings/mpaa_unrated.png</texture>
-			<visible>Container.Content(movies) + [!ListItem.IsFolder | !SubString(Container.FolderPath,videodb)] + IsEmpty(ListItem.MPAA)</visible>
-		</control>
 	</include>
 	
 	<include name="VideoMPAAFlaggingConditionsTV">
@@ -77,15 +69,6 @@
 			<texture>$VAR[mpaatv]</texture>
 			<colordiffuse>62ffffff</colordiffuse>
 		    <visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
-		</control>
-		<!-- No Rating -->
-		<control type="image">
-			<description>No Rating</description>
-			<width>75</width>
-			<height>48</height>
-			<aspectratio>keep</aspectratio>
-			<texture>extras/flagging/ratings/mpaa_unrated.png</texture>
-			<visible>Container.Content(tvshows) + [!ListItem.IsFolder | !SubString(Container.FolderPath,videodb)] + IsEmpty(ListItem.MPAA)</visible>
 		</control>
 	</include>
 </includes>

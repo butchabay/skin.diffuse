@@ -151,7 +151,7 @@
 					<posy>350</posy>
 					<width>900</width>
 					<height>18</height>
-					<label>[COLOR=white]$INFO[VideoPlayer.Year] • $INFO[VideoPlayer.Genre][/COLOR]</label>
+					<label>[COLOR=white]$INFO[VideoPlayer.Year]  $INFO[VideoPlayer.Genre][/COLOR]</label>
 					<scroll>true</scroll>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -207,7 +207,7 @@
 					<posy>350</posy>
 					<width>900</width>
 					<height>18</height>
-					<label>$INFO[VideoPlayer.Title] • $LOCALIZE[31063] $INFO[VideoPlayer.Season] • $LOCALIZE[31064] $INFO[VideoPlayer.Episode]</label>
+					<label>$INFO[VideoPlayer.Title]  $LOCALIZE[31063] $INFO[VideoPlayer.Season]  $LOCALIZE[31064] $INFO[VideoPlayer.Episode]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<scroll>true</scroll>
@@ -258,7 +258,7 @@
 					<posy>520</posy>
 					<width>200</width>
 					<height>20</height>
-					<label>$INFO[Player.Duration][COLOR=lightgrey] • $INFO[Player.Time][/COLOR]</label>
+					<label>$INFO[Player.Duration][COLOR=lightgrey]  $INFO[Player.Time][/COLOR]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>diffuse_18_title_bold</font>
@@ -584,7 +584,7 @@
 					<posy>465</posy>
 					<width>900</width>
 					<height>18</height>
-					<label>[COLOR=white]$INFO[VideoPlayer.Year] • $INFO[VideoPlayer.Genre][/COLOR]</label>
+					<label>[COLOR=white]$INFO[VideoPlayer.Year]  $INFO[VideoPlayer.Genre][/COLOR]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<scroll>true</scroll>
@@ -630,7 +630,7 @@
 					<posy>465</posy>
 					<width>900</width>
 					<height>18</height>
-					<label>$INFO[VideoPlayer.Title] • $LOCALIZE[31063] $INFO[VideoPlayer.Season] • $LOCALIZE[31064] $INFO[VideoPlayer.Episode]</label>
+					<label>$INFO[VideoPlayer.Title]  $LOCALIZE[31063] $INFO[VideoPlayer.Season]  $LOCALIZE[31064] $INFO[VideoPlayer.Episode]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<scroll>true</scroll>
@@ -682,7 +682,7 @@
 					<posy>520</posy>
 					<width>200</width>
 					<height>20</height>
-					<label>$INFO[Player.Duration][COLOR=lightgrey] • $INFO[Player.Time][/COLOR]</label>
+					<label>$INFO[Player.Duration][COLOR=lightgrey]  $INFO[Player.Time][/COLOR]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>diffuse_18_title_bold</font>

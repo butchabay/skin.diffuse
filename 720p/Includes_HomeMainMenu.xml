@@ -5,7 +5,7 @@
 			<posy>185</posy>
 			<width>264</width>
 			<height>50</height>
-			<texture>windows/common/list_fo.png</texture>
+			<texture>list_fo.png</texture>
 			<aspectratio>stretch</aspectratio>
 			<animation effect="fade" start="100" end="40" time="200" condition="!Control.HasFocus(9000)">Conditional</animation>
 			<include>transition_Fanart</include>
@@ -66,7 +66,7 @@
 					<height>50</height>
 					<font>diffuse_20_rss</font>
 					<textcolor>grey2</textcolor>
-					<texturefocus>windows/common/list_fo.png</texturefocus>
+					<texturefocus>list_fo.png</texturefocus>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>

@@ -48,7 +48,7 @@
 				<width>100</width>
 				<height>30</height>
 				<font>diffuse_18_rss</font>
-				<label>Info</label>
+				<label>$LOCALIZE[41379]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>darkgrey2</textcolor>

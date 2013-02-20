@@ -34,7 +34,7 @@
 				<control type="radiobutton" id="10023">
 					<description>Movie Logo 556</description>
 					 <include>ButtonCommonValuesMediaMenu</include>
-					<label>logo</label>
+					<label>$LOCALIZE[41382]</label>
 					<onclick>Skin.ToggleSetting(556_Movielogo)</onclick>
 					<selected>Skin.HasSetting(556_Movielogo)</selected>
 					<visible>Control.IsVisible(556)</visible>
@@ -43,7 +43,7 @@
 				<!-- <control type="radiobutton" id="10024">
 					<description>Clear Art Movie 556</description>
 					 <include>ButtonCommonValuesMediaMenu</include>
-					<label>clearart</label>
+					<label>$LOCALIZE[41383]</label>
 					<onclick>Skin.ToggleSetting(556_Clearlogo)</onclick>
 					<selected>Skin.HasSetting(556_Clearlogo)</selected>
 					<visible>Control.IsVisible(556)</visible>
@@ -54,8 +54,8 @@
 					<description>new</description>
 					<include>ButtonCommonValuesMediaMenu</include>
 					<label>1</label>
-					<onclick>-</onclick>
-					<onclick>-</onclick>
+					<onclick>noop</onclick>
+					<onclick>noop</onclick>
 					<selected>-</selected>
 					<visible>-</visible>
 					<visible>-</visible>
@@ -64,8 +64,8 @@
 					<description>new</description>
 					<include>ButtonCommonValuesMediaMenu</include>
 					<label>1</label>
-					<onclick>-</onclick>
-					<onclick>-</onclick>
+					<onclick>noop</onclick>
+					<onclick>noop</onclick>
 					<selected>-</selected>
 					<visible>-</visible>
 					<visible>-</visible>
@@ -74,14 +74,13 @@
 					<description>new</description>
 				    <include>ButtonCommonValuesMediaMenu</include>
 					<label>1</label>
-					<onclick>-</onclick>
-					<onclick>-</onclick>
+					<onclick>noop</onclick>
+					<onclick>noop</onclick>
 					<selected>-</selected>
 					<visible>-</visible>
 					<visible>-</visible>
 				</control> -->
 				
-				<!------------------------------------->
 		</include>
 			 <include name="Options557">
 			 <!-- view id = 557 tvshows -->
@@ -117,7 +116,7 @@
 				<control type="radiobutton" id="10031">
 					<description>TV Logo 557</description>
 					<include>ButtonCommonValuesMediaMenu</include>
-					<label>logo</label>
+					<label>$LOCALIZE[41382]</label>
 					<onclick>Skin.ToggleSetting(557_TVlogo)</onclick>
 					<selected>Skin.HasSetting(557_TVlogo)</selected>
 					<visible>Control.IsVisible(557)</visible>
@@ -126,7 +125,7 @@
 				<!-- <control type="radiobutton" id="10032">
 					<description>Clear Art TV 557</description>
 					<include>ButtonCommonValuesMediaMenu</include>
-					<label>clearart</label>
+					<label>$LOCALIZE[41383]</label>
 					<onclick>Skin.ToggleSetting(557_ClearTVlogo)</onclick>
 					<selected>Skin.HasSetting(557_ClearTVlogo)</selected>
 					<visible>Control.IsVisible(557)</visible>
@@ -136,8 +135,8 @@
 					<description>new</description>
 					<include>ButtonCommonValuesMediaMenu</include>
 					<label>1</label>
-					<onclick>-</onclick>
-					<onclick>-</onclick>
+					<onclick>noop</onclick>
+					<onclick>noop</onclick>
 					<selected>-</selected>
 					<visible>-</visible>
 					<visible>-</visible>
@@ -146,8 +145,8 @@
 					<description>new</description>
 					<include>ButtonCommonValuesMediaMenu</include>
 					<label>1</label>
-					<onclick>-</onclick>
-					<onclick>-</onclick>
+					<onclick>noop</onclick>
+					<onclick>noop</onclick>
 					<selected>-</selected>
 					<visible>-</visible>
 					<visible>-</visible>
@@ -156,14 +155,15 @@
 					<description>new</description>
 				    <include>ButtonCommonValuesMediaMenu</include>
 					<label>1</label>
-					<onclick>-</onclick>
-					<onclick>-</onclick>
+					<onclick>noop</onclick>
+					<onclick>noop</onclick>
 					<selected>-</selected>
 					<visible>-</visible>
 					<visible>-</visible>
 				</control> -->
 				</include>
-				<!------------------------------------->
+			
+			
 				<include name="Options52">
 				
 		        <control type="radiobutton" id="10036">
@@ -189,7 +189,7 @@
 				<control type="radiobutton" id="10038">
 					<description>List2_52</description>
 					<include>ButtonCommonValuesMediaMenu</include>
-					<label>Logo</label>
+					<label>$LOCALIZE[41382]</label>
 					<onclick>Skin.ToggleSetting(logo52)</onclick>
 					<selected>Skin.HasSetting(logo52)</selected>
 					<visible>Control.IsVisible(52) + !Skin.HasSetting(list_multithumbs52)</visible>
@@ -230,7 +230,7 @@
 				<control type="radiobutton" id="10044">
 					<description>List2_53</description>
 					<include>ButtonCommonValuesMediaMenu</include>
-					<label>Logo</label>
+					<label>$LOCALIZE[41382]</label>
 					<onclick>Skin.ToggleSetting(logo53)</onclick>
 					<selected>Skin.HasSetting(logo53)</selected>
 					<visible>Control.IsVisible(53) + !Skin.HasSetting(list_multithumbs53)</visible>

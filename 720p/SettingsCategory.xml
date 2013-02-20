@@ -54,7 +54,7 @@
         <posy>0</posy>
         <width>1280</width>
         <height>720</height>
-        <texture>info/settings_panel-custom.png</texture>
+        <texture>settings_panel-custom.png</texture>
 		<aspectratio>stretch</aspectratio>
       </control>
       <control type="grouplist" id="3">
@@ -64,7 +64,7 @@
 	    <width>490</width>
 	    <height>570</height>
         <itemgap>0</itemgap>
-        <onleft>-</onleft>
+        <onleft>noop</onleft>
         <onright>5</onright>
         <onup>3</onup>
         <ondown>3</ondown>
@@ -102,7 +102,7 @@
         <itemgap>-1</itemgap>
         <pagecontrol>-</pagecontrol>
         <onleft>3</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
         <onup>5</onup>
         <ondown>5</ondown>
       </control>

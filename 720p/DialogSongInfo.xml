@@ -30,7 +30,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture>info/settings_panel-custom.png</texture>
+			<texture>settings_panel-custom.png</texture>
 			<aspectratio>stretch</aspectratio>
 		</control>
 		<control type="image">
@@ -39,7 +39,7 @@
 			<width>760</width>
 			<height>41</height>
 			<aspectratio>keep</aspectratio>
-			<texture>info/infobar2.png</texture>
+			<texture>infobar2.png</texture>
 			<colordiffuse>60FFFFFF</colordiffuse>
 		</control>
 		<control type="label">

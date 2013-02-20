@@ -57,7 +57,7 @@
 			<width>689</width>
 			<height>309</height>
 			<onup>12</onup>
-			<onleft>-</onleft>
+			<onleft>noop</onleft>
 			<onright>9000</onright>
 			<ondown>12</ondown>
 			<scrolltime>200</scrolltime>
@@ -133,7 +133,7 @@
             <textcolor>white</textcolor>
             <focusedcolor>lightgrey</focusedcolor>			
 			<onup>10</onup>
-			<onleft>-</onleft>
+			<onleft>noop</onleft>
 			<onright>9000</onright>
 			<ondown>10</ondown>
 			<texturefocus>dialogs/context/listfo.png</texturefocus>
@@ -152,7 +152,7 @@
 				<height>37</height>				
 				<onup>19</onup>
 				<onleft>10</onleft>
-				<onright>-</onright>
+				<onright>noop</onright>
 				<ondown>13</ondown>
 				<align>center</align>
 				<aligny>top</aligny>
@@ -173,7 +173,7 @@
 				<height>37</height>		
 				<onup>11</onup>
 				<onleft>10</onleft>
-				<onright>-</onright>
+				<onright>noop</onright>
 				<ondown>14</ondown>
 				<align>center</align>
 				<aligny>top</aligny>
@@ -194,7 +194,7 @@
 				<height>37</height>		
 				<onup>13</onup>
 				<onleft>10</onleft>
-				<onright>-</onright>
+				<onright>noop</onright>
 				<ondown>20</ondown>
 				<align>center</align>
 				<aligny>top</aligny>
@@ -219,7 +219,7 @@
 				<label>20333</label>
 				<onup>14</onup>
 				<onleft>10</onleft>
-				<onright>-</onright>
+				<onright>noop</onright>
 				<ondown>18</ondown>
 				<align>center</align>
 				<aligny>top</aligny>
@@ -240,7 +240,7 @@
 				<height>37</height>		
 				<onup>20</onup>
 				<onleft>10</onleft>
-				<onright>-</onright>
+				<onright>noop</onright>
 				<ondown>19</ondown>
 				<align>center</align>
 				<aligny>top</aligny>
@@ -261,7 +261,7 @@
 				<height>37</height>	
 				<onup>18</onup>
 				<onleft>10</onleft>
-				<onright>-</onright>
+				<onright>noop</onright>
 				<ondown>11</ondown>
 				<align>center</align>
 				<aligny>top</aligny>

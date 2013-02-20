@@ -63,7 +63,7 @@
 					<posy>0</posy>
 					<width>50</width>
 					<height>50</height>
-					<label>info</label>
+					<label>$LOCALIZE[41379]</label>
 					<font>-</font>
 					<texturefocus>osd/fullscreen/info-fo.png</texturefocus>
 					<texturenofocus>osd/fullscreen/info-nofo.png</texturenofocus>
@@ -230,7 +230,7 @@
 					<posy>0</posy>
 					<width>50</width>
 					<height>50</height>
-					<label>info</label>
+					<label>$LOCALIZE[41379]</label>
 					<font>-</font>
 					<texturefocus>osd/fullscreen/info-fo.png</texturefocus>
 					<texturenofocus>osd/fullscreen/info-nofo.png</texturenofocus>
@@ -424,7 +424,7 @@
 				<posy>120</posy>
 				<width>1280</width>
 				<height>30</height>
-				<label>$INFO[VideoPlayer.Title] • $INFO[VideoPlayer.Time] • $INFO[VideoPlayer.Duration]</label>
+				<label>$INFO[VideoPlayer.Title]  $INFO[VideoPlayer.Time]  $INFO[VideoPlayer.Duration]</label>
 				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>

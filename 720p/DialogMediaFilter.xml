@@ -81,7 +81,7 @@
 			<onup>9001</onup>
 			<ondown>9001</ondown>
 			<onleft>9001</onleft>
-			<onright>-</onright>
+			<onright>noop</onright>
 		</control>
 		<control type="button" id="7">
 			<description>Default Button</description>
@@ -137,8 +137,8 @@
 				<focusedcolor>lightgrey</focusedcolor>
 				<disabledcolor>midgrey</disabledcolor>
 				<onup>5</onup>
-				<onleft>-</onleft>
-				<onright>-</onright>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
 				<ondown>27</ondown>
 			</control>
 			<control type="button" id="27">
@@ -159,8 +159,8 @@
 				<focusedcolor>lightgrey</focusedcolor>
 				<disabledcolor>midgrey</disabledcolor>
 				<onup>28</onup>
-				<onleft>-</onleft>
-				<onright>-</onright>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
 				<ondown>7</ondown>
 			</control>
 		</control>

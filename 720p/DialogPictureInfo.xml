@@ -53,8 +53,8 @@
         <posy>90</posy>
         <width>568</width>
         <height>440</height>
-        <onleft>-</onleft>
-        <onright>-</onright>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
         <onup>5</onup>
         <ondown>5</ondown>
         <pagecontrol>60</pagecontrol>

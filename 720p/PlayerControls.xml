@@ -200,24 +200,6 @@
 			<animation effect="fade" start="100" end="0" time="500" condition="![Control.HasFocus(9102) | ControlGroup(9105).HasFocus()]">Conditional</animation>
 			<animation effect="rotate" start="0" end="90" center="auto" time="0" condition="true">Conditional</animation>
 		</control>
-		<control type="rss">
-			<posx>470</posx>
-			<posy>170</posy>
-			<width>440</width>
-			<font>diffuse_24</font>
-			<urlset>1</urlset>
-			<textcolor>rsstext</textcolor>
-			<titlecolor>orange2</titlecolor>
-			<headlinecolor>lightgrey</headlinecolor>
-		</control>
-		<control type="image">
-			<posx>433</posx>
-			<posy>206</posy>
-			<width>482</width>
-			<height>1</height>
-			<texture>osd/media-guide/line.png</texture>
-			<aspectratio>stretch</aspectratio>
-		</control>
 		
 		<control type="group">
 		<visible>Control.HasFocus(9103) | ControlGroup(9101).HasFocus()</visible>
@@ -236,7 +218,7 @@
 				<posy>-2.5</posy>
 				<width>420</width>
 				<height>205</height>
-				<texture>dialogs/video-info/trailer-back.png</texture>
+				<texture>trailer-back.png</texture>
 				<aspectratio>stretch</aspectratio>
 				<fadetime>300</fadetime>
 				<visible>Player.HasVideo</visible>
@@ -253,7 +235,7 @@
 				<posx>60</posx>
 				<posy>-40</posy>
 				<width>400</width>
-				<label>$INFO[Player.Time] • $INFO[Player.Duration]</label>
+				<label>$INFO[Player.Time]  $INFO[Player.Duration]</label>
 				<font>diffuse_16_title_bold</font>
 				<align>left</align>
 				<textcolor>lightgrey</textcolor>
@@ -272,7 +254,7 @@
 			<posx>60</posx>
 			<posy>235</posy>
 			<width>390</width>
-			<label>$LOCALIZE[31053][COLOR=white] • $INFO[VideoPlayer.Year][/COLOR]</label>
+			<label>$LOCALIZE[31053][COLOR=white]  $INFO[VideoPlayer.Year][/COLOR]</label>
 			<font>diffuse_16_title_bold</font>
 			<align>left</align>
 			<textcolor>orange2</textcolor>
@@ -282,7 +264,7 @@
 			<posx>60</posx>
 			<posy>265</posy>
 			<width>390</width>
-			<label>$LOCALIZE[41324][COLOR=white] • $INFO[VideoPlayer.Studio][/COLOR]</label>
+			<label>$LOCALIZE[41324][COLOR=white]  $INFO[VideoPlayer.Studio][/COLOR]</label>
 			<font>diffuse_16_title_bold</font>
 			<align>left</align>
 			<textcolor>orange2</textcolor>
@@ -330,7 +312,7 @@
 				<posy>-50</posy>
 				<align>left</align>
 				<width>150</width>
-				<label>$INFO[Player.Time] • $INFO[Player.Duration]</label>
+				<label>$INFO[Player.Time]  $INFO[Player.Duration]</label>
 				<font>diffuse_16_title_bold</font>
 				<textcolor>lightgrey</textcolor>
 				<visible>Player.HasAudio</visible>
@@ -340,7 +322,7 @@
 				<posy>220</posy>
 				<width>390</width>
 				<label>$INFO[MusicPlayer.Title]</label>
-				<label>$LOCALIZE[41323][COLOR=white] • $INFO[MusicPlayer.offset(1).Artist]$INFO[MusicPlayer.offset(1).Title, • ][/COLOR]</label>
+				<label>$LOCALIZE[41323][COLOR=white]  $INFO[MusicPlayer.offset(1).Artist]$INFO[MusicPlayer.offset(1).Title,  ][/COLOR]</label>
 				<font>diffuse_16_title_bold</font>
 				<align>left</align>
 				<textcolor>orange2</textcolor>
@@ -665,7 +647,7 @@
 					<posy>220</posy>
 					<width>190</width>
 					<font>diffuse_18_title</font>
-					<label>[B]CURRENT USER:[/B]</label>
+					<label>$LOCALIZE[41396]</label>
 					<textcolor>lightgrey</textcolor>
 					<align>left</align>
 				</control>
@@ -685,7 +667,7 @@
 					<posy>265</posy>
 					<width>190</width>
 					<font>diffuse_18_title</font>
-					<label>[B]IP ADDRESS:[/B]</label>
+					<label>$LOCALIZE[41397]</label>
 					<textcolor>lightgrey</textcolor>
 					<align>left</align>
 				</control>
@@ -705,7 +687,7 @@
 					<posy>310</posy>
 					<width>190</width>
 					<font>diffuse_18_title</font>
-					<label>[B]STORAGE AVAILABLE:[/B]</label>
+					<label>$LOCALIZE[41398]</label>
 					<textcolor>lightgrey</textcolor>
 					<align>left</align>
 				</control>
@@ -725,7 +707,7 @@
 					<posy>405</posy>
 					<width>190</width>
 					<font>diffuse_18_title</font>
-					<label>[B]DIFFUSE VERSION:[/B]</label>
+					<label>$LOCALIZE[41400]</label>
 					<textcolor>lightgrey</textcolor>
 					<align>left</align>
 				</control>
@@ -734,7 +716,7 @@
 					<posy>405</posy>
 					<width>190</width>
 					<font>diffuse_18_title</font>
-					<label>[B]V0.90 ALPHA[/B]</label>
+					<label>$LOCALIZE[41401]</label>
 					<textcolor>lightgrey</textcolor>
 					<align>left</align>
 					<scroll>false</scroll>
@@ -787,7 +769,7 @@
 				<textcolor>grey</textcolor>
 				<focusedcolor>white</focusedcolor>
 				<font>diffuse_24_bold</font>
-				<label>[B]STYLE[/B]</label>
+				<label>$LOCALIZE[41399]</label>
 				<align>left</align>
 				<texturefocus>osd/media-guide/mediaguide-fo.png</texturefocus>
 				<texturenofocus>-</texturenofocus>

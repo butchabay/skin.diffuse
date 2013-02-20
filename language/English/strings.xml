@@ -206,7 +206,6 @@
   <string id="41308">Track</string>
   <string id="41309">Extra Info Home Menu</string>
   <string id="41310">Next Track</string>
-  <string id="41311">Minutes</string>
   <string id="41312">Info Panel</string>
   <string id="41313">Info Panel Delay</string>
   <string id="41315">Airs Next On</string>
@@ -266,7 +265,7 @@
   <string id="31327">Resolution</string>
   <string id="31331">Search</string>
   
-   <!-- Quick NAV -->
+  <!-- Quick NAV -->
    
   <string id="41317">System info</string>
   <string id="41318">Quick NAV</string>
@@ -349,5 +348,43 @@
   <string id="31267">Shutdown in 120 min</string>
   <string id="31268">Shutdown in 60 min</string>
   <string id="31269">Shutdown in 30 min</string>
+  
+   <!-- Latest 20.02.2013 -->
+  
+  <string id="41373">Minutes</string>
+  <string id="41374">Configure</string>
+  <string id="41375">Update</string>
+  <string id="41376">Changelog</string>
+  <string id="41377">Rollback</string>
+  <string id="41378">Scraper:</string>
+  <string id="41379">Info</string>
+  <string id="41380">Close</string>
+  <string id="41381">Cinema Experience</string>
+  <string id="41382">Logo</string>
+  <string id="41383">Clearart</string>
+  <string id="41384">List</string>
+  <string id="41385">ExtraThumbs</string>
+  <string id="41386">Flag</string>
+  <string id="41387">Landscape</string>
+  <string id="41388">CD Art Manager</string>
+  <string id="41389">YouTube</string>
+  <string id="41390">Artist Logo</string>
+  <string id="41391">Animated</string>
+  <string id="41392">Welcome to XBMC</string>
+  <string id="41393">Please login to your xbmc profile</string>
+  <string id="41394">Search Album: YouTube</string>
+  <string id="41395">Search Artist: YouTube</string>
+  <string id="41396">Current User:</string>
+  <string id="41397">IP Adress:</string>
+  <string id="41398">Storage Available:</string>
+  <string id="41399">Appearance</string>
+  <string id="41400">Skin Diffuse Version:</string>
+  <string id="41401">V 1.0.0</string>
+  <string id="41402">Fanart Diffuse</string>
+  <string id="41403">TriPanel</string>
+  <string id="41404">Loading</string>
+  
+  
+   
 		
 </strings>

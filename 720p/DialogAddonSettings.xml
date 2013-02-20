@@ -14,7 +14,7 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
-				<texture>info/settings_panel-custom.png</texture>
+				<texture>settings_panel-custom.png</texture>
 				<aspectratio>stretch</aspectratio>
 			</control>
 		<control type="label" id="20">
@@ -38,7 +38,7 @@
 			<itemgap>0</itemgap>
 			<onup>9</onup>
 			<ondown>9001</ondown>
-			<onleft>-</onleft>
+			<onleft>noop</onleft>
 			<onright>2</onright>
 			<orientation>vertical</orientation>
 		</control>
@@ -63,7 +63,7 @@
 			<onup>2</onup>
 			<ondown>2</ondown>
 			<onleft>9001</onleft>
-			<onright>-</onright>
+			<onright>noop</onright>
 		</control>
 		
 		<control type="scrollbar" id="30">
@@ -79,7 +79,7 @@
 				<posy>100</posy>
 				<label>186</label>
 				<onup>9</onup>
-				<onleft>-</onleft>
+				<onleft>noop</onleft>
 				<onright>2</onright>
 				<ondown>11</ondown>
 				<align>center</align>
@@ -91,7 +91,7 @@
 				<posy>150</posy>
 				<label>222</label>
 				<onup>10</onup>
-				<onleft>-</onleft>
+				<onleft>noop</onleft>
 				<onright>2</onright>
 				<ondown>12</ondown>
 				<align>center</align>
@@ -102,7 +102,7 @@
 				<label>409</label>
 				<include>ButtonCommonValuesInfo</include>			
 				<onup>11</onup>
-				<onleft>-</onleft>
+				<onleft>noop</onleft>
 				<onright>2</onright>
 				<ondown>9</ondown>
 				<align>center</align>

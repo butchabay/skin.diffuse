@@ -130,7 +130,7 @@
 				<focusedcolor>white</focusedcolor>
 				<label>-</label>
 				<onright>30</onright>
-				<onleft>-</onleft>
+				<onleft>noop</onleft>
 				<onup>7</onup>
 				<ondown>9</ondown>
 			</control>
@@ -142,7 +142,7 @@
 			    <align>left</align>
 			    <aligny>center</aligny>
 				<label>19202</label>
-				<onleft>-</onleft>
+				<onleft>noop</onleft>
 				<onright>30</onright>
 				<onup>8</onup>
 				<ondown>11</ondown>
@@ -165,7 +165,7 @@
 			    <aligny>center</aligny>
 				<label>19207</label>
 				<onright>30</onright>
-				<onleft>-</onleft>
+				<onleft>noop</onleft>
 				<onup>9</onup>
 				<ondown>12</ondown>
 			</control>
@@ -177,7 +177,7 @@
 			    <align>left</align>
 			    <aligny>center</aligny>
 				<label>19206</label>
-				<onleft>-</onleft>
+				<onleft>noop</onleft>
 				<onright>30</onright>
 				<onup>11</onup>
 				<ondown>13</ondown>
@@ -191,7 +191,7 @@
 			    <aligny>center</aligny>
 				<label>19200</label>
 				<onright>30</onright>
-				<onleft>-</onleft>
+				<onleft>noop</onleft>
 				<onup>12</onup>
 				<ondown>4</ondown>
 			</control>
@@ -208,7 +208,7 @@
 			    <align>left</align>
 			    <aligny>center</aligny>
 				<label>186</label>
-				<onleft>-</onleft>
+				<onleft>noop</onleft>
 				<onright>30</onright>
 				<onup>13</onup>
 				<ondown>5</ondown>
@@ -221,7 +221,7 @@
                 <include>ButtonCommonValuesInfo</include>
 			    <align>left</align>
 			    <aligny>center</aligny>
-				<onleft>-</onleft>
+				<onleft>noop</onleft>
 				<onright>30</onright>
 				<onup>4</onup>
 				<ondown>6</ondown>
@@ -236,7 +236,7 @@
                 <include>ButtonCommonValuesInfo</include>
 			    <align>left</align>
 			    <aligny>center</aligny>
-				<onleft>-</onleft>
+				<onleft>noop</onleft>
 				<onright>30</onright>
 				<onup>5</onup>
 				<ondown>7</ondown>

@@ -313,8 +313,8 @@
 		<aligny>center</aligny>
 		<texturefocus>dialogs/context/listfo.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
-        <onright>-</onright>
-        <onleft>-</onleft>
+        <onright>noop</onright>
+        <onleft>noop</onleft>
         <onup>17</onup>
         <ondown>19</ondown>
       </control>
@@ -343,7 +343,7 @@
 		<focusedcolor>lightgrey</focusedcolor>
 		<disabledcolor>midgrey</disabledcolor>
         <onright>20</onright>
-        <onleft>-</onleft>
+        <onleft>noop</onleft>
         <onup>18</onup>
         <ondown>22</ondown>
       </control>

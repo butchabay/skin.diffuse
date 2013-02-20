@@ -281,7 +281,7 @@
 			<posy>170</posy>
 			<width>188</width>
 			<height>37</height>
-			<label>Close</label>
+			<label>$LOCALIZE[41380]</label>
 			<onclick>PreviousMenu</onclick>
 			<onup>5</onup>
 			<onleft>3</onleft>

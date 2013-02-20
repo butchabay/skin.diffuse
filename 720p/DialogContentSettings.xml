@@ -55,7 +55,7 @@
 			<textoffsetx>20</textoffsetx>
 			<onup>5</onup>
 			<ondown>4</ondown>
-			<onleft>-</onleft>
+			<onleft>noop</onleft>
 			<onright>9001</onright>
 			<textcolor>black</textcolor>
 			<focusedcolor>blue</focusedcolor>
@@ -88,7 +88,7 @@
 			<width>689</width>
 			<height>168</height>
 			<onup>3</onup>
-			<onleft>-</onleft>
+			<onleft>noop</onleft>
 			<onright>9001</onright>
 			<ondown>5</ondown>
 			<pagecontrol>-</pagecontrol>
@@ -110,7 +110,7 @@
 					<font>diffuse_20_title_bold</font>
 					<aligny>center</aligny>
 					<align>left</align>
-					<label>Scraper: $INFO[ListItem.Label]</label>
+					<label>$LOCALIZE[41378] $INFO[ListItem.Label]</label>
 					<textcolor>darkgrey</textcolor>
 		        	<selectedcolor>darkgrey2</selectedcolor>
 				</control>
@@ -133,7 +133,7 @@
 					<font>diffuse_20_title_bold</font>
 					<aligny>center</aligny>
 					<align>left</align>
-					<label>Scraper: $INFO[ListItem.Label]</label>
+					<label>$LOCALIZE[41378] $INFO[ListItem.Label]</label>
 					<textcolor>white</textcolor>
 		        	<selectedcolor>lightgrey</selectedcolor>
 				</control>
@@ -149,7 +149,7 @@
 			<itemgap>0</itemgap>
 			<onup>4</onup>
 			<ondown>3</ondown>
-			<onleft>-</onleft>
+			<onleft>noop</onleft>
 			<onright>9001</onright>
 		</control>
 		

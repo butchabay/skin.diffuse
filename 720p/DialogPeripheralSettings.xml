@@ -93,8 +93,8 @@
         <itemgap>-1</itemgap>
 		<orientation>vertical</orientation>
 			<pagecontrol>-</pagecontrol>
-			<onleft>-</onleft>
-			<onright>-</onright>
+			<onleft>noop</onleft>
+			<onright>noop</onright>
 			<onup>50</onup>
 			<ondown>29</ondown>
 		</control>
@@ -129,7 +129,6 @@
 				<include>ButtonCommonValuesInfo</include>
 			    <align>left</align>
 			    <aligny>center</aligny>
-				<label>Test4</label>
 		</control>
 
 		<control type="group" id="9000">
@@ -143,8 +142,8 @@
 			    <align>left</align>
 			    <aligny>center</aligny>
 				<label>222</label>
-				<onleft>-</onleft>
-				<onright>-</onright>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
 				<onup>5</onup>
 				<ondown>28</ondown>
 			</control>
@@ -156,8 +155,8 @@
 			    <align>left</align>
 			    <aligny>center</aligny>
 				<label>186</label>
-				<onleft>-</onleft>
-				<onright>-</onright>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
 				<onup>29</onup>
 				<ondown>50</ondown>
 			</control>
@@ -169,8 +168,8 @@
 			    <align>left</align>
 			    <aligny>center</aligny>
 				<label>409</label>
-				<onleft>-</onleft>
-				<onright>-</onright>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
 				<onup>28</onup>
 				<ondown>5</ondown>
 			</control>

@@ -58,7 +58,7 @@
 			<texturenofocus>-</texturenofocus>
 			<align>left</align>
 			<onleft>28</onleft>
-			<onright>-</onright>
+			<onright>noop</onright>
 			<onup>27</onup>
 			<ondown>10</ondown>
 		</control>
@@ -87,7 +87,7 @@
 				<include>DiffuseButtonsSettings</include>
 				<label>19134</label>
 				<onleft>28</onleft>
-				<onright>-</onright>
+				<onright>noop</onright>
 				<onup>9</onup>
 				<ondown>11</ondown>
 			</control>
@@ -99,7 +99,7 @@
 				<include>DiffuseButtonsSettings</include>
 				<label>19135</label>
 				<onleft>28</onleft>
-				<onright>-</onright>
+				<onright>noop</onright>
 				<onup>10</onup>
 				<ondown>14</ondown>
 			</control>
@@ -141,7 +141,7 @@
 				<height>30</height>
 				<include>DiffuseButtonsSettings</include>
 				<label>19130</label>
-				<onright>-</onright>
+				<onright>noop</onright>
 				<onleft>28</onleft>
 				<onup>15</onup>
 				<ondown>13</ondown>
@@ -153,7 +153,7 @@
 				<height>30</height>
 				<include>DiffuseButtonsSettings</include>
 				<label>19131</label>
-				<onright>-</onright>
+				<onright>noop</onright>
 				<onleft>28</onleft>
 				<onup>12</onup>
 				<ondown>21</ondown>
@@ -166,7 +166,7 @@
 				<height>30</height>
 				<include>DiffuseButtonsSettings</include>
 				<label>19126</label>
-				<onright>-</onright>
+				<onright>noop</onright>
 				<onleft>28</onleft>
 				<onup>13</onup>
 				<ondown>17</ondown>
@@ -191,7 +191,7 @@
 				<height>30</height>
 				<include>DiffuseButtonsSettings</include>
 				<label>19141</label>
-				<onright>-</onright>
+				<onright>noop</onright>
 				<onleft>28</onleft>
 				<onup>13</onup>
 				<ondown>23</ondown>
@@ -204,7 +204,7 @@
 				<include>DiffuseButtonsSettings</include>
 				<label>19148</label>
 				<onleft>28</onleft>
-				<onright>-</onright>
+				<onright>noop</onright>
 				<onup>21</onup>
 				<ondown>18</ondown>
 			</control>
@@ -215,7 +215,7 @@
 				<height>30</height>
 				<include>DiffuseButtonsSettings</include>
 				<label>515</label>
-				<onright>-</onright>
+				<onright>noop</onright>
 				<onleft>28</onleft>
 				<onup>23</onup>
 				<ondown>20</ondown>
@@ -228,7 +228,7 @@
 				<include>DiffuseButtonsSettings</include>
 				<label>19132</label>
 				<onleft>28</onleft>
-				<onright>-</onright>
+				<onright>noop</onright>
 				<onup>18</onup>
 				<ondown>22</ondown>
 			</control>
@@ -240,7 +240,7 @@
 				<include>DiffuseButtonsSettings</include>
 				<label>19123</label>
 				<onleft>28</onleft>
-				<onright>-</onright>
+				<onright>noop</onright>
 				<onup>20</onup>
 				<ondown>24</ondown>
 			</control>
@@ -253,7 +253,7 @@
 				<pulseonselect>no</pulseonselect>
 				<label>19124</label>
 				<onleft>28</onleft>
-				<onright>-</onright>
+				<onright>noop</onright>
 				<onup>22</onup>
 				<ondown>19</ondown>
 			</control> 
@@ -264,7 +264,7 @@
 				<height>30</height>
 				<include>DiffuseButtonsSettings</include>
 				<label>19121</label>
-				<onright>-</onright>
+				<onright>noop</onright>
 				<onleft>28</onleft>
 				<onup>24</onup>
 				<ondown>27</ondown>
@@ -277,7 +277,7 @@
 				<include>DiffuseButtonsSettings</include>
 				<label>19125</label>
 				<onleft>28</onleft>
-				<onright>-</onright>
+				<onright>noop</onright>
 				<onup>19</onup>
 				<ondown>9</ondown>
 			</control>
@@ -294,7 +294,7 @@
 			    <align>left</align>
 			    <aligny>center</aligny>
 				<label>409</label>
-				<onleft>-</onleft>
+				<onleft>noop</onleft>
 				<onright>9</onright>
 				<onup>26</onup>
 				<ondown>25</ondown>
@@ -307,7 +307,7 @@
 			    <align>left</align>
 			    <aligny>center</aligny>
 				<label>222</label>
-				<onleft>-</onleft>
+				<onleft>noop</onleft>
 				<onright>9</onright>
 				<onup>28</onup>
 				<ondown>26</ondown>
@@ -320,7 +320,7 @@
 			    <align>left</align>
 			    <aligny>center</aligny>
 				<label>137</label>
-				<onleft>-</onleft>
+				<onleft>noop</onleft>
 				<onright>9</onright>
 				<onup>25</onup>
 				<ondown>28</ondown>

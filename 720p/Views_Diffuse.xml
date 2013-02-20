@@ -197,7 +197,7 @@
 <posy>220</posy>
 <width>800</width>
 <height>20</height>
-<label>[COLOR=white]$INFO[ListItem.Year] • $INFO[ListItem.Duration] $LOCALIZE[41311] • $INFO[ListItem.Genre][/COLOR]</label>
+<label>[COLOR=white]$INFO[ListItem.Year]  $INFO[ListItem.Duration] $LOCALIZE[41373]  $INFO[ListItem.Genre][/COLOR]</label>
 <align>left</align>
 <aligny>center</aligny>
 <font>diffuse_18_title_bold</font>
@@ -212,7 +212,7 @@
 <posy>180</posy>
 <width>800</width>
 <height>20</height>
-<label>[COLOR=white]$INFO[ListItem.Year] • $INFO[ListItem.Duration] $LOCALIZE[41311] • $INFO[ListItem.Genre][/COLOR]</label>
+<label>[COLOR=white]$INFO[ListItem.Year]  $INFO[ListItem.Duration] $LOCALIZE[41373]  $INFO[ListItem.Genre][/COLOR]</label>
 <align>left</align>
 <aligny>center</aligny>
 <font>diffuse_18_title_bold</font>
@@ -637,7 +637,7 @@
 <posy>220</posy>
 <width>800</width>
 <height>20</height>
-<label>[COLOR=white]$INFO[ListItem.Genre] • $INFO[ListItem.Year][/COLOR]</label>
+<label>[COLOR=white]$INFO[ListItem.Genre]  $INFO[ListItem.Year][/COLOR]</label>
 <align>left</align>
 <aligny>center</aligny>
 <font>diffuse_18_title_bold</font>
@@ -653,7 +653,7 @@
 <posy>180</posy>
 <width>800</width>
 <height>20</height>
-<label>[COLOR=white]$INFO[ListItem.Genre] • $INFO[ListItem.Year][/COLOR]</label>
+<label>[COLOR=white]$INFO[ListItem.Genre]  $INFO[ListItem.Year][/COLOR]</label>
 <align>left</align>
 <aligny>center</aligny>
 <font>diffuse_18_title_bold</font>
@@ -911,7 +911,7 @@
 <posy>225</posy>
 <width>500</width>
 <height>20</height>
-<label fallback="416">[COLOR=white]$LOCALIZE[20360] $INFO[listitem.episode] • $LOCALIZE[16102] $INFO[ListItem.Property(WatchedEpisodes)] • $LOCALIZE[16101] $INFO[ListItem.Property(UnWatchedEpisodes)][/COLOR]</label>
+<label fallback="416">[COLOR=white]$LOCALIZE[20360] $INFO[listitem.episode]  $LOCALIZE[16102] $INFO[ListItem.Property(WatchedEpisodes)]  $LOCALIZE[16101] $INFO[ListItem.Property(UnWatchedEpisodes)][/COLOR]</label>
 <align>center</align>
 <aligny>center</aligny>
 <font>diffuse_18_title_bold</font>
@@ -941,7 +941,7 @@
 <posy>225</posy>
 <width>500</width>
 <height>20</height>
-<label fallback="416">[COLOR=white]$LOCALIZE[20360] $INFO[listitem.episode] • $LOCALIZE[16102] $INFO[ListItem.Property(WatchedEpisodes)] • $LOCALIZE[16101] $INFO[ListItem.Property(UnWatchedEpisodes)][/COLOR]</label>
+<label fallback="416">[COLOR=white]$LOCALIZE[20360] $INFO[listitem.episode]  $LOCALIZE[16102] $INFO[ListItem.Property(WatchedEpisodes)]  $LOCALIZE[16101] $INFO[ListItem.Property(UnWatchedEpisodes)][/COLOR]</label>
 <align>center</align>
 <aligny>center</aligny>
 <font>diffuse_18_title_bold</font>

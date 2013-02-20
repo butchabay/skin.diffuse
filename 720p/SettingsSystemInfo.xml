@@ -32,7 +32,7 @@
         <posy>0</posy>
         <width>1280</width>
         <height>720</height>
-        <texture>info/settings_panel-custom.png</texture>
+        <texture>settings_panel-custom.png</texture>
 	    <include>transition_Fanart</include>
       </control>
       <control type="grouplist" id="9000">

@@ -2,8 +2,7 @@
 
 	<include name="LiveTVRadioChannel">
 	
-			<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
-			<!---------------------------------------------------------  RADIO CHANNEL GROUP  ---------------------------------------------------------------------------->
+			<!-- RADIO CHANNEL GROUP -->
 			
 			   <control type="group">
 				<description>Radio Channels group</description>
@@ -72,7 +71,7 @@
 					<posy>85</posy>
 					<width>500</width>
 					<height>445</height>
-					<onleft>-</onleft>
+					<onleft>noop</onleft>
 					<onright>33</onright>
 					<onup>12</onup>
 					<ondown>12</ondown>

@@ -27,7 +27,7 @@
 					<height>200</height>
 					<onleft>9000</onleft>
 					<onright>8023</onright>
-					<onup>-</onup>
+					<onup>noop</onup>
 					<ondown>8063</ondown>
 					<align>left</align>
 					<orientation>horizontal</orientation>
@@ -176,7 +176,7 @@
 					<height>200</height>
 					<onleft>9000</onleft>
 					<onright>8024</onright>
-					<onup>-</onup>
+					<onup>noop</onup>
 					<ondown>8062</ondown>
 					<align>left</align>
 					<orientation>horizontal</orientation>
@@ -323,7 +323,7 @@
 					<height>200</height>
 					<onleft>9000</onleft>
 					<onright>8002</onright>
-					<onup>-</onup>
+					<onup>noop</onup>
 					<ondown>8061</ondown>
 					<align>left</align>
 					<orientation>horizontal</orientation>
@@ -497,7 +497,7 @@
 					<onleft>9000</onleft>
 					<onright>8062</onright>
 					<onup>8002</onup>
-					<ondown>-</ondown>
+					<ondown>noop</ondown>
 				</control>
 				<control type="image">
 					<posx>105</posx>
@@ -537,7 +537,7 @@
 					<onleft>8061</onleft>
 					<onright>8063</onright>
 					<onup>8024</onup>
-					<ondown>-</ondown>
+					<ondown>noop</ondown>
 				</control>
 				<control type="image">
 					<posx>175</posx>
@@ -578,7 +578,7 @@
 					<onleft>8062</onleft>
 					<onright>8061</onright>
 					<onup>8023</onup>
-					<ondown>-</ondown>
+					<ondown>noop</ondown>
 				</control>
 				<control type="image">
 					<posx>245</posx>

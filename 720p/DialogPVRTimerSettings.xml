@@ -35,7 +35,7 @@
 			<onup>5</onup>
 			<ondown>5</ondown>
 			<onleft>9001</onleft>
-			<onright>-</onright>
+			<onright>noop</onright>
 		</control>
 		<control type="button" id="7">
 			<description>Default Button</description>
@@ -71,7 +71,7 @@
 			    <align>left</align>
 			    <aligny>center</aligny>
 				<label>186</label>
-				<onleft>-</onleft>
+				<onleft>noop</onleft>
 				<onright>5</onright>
 				<onup>29</onup>
 				<ondown>29</ondown>
@@ -87,7 +87,7 @@
 			    <align>left</align>
 			    <aligny>center</aligny>
 				<label>222</label>
-				<onleft>-</onleft>
+				<onleft>noop</onleft>
 				<onright>5</onright>
 				<onup>28</onup>
 				<ondown>28</ondown>

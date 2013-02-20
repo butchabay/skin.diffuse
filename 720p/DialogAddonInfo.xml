@@ -21,7 +21,7 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
-				<texture>info/settings_panel-custom.png</texture>
+				<texture>settings_panel-custom.png</texture>
 				<aspectratio>stretch</aspectratio>
 			</control>
 		<control type="image">
@@ -41,7 +41,7 @@
 			<width>780</width>
 			<height>41</height>
 			<aspectratio>keep</aspectratio>
-			<texture>info/infobar2.png</texture>
+			<texture>infobar2.png</texture>
 			<colordiffuse>60FFFFFF</colordiffuse>
 		</control>
 		<control type="label" id="20">
@@ -61,7 +61,7 @@
 			<width>780</width>
 			<height>41</height>
 			<aspectratio>keep</aspectratio>
-			<texture>info/infobar2.png</texture>
+			<texture>infobar2.png</texture>
 			<colordiffuse>60FFFFFF</colordiffuse>
 		</control> 
 
@@ -170,7 +170,7 @@
 	  
 	  <control type="button" id ="9">
 		<description>Config</description>
-		<label>configure</label>
+		<label>$LOCALIZE[41374]</label>
 	    <include>ButtonCommonValuesInfo</include>
 		<align>left</align>
 		<aligny>top</aligny>
@@ -182,7 +182,7 @@
 	  
     <control type="button" id="8">
 		<description>update</description>
-		<label>update</label>
+		<label>$LOCALIZE[41375]</label>
 		<include>ButtonCommonValuesInfo</include>
 		<align>left</align>
 		<aligny>center</aligny>
@@ -194,7 +194,7 @@
 	
     <control type="button" id="10">
 		<description>changelog</description>
-		<label>changelog</label>
+		<label>$LOCALIZE[41376]</label>
 		<include>ButtonCommonValuesInfo</include>
 		<align>left</align>
 		<aligny>center</aligny>
@@ -205,7 +205,7 @@
     </control>
 	 <control type="button" id="11">
 		<description>rollback</description>
-		<label>rollback</label>
+		<label>$LOCALIZE[41377]</label>
 		<include>ButtonCommonValuesInfo</include>
 		<align>left</align>
 		<aligny>center</aligny>
