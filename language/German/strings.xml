@@ -207,7 +207,6 @@
   <string id="41308">Track</string>
   <string id="41309">Extra Info Home Menü</string>
   <string id="41310">Nächsten Track</string>
-  <string id="41311">Minuten</string>
   <string id="41312">Info Panel</string>
   <string id="41313">Info Panel verzögert</string>
   <string id="41315">Wird ausgestrahlt</string>
@@ -349,5 +348,40 @@
   <string id="31267">Herunterfahren in 120 min</string>
   <string id="31268">Herunterfahren in 60 min</string>
   <string id="31269">Herunterfahren in 30 min</string>
+  
+   <!-- Latest 20.02.2013 -->
+  
+  <string id="41373">Minuten</string>
+  <string id="41374">Configuriere</string>
+  <string id="41375">Update</string>
+  <string id="41376">Changelog</string>
+  <string id="41377">Rollback</string>
+  <string id="41378">Scraper:</string>
+  <string id="41379">Info</string>
+  <string id="41380">Schliesse</string>
+  <string id="41381">Cinema Experience</string>
+  <string id="41382">Logo</string>
+  <string id="41383">Clearart</string>
+  <string id="41384">List</string>
+  <string id="41385">ExtraThumbs</string>
+  <string id="41386">Flag</string>
+  <string id="41387">Landscape</string>
+  <string id="41388">CD Art Manager</string>
+  <string id="41389">YouTube</string>
+  <string id="41390">Artist Logo</string>
+  <string id="41391">Animiert</string>
+  <string id="41392">Willkommen zu XBMC</string>
+  <string id="41393">Bitte login to your xbmc profile</string>
+  <string id="41394">Suche Album: YouTube</string>
+  <string id="41395">Suche Artist: YouTube</string>
+  <string id="41396">Current User:</string>
+  <string id="41397">IP Adresse:</string>
+  <string id="41398">Freier Speicher:</string>
+  <string id="41399">Appearance</string>
+  <string id="41400">Skin Diffuse Version:</string>
+  <string id="41401">V 1.0.0</string>
+  <string id="41402">Fanart Diffuse</string>
+  <string id="41403">TriPanel</string>
+  <string id="41404">Lädt</string>
 		
 </strings>
