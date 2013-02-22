@@ -1,85 +1,85 @@
-<window id="606">
-	<defaultcontrol always="true">9</defaultcontrol>
-	<controls>
-	<include>TVBackgrounds</include>
-		<control type="image">
-			<description>floor</description>
-		    <include>transition_Fanart</include>
-			<posx>0</posx>
-			<posy>50</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture>menuBackgroundvertical.png</texture>
-			<aspectratio>stretch</aspectratio>
-		</control>
-		<control type="group">
-		 <include>transition_Fanart</include>
-		<control type="image"> <!-- Home Background 2 -->
-			<posx>0</posx>
-		    <posy>0</posy>
-		    <width>1280</width>
-			<height>720</height>
-			<aspectratio>stretch</aspectratio>
- 			<texture background="true">settings_panel-custom.png</texture>
-		</control>
-		 </control>
-		<control type="group">
-		    <posx>0</posx>
-		    <posy>0</posy>
-		 <include>transition_Fanart</include>
-		<control type="label">
-			<description>Search string</description>
-			<posx>380</posx>
-			<posy>60</posy>
-			<width>320</width>
-			<height>40</height>
-			<font>diffuse_20_title_bold</font>
-			<label>$LOCALIZE[19133]</label>
-			<align>left</align>
-			<aligny>center</aligny>
-			<textcolor>white</textcolor>
-		</control>
-		<control type="image">
-			<posx>540</posx>
-			<posy>67</posy>
-			<width>630</width>
-			<height>30</height>
-			<texture>views/list/other/list_fo.png</texture>
-		</control>
-		<control type="edit" id="9">
-			<description>Search string</description>
-			<posx>550</posx>
-			<posy>60</posy>
-			<width>600</width>
-			<height>40</height>
-			<font>diffuse_20_alt_bold</font>
-			<textcolor>white</textcolor>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<align>left</align>
-			<onleft>28</onleft>
-			<onright>noop</onright>
-			<onup>27</onup>
-			<ondown>10</ondown>
-		</control>
-		<control type="label">
-			<description>Search help</description>
-			<posx>380</posx>
-			<posy>100</posy>
-			<width>780</width>
-			<height>20</height>
-			<align>left</align>
-			<font>diffuse_16_alt_bold</font>
-			<textcolor>lightgrey</textcolor>
-			<label>$LOCALIZE[19001] $LOCALIZE[19002]</label>
-			<scroll>true</scroll>
-		</control>
-		</control>
-		<control type="group">
-		<include>transition_Fanart</include>
-			<posx>365</posx>
-			<posy>130</posy>
-			<control type="radiobutton" id="10">
+				<window id="606">
+				<defaultcontrol always="true">9</defaultcontrol>
+				<controls>
+				<include>TVBackgrounds</include>
+				<control type="image">
+				<description>floor</description>
+				<include>transition_Fanart</include>
+				<posx>0</posx>
+				<posy>50</posy>
+				<width>1280</width>
+				<height>720</height>
+				<texture>menuBackgroundvertical.png</texture>
+				<aspectratio>stretch</aspectratio>
+				</control>
+				<control type="group">
+				<include>transition_Fanart</include>
+				<control type="image"> <!-- Home Background 2 -->
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<aspectratio>stretch</aspectratio>
+				<texture background="true">settings_panel-custom.png</texture>
+				</control>
+				</control>
+				<control type="group">
+				<posx>0</posx>
+				<posy>0</posy>
+				<include>transition_Fanart</include>
+				<control type="label">
+				<description>Search string</description>
+				<posx>380</posx>
+				<posy>60</posy>
+				<width>320</width>
+				<height>40</height>
+				<font>diffuse_20_title_bold</font>
+				<label>$LOCALIZE[19133]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<textcolor>white</textcolor>
+				</control>
+				<control type="image">
+				<posx>540</posx>
+				<posy>67</posy>
+				<width>630</width>
+				<height>30</height>
+				<texture>views/list/other/list_fo.png</texture>
+				</control>
+				<control type="edit" id="9">
+				<description>Search string</description>
+				<posx>550</posx>
+				<posy>60</posy>
+				<width>600</width>
+				<height>40</height>
+				<font>diffuse_20_alt_bold</font>
+				<textcolor>white</textcolor>
+				<texturefocus>-</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<align>left</align>
+				<onleft>28</onleft>
+				<onright>noop</onright>
+				<onup>27</onup>
+				<ondown>10</ondown>
+				</control>
+				<control type="label">
+				<description>Search help</description>
+				<posx>380</posx>
+				<posy>100</posy>
+				<width>780</width>
+				<height>20</height>
+				<align>left</align>
+				<font>diffuse_16_alt_bold</font>
+				<textcolor>lightgrey</textcolor>
+				<label>$LOCALIZE[19001] $LOCALIZE[19002]</label>
+				<scroll>true</scroll>
+				</control>
+				</control>
+				<control type="group">
+				<include>transition_Fanart</include>
+				<posx>365</posx>
+				<posy>130</posy>
+				<control type="radiobutton" id="10">
 				<description>Include Description</description>
 				<posx>0</posx>
 				<posy>0</posy>
@@ -90,8 +90,8 @@
 				<onright>noop</onright>
 				<onup>9</onup>
 				<ondown>11</ondown>
-			</control>
-			<control type="radiobutton" id="11">
+				</control>
+				<control type="radiobutton" id="11">
 				<description>Case Sensitive</description>
 				<posx>0</posx>
 				<posy>30</posy>
@@ -102,8 +102,8 @@
 				<onright>noop</onright>
 				<onup>10</onup>
 				<ondown>14</ondown>
-			</control>
-			<control type="edit" id="14">
+				</control>
+				<control type="edit" id="14">
 				<description>Start Date</description>
 				<posx>0</posx>
 				<posy>60</posy>
@@ -115,8 +115,8 @@
 				<onleft>28</onleft>
 				<onup>11</onup>
 				<ondown>15</ondown>
-			</control>
-			<control type="edit" id="15">
+				</control>
+				<control type="edit" id="15">
 				<description>Stop Date</description>
 				<posx>0</posx>
 				<posy>90</posy>
@@ -128,13 +128,13 @@
 				<onleft>28</onleft>
 				<onup>14</onup>
 				<ondown>12</ondown>
-			</control>
-		</control>
-		<control type="group">
-		<include>transition_Fanart</include>
-			<posx>365</posx>
-			<posy>220</posy>
-			<control type="spincontrolex" id="12">
+				</control>
+				</control>
+				<control type="group">
+				<include>transition_Fanart</include>
+				<posx>365</posx>
+				<posy>220</posy>
+				<control type="spincontrolex" id="12">
 				<description>Min Duration</description>
 				<posx>0</posx>
 				<posy>30</posy>
@@ -145,8 +145,8 @@
 				<onleft>28</onleft>
 				<onup>15</onup>
 				<ondown>13</ondown>
-			</control>
-			<control type="spincontrolex" id="13">
+				</control>
+				<control type="spincontrolex" id="13">
 				<description>Max Duration</description>
 				<posx>0</posx>
 				<posy>60</posy>
@@ -157,8 +157,8 @@
 				<onleft>28</onleft>
 				<onup>12</onup>
 				<ondown>21</ondown>
-			</control>
-			<control type="edit" id="16">
+				</control>
+				<control type="edit" id="16">
 				<description>Start time</description>
 				<posx>415</posx>
 				<posy>-30</posy>
@@ -170,8 +170,8 @@
 				<onleft>28</onleft>
 				<onup>13</onup>
 				<ondown>17</ondown>
-			</control>
-			<control type="edit" id="17">
+				</control>
+				<control type="edit" id="17">
 				<description>Stop time</description>
 				<posx>415</posx>
 				<posy>0</posy>
@@ -183,8 +183,8 @@
 				<onleft>15</onleft>
 				<onup>16</onup>
 				<ondown>12</ondown>
-			</control>
-			 <control type="spincontrolex" id="21">
+				</control>
+				<control type="spincontrolex" id="21">
 				<description>Groups</description>
 				<posx>0</posx>
 				<posy>90</posy>
@@ -195,8 +195,8 @@
 				<onleft>28</onleft>
 				<onup>13</onup>
 				<ondown>23</ondown>
-			</control>
-			<control type="spincontrolex" id="23">
+				</control>
+				<control type="spincontrolex" id="23">
 				<description>Channels</description>
 				<posx>0</posx>
 				<posy>120</posy>
@@ -207,8 +207,8 @@
 				<onright>noop</onright>
 				<onup>21</onup>
 				<ondown>18</ondown>
-			</control>
-			<control type="spincontrolex" id="18">
+				</control>
+				<control type="spincontrolex" id="18">
 				<description>Genre</description>
 				<posx>0</posx>
 				<posy>150</posy>
@@ -219,8 +219,8 @@
 				<onleft>28</onleft>
 				<onup>23</onup>
 				<ondown>20</ondown>
-			</control>
-			<control type="radiobutton" id="20">
+				</control>
+				<control type="radiobutton" id="20">
 				<description>Include unknown Genres</description>
 				<posx>0</posx>
 				<posy>180</posy>
@@ -231,8 +231,8 @@
 				<onright>noop</onright>
 				<onup>18</onup>
 				<ondown>22</ondown>
-			</control>
-			<control type="radiobutton" id="22">
+				</control>
+				<control type="radiobutton" id="22">
 				<description>FTA only</description>
 				<posx>0</posx>
 				<posy>210</posy>
@@ -243,8 +243,8 @@
 				<onright>noop</onright>
 				<onup>20</onup>
 				<ondown>24</ondown>
-			</control>
-			<control type="radiobutton" id="24">
+				</control>
+				<control type="radiobutton" id="24">
 				<description>Ignore Timers</description>
 				<posx>0</posx>
 				<posy>240</posy>
@@ -256,8 +256,8 @@
 				<onright>noop</onright>
 				<onup>22</onup>
 				<ondown>19</ondown>
-			</control> 
-			 <control type="radiobutton" id="19">
+				</control> 
+				<control type="radiobutton" id="19">
 				<description>avoid repeats</description>
 				<posx>0</posx>
 				<posy>270</posy>
@@ -268,8 +268,8 @@
 				<onleft>28</onleft>
 				<onup>24</onup>
 				<ondown>27</ondown>
-			</control> 
-			<control type="radiobutton" id="27">
+				</control> 
+				<control type="radiobutton" id="27">
 				<description>Ignore Recordings</description>
 				<posx>0</posx>
 				<posy>300</posy>
@@ -280,51 +280,51 @@
 				<onright>noop</onright>
 				<onup>19</onup>
 				<ondown>9</ondown>
-			</control>
-		</control>
-		<control type="group" id="9000">
-		<include>transition_Fanart</include>
-			<posy>85</posy>
-			<posx>102</posx>
-			<control type="button" id="28">
+				</control>
+				</control>
+				<control type="group" id="9000">
+				<include>transition_Fanart</include>
+				<posy>85</posy>
+				<posx>102</posx>
+				<control type="button" id="28">
 				<description>Defaults Button</description>
 				<posx>0</posx>
 				<posy>0</posy>
 				<include>ButtonCommonValuesInfo</include>
-			    <align>left</align>
-			    <aligny>center</aligny>
+				<align>left</align>
+				<aligny>center</aligny>
 				<label>409</label>
 				<onleft>noop</onleft>
 				<onright>9</onright>
 				<onup>26</onup>
 				<ondown>25</ondown>
-			</control>
-			<control type="button" id="25">
+				</control>
+				<control type="button" id="25">
 				<description>Cancel Button</description>
 				<posx>0</posx>
 				<posy>50</posy>
 				<include>ButtonCommonValuesInfo</include>
-			    <align>left</align>
-			    <aligny>center</aligny>
+				<align>left</align>
+				<aligny>center</aligny>
 				<label>222</label>
 				<onleft>noop</onleft>
 				<onright>9</onright>
 				<onup>28</onup>
 				<ondown>26</ondown>
-			</control>
-			<control type="button" id="26">
+				</control>
+				<control type="button" id="26">
 				<description>Search Button</description>
 				<posx>0</posx>
 				<posy>100</posy>
 				<include>ButtonCommonValuesInfo</include>
-			    <align>left</align>
-			    <aligny>center</aligny>
+				<align>left</align>
+				<aligny>center</aligny>
 				<label>137</label>
 				<onleft>noop</onleft>
 				<onright>9</onright>
 				<onup>25</onup>
 				<ondown>28</ondown>
-			</control>
-		</control>
-	</controls>
-</window>
+				</control>
+				</control>
+				</controls>
+				</window>
