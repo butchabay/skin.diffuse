@@ -1344,3 +1344,11 @@ msgstr "TriPanel"
 msgctxt "#41404"
 msgid "Loading"
 msgstr "Lädt"
+
+msgctxt "#41405"
+msgid "XBMC Version:"
+msgstr "XBMC Version:"
+
+msgctxt "#41406"
+msgid "Diffuse"
+msgstr "Diffuse"

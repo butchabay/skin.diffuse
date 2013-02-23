@@ -52,7 +52,7 @@
 				<width>740</width>
 				<height>40</height>
 				<font>diffuse_40_title_bold</font>
-				<label>diffuse</label>
+				<label>$LOCALIZE[41406]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<textcolor>lightgrey</textcolor>

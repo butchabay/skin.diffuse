@@ -1509,3 +1509,11 @@ msgstr ""
 msgctxt "#41404"
 msgid "Loading"
 msgstr ""
+
+msgctxt "#41405"
+msgid "XBMC Version:"
+msgstr ""
+
+msgctxt "#41406"
+msgid "Diffuse"
+msgstr ""

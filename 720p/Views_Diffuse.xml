@@ -819,8 +819,8 @@
 				</control>
 				<!-- Season Landscape -->
 				<control type="image">
-				<posx>910</posx>
-				<posy>260</posy>
+				<posx>990</posx>
+				<posy>255</posy>
 				<width>250</width>
 				<height>139</height>
 				<aspectratio>stretch</aspectratio>
@@ -835,8 +835,8 @@
 				</control>
 				<!-- Season Landscape -->
 				<control type="image">
-				<posx>910</posx>
-				<posy>260</posy>
+				<posx>990</posx>
+				<posy>255</posy>
 				<width>250</width>
 				<height>139</height>
 				<aspectratio>stretch</aspectratio>
@@ -877,7 +877,7 @@
 				</control>
 				<control type="image">
 				<description>Rating value</description>
-				<posx>900</posx>
+				<posx>990</posx>
 				<posy>350</posy>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -892,7 +892,7 @@
 				</control>
 				<control type="image">
 				<description>Rating value</description>
-				<posx>900</posx>
+				<posx>990</posx>
 				<posy>350</posy>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -907,14 +907,14 @@
 				</control>
 				<control type="label">
 				<description>Watched Unwatched</description>
-				<posx>782</posx>
+				<posx>1240</posx>
 				<posy>225</posy>
 				<width>500</width>
 				<height>20</height>
 				<label fallback="416">[COLOR=white]$LOCALIZE[20360] $INFO[listitem.episode]  $LOCALIZE[16102] $INFO[ListItem.Property(WatchedEpisodes)]  $LOCALIZE[16101] $INFO[ListItem.Property(UnWatchedEpisodes)][/COLOR]</label>
-				<align>center</align>
+				<align>right</align>
 				<aligny>center</aligny>
-				<font>diffuse_18_title_bold</font>
+				<font>diffuse_16_rss</font>
 				<animation effect="slide" start="600,0" end="0,0" time="1000" delay="1000" reversible="false" easing="out" tween="cubic" condition="Skin.HasSetting(556_Info_Panel_On)">Conditional</animation>
 				<visible>Skin.HasSetting(557_Info_Panel_On)</visible>
 				<visible>!IsEmpty(ListItem.Thumb)</visible> 
@@ -922,14 +922,14 @@
 				</control>
 				<control type="label">
 				<description>Next Aired</description>
-				<posx>782</posx>
+				<posx>1240</posx>
 				<posy>255</posy>
 				<width>500</width>
 				<height>20</height>
 				<label>[COLOR=white]$LOCALIZE[41315]  $INFO[Window(Home).Property(NextAired.NextDate)][/COLOR]</label>
-				<align>center</align>
+				<align>right</align>
 				<aligny>center</aligny>
-				<font>diffuse_18_title_bold</font>
+				<font>diffuse_18_rss</font>
 				<animation effect="slide" start="600,0" end="0,0" time="1000" delay="1000" reversible="false" easing="out" tween="cubic" condition="Skin.HasSetting(556_Info_Panel_On)">Conditional</animation>
 				<visible>Skin.HasSetting(557_Info_Panel_On) + !IsEmpty(Window(Home).Property(NextAired.Label)) + !IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
 				<visible>!IsEmpty(ListItem.Thumb)</visible> 
@@ -937,14 +937,14 @@
 				</control>
 				<control type="label">
 				<description>Watched Unwatched</description>
-				<posx>782</posx>
+				<posx>1240</posx>
 				<posy>225</posy>
 				<width>500</width>
 				<height>20</height>
 				<label fallback="416">[COLOR=white]$LOCALIZE[20360] $INFO[listitem.episode]  $LOCALIZE[16102] $INFO[ListItem.Property(WatchedEpisodes)]  $LOCALIZE[16101] $INFO[ListItem.Property(UnWatchedEpisodes)][/COLOR]</label>
-				<align>center</align>
+				<align>right</align>
 				<aligny>center</aligny>
-				<font>diffuse_18_title_bold</font>
+				<font>diffuse_16_rss</font>
 				<visible>!Container(557).OnNext + !Container(557).OnPrevious + Skin.HasSetting(557_Info_Panel_Delay) + !Control.HasFocus(60)</visible>
 				<animation effect="slide" start="600" end="0" time="1500" delay="3200" easing="out" tween="cubic" reversible="false">Visible</animation>
 				<visible>!IsEmpty(ListItem.Thumb)</visible> 
@@ -952,14 +952,14 @@
 				</control>
 				<control type="label">
 				<description>Next Aired</description>
-				<posx>782</posx>
+				<posx>1240</posx>
 				<posy>255</posy>
 				<width>500</width>
 				<height>20</height>
 				<label>[COLOR=white]$LOCALIZE[41315]  $INFO[Window(Home).Property(NextAired.NextDate)][/COLOR]</label>
-				<align>center</align>
+				<align>right</align>
 				<aligny>center</aligny>
-				<font>diffuse_18_title_bold</font>
+				<font>diffuse_18_rss</font>
 				<visible>!Container(557).OnNext + !Container(557).OnPrevious + Skin.HasSetting(557_Info_Panel_Delay) + !Control.HasFocus(60) + !IsEmpty(Window(Home).Property(NextAired.Label)) + !IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
 				<animation effect="slide" start="600" end="0" time="1500" delay="3200" easing="out" tween="cubic" reversible="false">Visible</animation>
 				<visible>!IsEmpty(ListItem.Thumb)</visible> 
