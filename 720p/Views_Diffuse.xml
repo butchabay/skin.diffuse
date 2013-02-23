@@ -803,7 +803,7 @@
 				<visible>Container.Content(TVShows)</visible>
 				</control>
 				<control type="image">
-				<posx>903</posx>
+				<posx>1060</posx>
 				<posy>270</posy>
 				<width>270</width>
 				<height>80</height>
